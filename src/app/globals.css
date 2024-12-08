@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: #000000;
+		--foreground: #ffffff;
+		--mutedblue: #6C8EA3;
+		--pitch-dark-blue: #202A30;
+		--sky-blue: #BEE8FF;
+		--deep-Blue: #438DB5;
+		--muted-text: #999999;
+		--muted-text-2: #CCCCCC;
+		--muted-text-3: #595959;
+		--muted-text-4: #808080;
+	}
+}
+
+.theme-dark {
+	--background: #000000;
+	--foreground: #ffffff;
+	--mutedblue: #6C8EA3;
+	--pitch-dark-blue: #202A30;
+	--sky-blue: #BEE8FF;
+	--deep-Blue: #438DB5;
+	--muted-text: #999999;
+	--muted-text-2: #CCCCCC;
+	--muted-text-3: #595959;
+	--muted-text-4: #808080;
+	@apply transition-colors duration-500 ease-in-out;
+}
+
+.theme-light {
+	--background: #ffffff;
+	--foreground: #000000;
+	--mutedblue: #6C8EA3;
+	--pitch-dark-blue: #202A30;
+	--sky-blue: #BEE8FF;
+	--deep-Blue: #438DB5;
+	--muted-text: #999999;
+	--muted-text-2: #CCCCCC;
+	--muted-text-3: #595959;
+	--muted-text-4: #808080;
+	@apply transition-colors duration-500 ease-in-out;
+}
+
+body {
+	color: var(--foreground);
+	background: var(--background);
+	font-family: var(--font-general-sans-regular);
+}
