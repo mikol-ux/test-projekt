@@ -8,8 +8,10 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 	return (
 		<html lang="en">
 			<body
-				className={`${generalSansLight.variable} ${generalSansRegular.variable} theme-light`}>
+				className={`${generalSansLight.variable} ${generalSansRegular.variable} bg-white text-black dark:text-white dark:bg-black`}>
 				{children}
+				<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+				<script src="./js/index.js"></script>
 			</body>
 		</html>
 	);

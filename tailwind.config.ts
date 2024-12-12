@@ -2,21 +2,27 @@ import type { Config } from "tailwindcss";
 
 export default {
 	content: [
-		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/app/**/*.{js,ts,jsx,tsx,mdx}"
 	],
 	theme: {
 		extend: {
+			screens: {
+				"2xl": "1920px",
+				"3xl": "2560px",
+				"4xl": "3200px",
+				"5xl": "7680px"
+			},
 			colors: {
-				background: "var(--background)",
-				foreground: "var(--foreground)",
+				black: "var(--black)",
+				white: "var(--white)",
 				"muted-blue": "var(--muted-blue)",
 				"pitch-dark-blue": "var(--pitch-dark-blue)",
 				"sky-blue": "var(--sky-blue)",
 				"deep-Blue": "var(--deep-Blue)",
-				"muted-text": "var(--muted-text)",
-				"muted-text-2": "var(--muted-text-2)",
-				"muted-text-3": "var(--muted-text-3)",
-				"muted-text-4": "var(--muted-text-4)"
+				"muted": "var(--muted-text)",
+				"muted-2": "var(--muted-text-2)",
+				"muted-3": "var(--muted-text-3)",
+				"muted-4": "var(--muted-text-4)"
 			}
 		}
 	},

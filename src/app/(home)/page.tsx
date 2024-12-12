@@ -1,7 +1,11 @@
 import Image from "next/image";
+import HeroSection from "./components/Hero Section/HeroSection";
+import { Fragment } from "react";
 
 export default function Home() {
 	return (
-		<h1 className="bg-pitch-dark-blue">Hello</h1>
+		<Fragment>
+			<HeroSection />
+		</Fragment>
 	);
 }

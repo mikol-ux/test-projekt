@@ -27,6 +27,6 @@ export const generalMetaData: Metadata = {
 			{ rel: "manifest", url: "/favicon/site.webmanifest" }, // Web App Manifest
 			{ rel: "android-chrome", url: "/favicon/web-app-manifest-192x192.png", sizes: "192x192" },
 			{ rel: "android-chrome", url: "/favicon/web-app-manifest-512x512.png", sizes: "512x512" },
-		],
-	},
+		]
+	}
 };
