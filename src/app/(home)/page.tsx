@@ -1,11 +1,12 @@
-import Image from "next/image";
-import HeroSection from "./sections/Hero Section/HeroSection";
+import TheHero from "./sections/TheHero/TheHero";
 import { Fragment } from "react";
+import TheDescription from "./sections/TheDescription/TheDescription";
 
 export default function Home() {
 	return (
 		<Fragment>
-			<HeroSection />
+			<TheHero />
+			<TheDescription />
 		</Fragment>
 	);
 }
