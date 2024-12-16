@@ -1,17 +1,4 @@
 import { Metadata } from "next";
-import localFont from "next/font/local";
-
-export const generalSansLight = localFont({
-	src: "./assets/fonts/GeneralSans-Light.woff2",
-	variable: "--font-general-sans-light",
-	weight: "400",
-});
-
-export const generalSansRegular = localFont({
-	src: "./assets/fonts/GeneralSans-Regular.woff2",
-	variable: "--font-general-sans-regular",
-	weight: "400",
-});
 
 export const generalMetaData: Metadata = {
 	title: "TheProjekt",
