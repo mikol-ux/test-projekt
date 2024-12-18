@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import TheDescription from "./sections/TheDescription/TheDescription";
 import TheDirections from "./sections/TheDirections/TheDirections";
 import TheService from "./sections/TheService/TheService";
+import TheAdvice from "./sections/TheAdvice/TheAdvice";
 
 export default function Home() {
 	return (
@@ -12,6 +13,7 @@ export default function Home() {
 				<TheDescription />
 				<TheDirections />
 				<TheService />
+				<TheAdvice />
 			</main>
 		</Fragment>
 	);
