@@ -17,7 +17,11 @@ export default {
 			},
 			colors: {
 				black: "var(--black)",
-				white: "var(--white)",
+				white: {
+					DEFAULT: "var(--white)",
+					"300": "#C6C6C6",
+					"800": "#555555"
+				},
 				"muted-blue": "var(--muted-blue)",
 				"pitch-dark-blue": "var(--pitch-dark-blue)",
 				"sky-blue": "var(--sky-blue)",

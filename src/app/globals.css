@@ -4,31 +4,101 @@
 
 @layer base {
   :root {
-	--black: #000000;
-	--white: #ffffff;
-	--muted-blue: #6c8ea3;
-	--pitch-dark-blue: #202a30;
-	--sky-blue: #bee8ff;
-	--deep-blue: #438db5;
-	--muted-text: #999999;
-	--muted-text-2: #cccccc;
-	--muted-text-3: #595959;
-	--muted-text-4: #808080;
+    --black: #000000;
+    --white: #ffffff;
+    --muted-blue: #6c8ea3;
+    --pitch-dark-blue: #202a30;
+    --sky-blue: #bee8ff;
+    --deep-blue: #438db5;
+    --muted-text: #999999;
+    --muted-text-2: #cccccc;
+    --muted-text-3: #595959;
+    --muted-text-4: #808080;
   }
 }
 
 @font-face {
-  font-family: "General Sans"; /* Match this to the font family name in Tailwind's config */
-  src: url('/fonts/GeneralSans-Regular.woff2') format('woff2');
-  font-weight: 400; /* Adjust based on font weight */
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Extralight.woff2') format('woff2');
+  font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "General Sans";
+  font-family: 'General Sans';
   src: url('/fonts/GeneralSans-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Extralightitalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Lightitalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Mediumitalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Semibolditalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Bolditalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
 }
 
 /* .theme-dark {
@@ -60,15 +130,18 @@
 } */
 
 body {
-  font-family: "General Sans", sans-serif;
+  font-family: 'General Sans', sans-serif;
   height: 100vh;
 }
 
 @layer components {
   .center-center {
-	@apply flex justify-center items-center;
+    @apply flex justify-center items-center;
   }
   .tpk-contained {
-	@apply max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto p-4;
+    @apply max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto p-4;
+  }
+  .tpk-title {
+	@apply text-2xl text-black md:text-4xl dark:text-white uppercase;
   }
 }
