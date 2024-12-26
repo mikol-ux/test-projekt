@@ -4,6 +4,7 @@ import TheDescription from "./sections/TheDescription/TheDescription";
 import TheDirections from "./sections/TheDirections/TheDirections";
 import TheService from "./sections/TheService/TheService";
 import TheAdvice from "./sections/TheAdvice/TheAdvice";
+import TheEvidence from "./sections/TheEvidence/TheEvidence";
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 				<TheDirections />
 				<TheService />
 				<TheAdvice />
+				<TheEvidence />
 			</main>
 		</Fragment>
 	);

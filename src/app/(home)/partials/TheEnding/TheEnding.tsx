@@ -44,7 +44,7 @@ const TheEnding = () => {
 					</p>
 					<Link
 						href="#x"
-						className="block text-center uppercase p-3 border-[0.5px] border-muted-4 dark:border-white text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black">
+						className="tpk-btn-white">
 						I WANT TO SPEAK WITH SOMEONE
 					</Link>
 				</div>

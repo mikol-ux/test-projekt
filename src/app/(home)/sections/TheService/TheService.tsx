@@ -56,7 +56,7 @@ function TheService() {
 					</ul>
 					<Link
 						href="#x"
-						className="block text-center uppercase p-3 border-[0.75px] border-muted-4 dark:border-muted text-muted-4 dark:text-muted hover:bg-muted dark:hover:bg-muted-4 hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black">
+						className="tpk-btn-muted">
 						I WANT THE FULL STORY
 					</Link>
 				</div>
