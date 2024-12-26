@@ -1,8 +1,8 @@
 //
-
+import { FC } from "react";
 import Link from "next/link";
 
-const TheHero = () => {
+const TheHero: FC = () => {
 	return (
 		<section className="tpk-contained">
 			<div className="justify-items-stretch items-center grid grid-cols-3 grid-flow-row">
@@ -18,7 +18,7 @@ const TheHero = () => {
 				</div>
 			</div>
 		</section>
-	)
+	);
 }
 
 export default TheHero;

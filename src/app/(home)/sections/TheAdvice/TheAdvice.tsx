@@ -1,6 +1,7 @@
 //
+import { FC } from "react";
 
-function TheAdvice() {
+const TheAdvice: FC = () => {
 	return (
 		<section className="tpk-contained">
 			<div className="flex flex-col md:flex-row gap-12">

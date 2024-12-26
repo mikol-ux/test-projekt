@@ -1,10 +1,11 @@
-import TheHero from "./sections/TheHero/TheHero";
 import { Fragment } from "react";
+import TheHero from "./sections/TheHero/TheHero";
 import TheDescription from "./sections/TheDescription/TheDescription";
 import TheDirections from "./sections/TheDirections/TheDirections";
 import TheService from "./sections/TheService/TheService";
 import TheAdvice from "./sections/TheAdvice/TheAdvice";
 import TheEvidence from "./sections/TheEvidence/TheEvidence";
+import TheProcess from "./sections/TheProcess/TheProcess";
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 				<TheService />
 				<TheAdvice />
 				<TheEvidence />
+				<TheProcess />
 			</main>
 		</Fragment>
 	);

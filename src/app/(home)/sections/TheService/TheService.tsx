@@ -1,8 +1,8 @@
 //
-
+import { FC } from "react";
 import Link from "next/link";
 
-function TheService() {
+const TheService: FC = () => {
 	return (
 		<section className='tpk-contained'>
 			<div className="flex flex-col md:flex-row justify-start gap-24 md:gap-0">

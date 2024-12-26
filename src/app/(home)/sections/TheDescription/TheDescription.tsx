@@ -1,6 +1,7 @@
 //
+import { FC } from "react";
 
-function TheDescription() {
+const TheDescription: FC = () => {
 	return (
 		<section className="flex flex-col gap-8 tpk-contained">
 			<h2 className="text-muted-3 dark:text-muted tpk-title">

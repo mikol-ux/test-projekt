@@ -1,6 +1,7 @@
 // 
+import { FC } from "react";
 
-function TheDirections() {
+const TheDirections: FC = () => {
 	return (
 		<section className="tpk-contained">
 			<div className="flex md:flex-row flex-col gap-12 md:gap-0">
@@ -28,7 +29,7 @@ function TheDirections() {
 							<h6 className="py-3 border-b-2 border-b-white-300 w-full text-lg text-white-800 dark:text-white-300 3xl:text-3xl">02</h6>
 							<h5 className="text-muted-3 dark:text-white-300 text-xl 3xl:text-3xl">
 								Market-ready identity that attracts your audience
-								</h5>
+							</h5>
 							<p className="text-muted-black dark:text-muted-4 text-sm lg:text-md 3xl:text-xl">
 								From strategy to execution, we ensure your brand is distinct, memorable, and positioned to connect with the right customers. It's more than just a logo—it’s a complete identity that drives growth. 							</p>
 						</div>
@@ -36,7 +37,7 @@ function TheDirections() {
 							<h6 className="py-3 border-b-2 border-b-white-300 w-full text-lg text-white-800 dark:text-white-300 3xl:text-3xl">03</h6>
 							<h5 className="text-muted-3 dark:text-white-300 text-xl 3xl:text-3xl">
 								Get high-quality results with video production for your business.
-								</h5>
+							</h5>
 							<p className="text-muted-black dark:text-muted-4 text-sm lg:text-md 3xl:text-xl">
 								Use Rogue's Full-service multimedia production. Without the headache. We handle it all.							</p>
 						</div>
@@ -44,7 +45,7 @@ function TheDirections() {
 							<h6 className="py-3 border-b-2 border-b-white-300 w-full text-lg text-white-800 dark:text-white-300 3xl:text-3xl">04</h6>
 							<h5 className="text-muted-3 dark:text-white-300 text-xl 3xl:text-3xl">
 								Save hours of manual work and reduce errors
-								</h5>
+							</h5>
 							<p className="text-muted-black dark:text-muted-4 text-sm lg:text-md 3xl:text-xl">
 								Use The Watchman to hire certified and qualified candidates that match your criteria for 87% less than the cost of hiring in the U.S. or similar.							</p>
 						</div>

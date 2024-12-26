@@ -1,8 +1,8 @@
 //
-
+import { FC } from "react";
 import Link from "next/link";
 
-function TheEvidence() {
+const TheEvidence: FC = () => {
 	return (
 		<section>
 			<div className="tpk-contained">
