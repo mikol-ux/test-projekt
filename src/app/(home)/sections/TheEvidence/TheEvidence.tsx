@@ -45,8 +45,8 @@ const TheEvidence: FC = () => {
 			</div>
 			<div className="tpk-contained">
 				<div className="flex flex-col lg:flex-row">
-					<div className="basis-1/3"></div>
-					<div className="basis-2/3">
+					<div className="basis-5/12"></div>
+					<div className="basis-7/12">
 						<Link href="#x"
 							className="tpk-btn-white">
 							SEE ALL PROJECTS
