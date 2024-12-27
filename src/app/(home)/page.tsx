@@ -7,6 +7,7 @@ import TheAdvice from "./sections/TheAdvice/TheAdvice";
 import TheEvidence from "./sections/TheEvidence/TheEvidence";
 import TheProcess from "./sections/TheProcess/TheProcess";
 import TheBlog from "./sections/TheBlog/TheBlog";
+import TheForge from "./sections/TheForge/TheForge";
 
 export default function Home() {
 	return (
@@ -20,6 +21,7 @@ export default function Home() {
 				<TheEvidence />
 				<TheProcess />
 				<TheBlog />
+				<TheForge />
 			</main>
 		</Fragment>
 	);
