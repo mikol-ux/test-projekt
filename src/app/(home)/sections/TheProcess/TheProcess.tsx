@@ -13,34 +13,34 @@ const TheProcess: FC = () => {
 						</svg>
 						<h4 className="text-muted-4 dark:text-muted text-normal uppercase">How it works</h4>
 					</div>
-					<h2 className="text-xl md:text-2xl font-normal mt-4 uppercase tpk-text-muted">Let's transform your dream to a remarkable business</h2>
+					<h2 className="text-xl md:text-2xl font-normal mt-4 uppercase tpk-text-muted">Let&apos;s transform your dream to a remarkable business</h2>
 				</div>
 				<div className="md:basis-7/12">
 					<ul className="flex flex-col gap-3">
 						<li className="tpk-btn-white border-[0.75px] text-start py-6 hover:text-white dark:hover:text-black">
 							<h6 className="text-muted-4 text-sm normal-case">Stop 01</h6>
 							<h3 className="text-inherit text-xl md:text-2xl font-normal mt-2">Select a Program/Fill out the questionnaire</h3>
-							<p className="text-muted-3 dark:text-muted-4 text-sm mt-2 normal-case lg:w-3/4 xl:w-3/4">We’ll help you select the right program for your business and fill out a questionnaire to help us understand your business better.</p>
+							<p className="text-muted-3 dark:text-muted-4 text-sm mt-2 normal-case lg:w-3/4 xl:w-3/4">We&apos;ll help you select the right program for your business and fill out a questionnaire to help us understand your business better.</p>
 						</li>
 						<li className="tpk-btn-white border-[0.75px] text-start py-6 hover:text-white dark:hover:text-black">
 							<h6 className="text-muted-4 text-sm normal-case">Stop 02</h6>
 							<h3 className="text-inherit text-xl md:text-2xl font-normal mt-2">Log in/make a refundable deposit</h3>
 							<p className="text-muted-3 dark:text-muted-4 text-sm mt-2 normal-case lg:w-3/4 xl:w-3/4">
-								You’ll log in to your account, make a refundable deposit, and we’ll get started on your business.
+								You&apos;ll log in to your account, make a refundable deposit, and we&apos;ll get started on your business.
 							</p>
 						</li>
 						<li className="tpk-btn-white border-[0.75px] text-start py-6 hover:text-white dark:hover:text-black">
 							<h6 className="text-muted-4 text-sm normal-case">Stop 03</h6>
 							<h3 className="text-inherit text-xl md:text-2xl font-normal mt-2">Schedule a call</h3>
 							<p className="text-muted-3 dark:text-muted-4 text-sm mt-2 normal-case lg:w-3/4 xl:w-3/4">
-								We’ll schedule a call to discuss your business, goals, and how we can help you achieve them.
+								We&apos;ll schedule a call to discuss your business, goals, and how we can help you achieve them.
 							</p>
 						</li>
 						<li className="tpk-btn-white border-[0.75px] text-start py-6 hover:text-white dark:hover:text-black">
 							<h6 className="text-muted-4 text-sm normal-case">Stop 04</h6>
 							<h3 className="text-inherit text-xl md:text-2xl font-normal mt-2">Projekt Kick off</h3>
 							<p className="text-muted-3 dark:text-muted-4 text-sm mt-2 normal-case lg:w-3/4 xl:w-3/4">
-								We’ll kick off your project and start working on your business. You’ll have access to your account to track our progress.
+								We&apos;ll kick off your project and start working on your business. You&apos;ll have access to your account to track our progress.
 							</p>
 						</li>
 

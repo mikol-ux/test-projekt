@@ -31,7 +31,7 @@ const TheDirections: FC = () => {
 								Market-ready identity that attracts your audience
 							</h5>
 							<p className="text-muted-black dark:text-muted-4 text-sm lg:text-md 3xl:text-xl">
-								From strategy to execution, we ensure your brand is distinct, memorable, and positioned to connect with the right customers. It's more than just a logo—it’s a complete identity that drives growth. 							</p>
+								From strategy to execution, we ensure your brand is distinct, memorable, and positioned to connect with the right customers. It&apos;s more than just a logo—it&apos;s a complete identity that drives growth. 							</p>
 						</div>
 						<div className="flex flex-col gap-4">
 							<h6 className="py-3 border-b-2 border-b-white-300 w-full text-lg text-white-800 dark:text-white-300 3xl:text-3xl">03</h6>
@@ -39,7 +39,7 @@ const TheDirections: FC = () => {
 								Get high-quality results with video production for your business.
 							</h5>
 							<p className="text-muted-black dark:text-muted-4 text-sm lg:text-md 3xl:text-xl">
-								Use Rogue's Full-service multimedia production. Without the headache. We handle it all.							</p>
+								Use Rogue&apos;s Full-service multimedia production. Without the headache. We handle it all.</p>
 						</div>
 						<div className="flex flex-col gap-4">
 							<h6 className="py-3 border-b-2 border-b-white-300 w-full text-lg text-white-800 dark:text-white-300 3xl:text-3xl">04</h6>

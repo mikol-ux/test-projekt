@@ -1,21 +1,25 @@
 //
 import { FC } from "react";
-import Link from "next/link";
+import GradientBtn from "@/components/buttons/GradientBtn";
 
 const TheHero: FC = () => {
 	return (
-		<section className="tpk-contained">
-			<div className="justify-items-stretch items-center grid grid-cols-3 grid-flow-row">
-				<div>
-					<span className="font-light text-[50vw] text-black text-center lg:text-[30vw] dark:text-white">T</span>
+		<section className="tpk-contained min-h-screen flex items-end py-32">
+			<div className="flex">
+				<div className="md:basis-6/12">
+					<div className="bg-[#141414] rounded-md text-center px-5 py-3 w-max mb-8">
+						<h6 className="text-white text-normal uppercase">We Are The Projekt</h6>
+					</div>
+					<h1 className="text-black dark:text-white uppercase text-2xl md:text-3xl xl:text-5xl">
+						The best place to turn your IDEAS Into everything you need for a remarkable business.
+					</h1>
+					<p className="text-dark dark:text-white font-light text-md md:text-lg xl:text-xl my-5">
+						We help upcoming passionate founders turn their dreams into profitable businesses- research, brand, build, launch, and scale their products/services. For Established businesses, we provide tools to stay ahead, leveraging automation, design, software development, artificial intelligence, and an exclusive highly vetted founders community.
+					</p>
+
+					<GradientBtn href="/about" className="mt-14">I Want To Learn More</GradientBtn>
 				</div>
-				<div className="flex flex-col justify-items-center items-center gap-8 md:gap-12 lg:gap-24 col-span-3 md:col-span-1 row-start-2 md:row-start-auto">
-					<h1 className="text-2xl text-black text-center xl:text-4xl 2xl:text-5xl dark:text-white">Remarkable dreams are built with the Projekt</h1>
-					<Link href="#x" className="border-[.5px] dark:hover:border-white dark:focus:border-white bg-black hover:bg-white dark:hover:bg-black focus:bg-white dark:focus:bg-black dark:bg-white px-8 p-2 border-black hover:border-black max-w-max text-center text-md text-white hover:text-black dark:hover:text-white focus:text-black dark:focus:text-white dark:text-black uppercase">See Pricing</Link>
-				</div>
-				<div className="justify-self-end col-start-3 row-start-1">
-					<span className="font-light text-[50vw] text-black text-center lg:text-[30vw] dark:text-white">P</span>
-				</div>
+				<div className="md:basis-6/12"></div>
 			</div>
 		</section>
 	);

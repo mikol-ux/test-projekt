@@ -25,7 +25,7 @@ export default {
 				"muted-blue": "var(--muted-blue)",
 				"pitch-dark-blue": "var(--pitch-dark-blue)",
 				"sky-blue": "var(--sky-blue)",
-				"deep-Blue": "var(--deep-Blue)",
+				"deep-blue": "var(--deep-blue)",
 				"muted": "var(--muted-text)",
 				"muted-2": "var(--muted-text-2)",
 				"muted-3": "var(--muted-text-3)",

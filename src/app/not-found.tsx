@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function NotFound() {
 	return (
@@ -9,18 +9,17 @@ export default function NotFound() {
 					Page not found
 				</h1>
 				<p className="mt-6 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">
-					Sorry, we couldn’t find the page you’re looking for.
+					Sorry, we couldn&apos;t find the page you&apos;re looking for.
 				</p>
 				<div className="mt-10 flex items-center justify-center gap-x-6">
-					<a
-						href="/"
+					<Link href="/"
 						className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 					>
 						Go back home
-					</a>
-					<a href="#" className="text-sm font-semibold text-gray-200">
+					</Link>
+					<Link href="#" className="text-sm font-semibold text-gray-200">
 						Contact support <span aria-hidden="true">&rarr;</span>
-					</a>
+					</Link>
 				</div>
 			</div>
 		</main>

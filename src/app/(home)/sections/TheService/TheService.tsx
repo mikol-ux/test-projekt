@@ -17,7 +17,7 @@ const TheService: FC = () => {
 						WE ARE A WEB DEVELOPMENT & CYBER SECURITY AGENCY
 					</h3>
 					<p className="text-muted-4 dark:text-muted text-xl text-normal">
-						At The Projekt, we know what it’s like to take big risks without having a huge budget and clarity. That’s why we created the Foundation Program—designed for the dreamers, misfits, and rebels who are too busy chasing something bigger. It’s not just about launching your business; it’s about growing to the point where you're turning clients away because you’re in such high demand.
+						At The Projekt, we know what it&apos;s like to take big risks without having a huge budget and clarity. That&apos;s why we created the Foundation Program—designed for the dreamers, misfits, and rebels who are too busy chasing something bigger. It&apos;s not just about launching your business; it&apos;s about growing to the point where you&apos;re turning clients away because you&apos;re in such high demand.
 					</p>
 				</div>
 			</div>

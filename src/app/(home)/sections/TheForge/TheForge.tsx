@@ -11,7 +11,7 @@ const TheForge: FC = () => {
 					<h4 className="text-muted-4 dark:text-muted text-normal uppercase">THE FORGE</h4>
 				</div>
 				<h2 className="text-xl md:text-2xl font-normal mt-4 uppercase tpk-text-muted">Join the private network for dreamers turned high-performing founders.</h2>
-				<h2 className="text-xl md:text-2xl font-normal mt-4 uppercase tpk-text-white">Each applicant is interviewed and highly vetted with only a less than 10% acceptance rate. To keep The Forge intimate we're limiting the community to a select few. </h2>
+				<h2 className="text-xl md:text-2xl font-normal mt-4 uppercase tpk-text-white">Each applicant is interviewed and highly vetted with only a less than 10% acceptance rate. To keep The Forge intimate we&apos;re limiting the community to a select few. </h2>
 			</div>
 			<div className="flex flex-col-reverse md:flex-row gap-6">
 				<div className="md:basis-5/12">

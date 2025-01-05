@@ -13,7 +13,7 @@ const TheEvidence: FC = () => {
 					<h4 className="tpk-text-muted text-normal uppercase">PORTFOLIO</h4>
 				</div>
 				<h3 className="tpk-text-muted uppercase text-4xl text-normal mt-8">
-					We help small businesses and tech founders everywhere—whether you’re launching, scaling, or building custom software. Think of us as your secret weapon for remote hiring, in-house tools, and everything in between. Real results, no fluff. You focus on the vision; we’ll handle the heavy lifting.
+					We help small businesses and tech founders everywhere—whether you&apos;re launching, scaling, or building custom software. Think of us as your secret weapon for remote hiring, in-house tools, and everything in between. Real results, no fluff. You focus on the vision; we&apos;ll handle the heavy lifting.
 				</h3>
 			</div>
 			{/* */}

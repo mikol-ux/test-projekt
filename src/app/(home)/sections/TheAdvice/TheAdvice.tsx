@@ -11,15 +11,15 @@ const TheAdvice: FC = () => {
 						Roughly 80% of businesses fail because inadequate planning, but the 30-20% that succeed often do so because they learn, adapt, and innovate.
 					</h3>
 					<p className="text-muted-4 dark:text-muted text-xl 3xl:text-2xl text-normal">
-						Starting a business is tough and often lonely. We understand. You’re balancing school, work, family, and your dream—often without full support from those around you. Even if you've done this before, new challenges arise daily, with incomplete information and unknowns. We call this stage "The Foundation." It’s the hardest part, where you're pushing through uncertainty to find solutions. You’re a dreamer trying to love/understand the problem enough to build the solution. We know the feeling. We re-live it every time a new client steps through our door. 					</p>
+						Starting a business is tough and often lonely. We understand. You&apos;re balancing school, work, family, and your dream—often without full support from those around you. Even if you&apos;ve done this before, new challenges arise daily, with incomplete information and unknowns. We call this stage &quot;The Foundation.&quot; It&apos;s the hardest part, where you&apos;re pushing through uncertainty to find solutions. You&apos;re a dreamer trying to love/understand the problem enough to build the solution. We know the feeling. We re-live it every time a new client steps through our door.</p>
 					<ul className="mb-10">
 						<li className="pt-24 md:pt-12 md:px-0">
 							<span className="text-muted-4 dark:text-muted text-lg lg:text-2xl uppercase">(A)</span>
-							<h6 className="text-black dark:text-white text-lg lg:text-2xl uppercase">Ensure your goals are achieved efficiently, with maximum impact and minimal risk </h6>
+							<h6 className="text-black dark:text-white text-lg lg:text-2xl uppercase">Ensure your goals are achieved efficiently, with maximum impact and minimal risk</h6>
 						</li>
 						<li className="pt-24 md:pt-12 md:px-0">
 							<span className="text-muted-4 dark:text-muted text-lg lg:text-2xl uppercase">(B)</span>
-							<h6 className="text-bl	ck dark:text-white text-lg lg:text-2xl uppercase">Market-ready identity that attracts your audience </h6>
+							<h6 className="text-bl	ck dark:text-white text-lg lg:text-2xl uppercase">Market-ready identity that attracts your audience</h6>
 						</li>
 						<li className="pt-24 md:pt-12 md:px-0">
 							<span className="text-muted-4 dark:text-muted text-lg lg:text-2xl uppercase">(C)</span>
@@ -27,7 +27,7 @@ const TheAdvice: FC = () => {
 						</li>
 						<li className="pt-24 md:pt-12 md:px-0">
 							<span className="text-muted-4 dark:text-muted text-lg lg:text-2xl uppercase">(D)</span>
-							<h6 className="text-black dark:text-white text-lg lg:text-2xl uppercase">Save hours of manual work and reduce errors </h6>
+							<h6 className="text-black dark:text-white text-lg lg:text-2xl uppercase">Save hours of manual work and reduce errors</h6>
 						</li>
 						<li className="pt-24 md:pt-12 md:px-0">
 							<span className="text-muted-4 dark:text-muted text-lg lg:text-2xl uppercase">(E)</span>

@@ -5,9 +5,9 @@ const TheDescription: FC = () => {
 	return (
 		<section className="flex flex-col gap-8 tpk-contained">
 			<h2 className="text-muted-3 dark:text-muted tpk-title">
-				It’s how you turn a <em className="not-italic tpk-title">dream into a
+				It&apos;s how you turn a <em className="not-italic tpk-title">dream into a
 				remarkable profitable business </em>
-				that’s ready to scale.
+				that&apos;s ready to scale.
 			</h2>
 			<div className="bg-[url('/img/home/man-designing-website.jpeg')] bg-blend-luminosity bg-white dark:bg-black bg-cover bg-center bg-fixed h-[30vh] md:h-[70vh]"></div>
 			<div className="grid grid-cols-6">

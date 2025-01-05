@@ -1,11 +1,10 @@
 //
-import Image from "next/image";
 import Link from "next/link";
 
 const TheBeginning = () => {
 	return (
 		<header>
-			<nav className="bg-white dark:bg-black">
+			<nav className="bg-white dark:bg-black fixed">
 				<div className="tpk-contained flex flex-wrap items-center justify-between mx-auto p-4">
 					<Link className="w-[min-content]" href="/">
 						<svg className="w-14 h-full md:hidden" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342.86 307.94">
