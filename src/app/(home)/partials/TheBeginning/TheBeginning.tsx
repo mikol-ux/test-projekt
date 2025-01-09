@@ -1,18 +1,19 @@
 //
+import GradientBtn from "@/components/buttons/GradientBtn";
 import Link from "next/link";
 
 const TheBeginning = () => {
 	return (
-		<header>
-			<nav className="bg-white dark:bg-black fixed">
-				<div className="tpk-contained flex flex-wrap items-center justify-between mx-auto p-4">
+		<header className="fixed w-full top-8 z-10">
+			<nav className="tpk-contained">
+				<div className="backdrop-blur-md bg-white/30 flex flex-wrap items-center justify-between mx-auto p-4 lg:p-6 xl:px-16">
 					<Link className="w-[min-content]" href="/">
-						<svg className="w-14 h-full md:hidden" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342.86 307.94">
+						<svg className="w-14 h-full lg:hidden" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342.86 307.94">
 							<path className="fill-black dark:fill-white" d="M180.36,216.88l27.44,27.44c.78,.78,1.99,.93,2.93,.36l41.68-24.95c4.84-2.9,8.23-7.71,9.34-13.24l18.17-90.84c.22-1.11-.63-2.15-1.77-2.15h-13.89c-2.59,0-4.88,1.66-5.7,4.11l-2.94,8.87c-3.83,11.55-10.3,22.04-18.91,30.65l-56.35,56.35c-.94,.94-.94,2.46,0,3.39Z" />
 							<path className="fill-black dark:fill-white" d="M162.5,216.88l-27.44,27.44c-.78,.78-1.99,.93-2.93,.36l-41.68-24.95c-4.84-2.9-8.23-7.71-9.34-13.24l-18.17-90.84c-.22-1.11,.63-2.15,1.77-2.15h13.89c2.59,0,4.88,1.66,5.7,4.11l2.94,8.87c3.83,11.55,10.3,22.04,18.91,30.65l56.35,56.35c.94,.94,.94,2.46,0,3.39Z" />
 							<path className="fill-black dark:fill-white" d="M222.08,109.7v7.71c0,.87-.7,1.56-1.56,1.59-11.1,.37-21.13,4.73-28.77,11.72-.26,.23-.52,.46-.77,.71-.22,.2-.43,.41-.64,.62-.14,.14-.28,.29-.43,.43-.2,.21-.41,.43-.62,.64-7.38,7.73-12.03,18.07-12.42,29.54-.03,.87-.72,1.56-1.59,1.56h-7.69c-.87,0-1.56-.7-1.59-1.57-.36-11.07-4.71-21.09-11.66-28.72-.49-.53-.98-1.06-1.48-1.57-.07-.07-.14-.14-.22-.22-.51-.51-1.03-1-1.57-1.48-.27-.24-.54-.49-.81-.71-7.53-6.54-17.24-10.61-27.93-10.96-.85-.03-1.54-.7-1.54-1.56v-7.72c0-.87,.7-1.56,1.56-1.59,11.47-.39,21.81-5.04,29.54-12.42,.22-.2,.43-.41,.64-.62,.14-.14,.29-.29,.43-.43,.21-.21,.41-.43,.62-.64,7.39-7.73,12.04-18.07,12.42-29.54,.03-.87,.72-1.56,1.59-1.56h7.69c.87,0,1.56,.7,1.59,1.56,.39,11.45,5.02,21.77,12.39,29.51,.58,.61,1.17,1.2,1.77,1.77,.24,.23,.48,.45,.73,.67,.26,.24,.53,.47,.79,.7,7.54,6.58,17.28,10.66,28.01,11.02,.86,.03,1.54,.71,1.54,1.57Z" />
 						</svg>
-						<svg className="w-[12em] lg:w-[14em] h-full hidden md:block" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1186.96 307.94">
+						<svg className="w-[12em] lg:w-[14em] h-full hidden lg:block" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1186.96 307.94">
 							<path className="fill-black dark:fill-white" d="M180.36,216.88l27.44,27.44c.78,.78,1.99,.93,2.93,.36l41.68-24.95c4.84-2.9,8.23-7.71,9.34-13.24l18.17-90.84c.22-1.11-.63-2.15-1.77-2.15h-13.89c-2.59,0-4.88,1.66-5.7,4.11l-2.94,8.87c-3.83,11.55-10.3,22.04-18.91,30.65l-56.35,56.35c-.94,.94-.94,2.46,0,3.39Z" />
 							<path className="fill-black dark:fill-white" d="M162.5,216.88l-27.44,27.44c-.78,.78-1.99,.93-2.93,.36l-41.68-24.95c-4.84-2.9-8.23-7.71-9.34-13.24l-18.17-90.84c-.22-1.11,.63-2.15,1.77-2.15h13.89c2.59,0,4.88,1.66,5.7,4.11l2.94,8.87c3.83,11.55,10.3,22.04,18.91,30.65l56.35,56.35c.94,.94,.94,2.46,0,3.39Z" />
 							<path className="fill-black dark:fill-white" d="M222.08,109.7v7.71c0,.87-.7,1.56-1.56,1.59-11.1,.37-21.13,4.73-28.77,11.72-.26,.23-.52,.46-.77,.71-.22,.2-.43,.41-.64,.62-.14,.14-.28,.29-.43,.43-.2,.21-.41,.43-.62,.64-7.38,7.73-12.03,18.07-12.42,29.54-.03,.87-.72,1.56-1.59,1.56h-7.69c-.87,0-1.56-.7-1.59-1.57-.36-11.07-4.71-21.09-11.66-28.72-.49-.53-.98-1.06-1.48-1.57-.07-.07-.14-.14-.22-.22-.51-.51-1.03-1-1.57-1.48-.27-.24-.54-.49-.81-.71-7.53-6.54-17.24-10.61-27.93-10.96-.85-.03-1.54-.7-1.54-1.56v-7.72c0-.87,.7-1.56,1.56-1.59,11.47-.39,21.81-5.04,29.54-12.42,.22-.2,.43-.41,.64-.62,.14-.14,.29-.29,.43-.43,.21-.21,.41-.43,.62-.64,7.39-7.73,12.04-18.07,12.42-29.54,.03-.87,.72-1.56,1.59-1.56h7.69c.87,0,1.56,.7,1.59,1.56,.39,11.45,5.02,21.77,12.39,29.51,.58,.61,1.17,1.2,1.77,1.77,.24,.23,.48,.45,.73,.67,.26,.24,.53,.47,.79,.7,7.54,6.58,17.28,10.66,28.01,11.02,.86,.03,1.54,.71,1.54,1.57Z" />
@@ -38,32 +39,27 @@ const TheBeginning = () => {
 							<path d="M0 28H30" className="stroke-black dark:stroke-white" strokeWidth="3" />
 						</svg>
 					</button>
-					<div id="tpk-nav-menu" className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+					<div id="tpk-nav-menu" className="items-center justify-between hidden w-full md:flex md:w-auto">
 						<ul className="font-normal flex flex-col p-4 md:p-0 mt-4 border-[.5px] border-muted-2 dark:border-muted-3 md:flex-row md:space-x-8 md:mt-0 md:border-0">
 							<li>
-								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-muted-3 dark:hover:text-muted-2 md:p-0" aria-current="page">About Us</Link>
+								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0" aria-current="page">About Us</Link>
 							</li>
 							<li>
-								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-muted-3 dark:hover:text-muted-2 md:p-0" >Pricing</Link>
+								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">Services</Link>
 							</li>
 							<li>
-								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-muted-3 dark:hover:text-muted-2 md:p-0" >Contact Us</Link>
+								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">Pricing</Link>
 							</li>
 							<li>
-								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-muted-3 dark:hover:text-muted-2 md:p-0">Search</Link>
-							</li>
-							<li>
-								<button id="tpk-nav-menu-dropdown-cta" data-collapse-toggle="tpk-nav-menu-dropdown" className="flex items-center justify-between w-full py-2 px-3 uppercase text-black dark:text-white hover:text-muted-3 dark:hover:text-muted-2 md:p-0" aria-expanded="false">
-									More
-									<svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-										<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
-									</svg>
-								</button>
+								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">Resources</Link>
 							</li>
 						</ul>
 					</div>
+					
+					<GradientBtn href="/login" className="hidden md:flex py-2 px-10" isAnimated={false}>Login</GradientBtn>
 				</div>
-				<div id="tpk-nav-menu-dropdown" className="hidden">
+
+				{/* <div id="tpk-nav-menu-dropdown" className="hidden">
 					<div className="grid tpk-contained px-4 py-5 mx-auto text-sm text-muted-2 md:grid-cols-2 md:px-6 gap-4">
 						<ul className="mb-4 space-y-4 md:mb-0" aria-labelledby="tpk-nav-menu-button">
 							<li>
@@ -90,7 +86,7 @@ const TheBeginning = () => {
 							</button>
 						</Link>
 					</div>
-				</div>
+				</div> */}
 			</nav>
 		</header>
 	)

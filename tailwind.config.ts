@@ -1,13 +1,17 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
 	content: [
-		"./src/app/**/*.{js,ts,jsx,tsx,mdx}"
+		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
 		extend: {
 			fontFamily: {
-				generalSans: ['"General Sans"', 'sans-serif'], // Add General Sans
+				generalSans: ['"General Sans"', "sans-serif"], // Add General Sans
+			},
+			backgroundImage: {
+				"bg-gradient-dir": "linear-gradient(var(--tw-gradient-direction, to right), var(--tw-gradient-stops))",
 			},
 			screens: {
 				"2xl": "1920px",
@@ -33,5 +37,20 @@ export default {
 			}
 		}
 	},
-	plugins: []
-} satisfies Config;
+	plugins: [
+		function ({ addUtilities }: { addUtilities: (utilities: Record<string, any>) => void }) {
+			addUtilities({
+				".mask-content-box": {
+					"-webkit-mask": "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+					"mask": "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+				},
+				".mask-composite-exclude": {
+					"-webkit-mask-composite": "destination-out",
+					"mask-composite": "exclude",
+				},
+			});
+		}
+	]
+};
+
+export default config;

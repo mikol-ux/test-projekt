@@ -6,30 +6,39 @@ import gsap from "gsap";
 
 interface ButtonProps {
 	href: string;
-	className: string;
+	className?: string;
 	children: React.ReactNode;
+	isAnimated?: boolean;
 }
 
-const GradientBtn: FC<ButtonProps> = ({ href, className, children }) => {
+const GradientBtn: FC<ButtonProps> = ({ href, className, children, isAnimated }) => {
 	const btnRef = useRef<HTMLAnchorElement>(null);
+	const btnStyle = "relative block text-center py-4 px-6 text-white bg-black dark:bg-transparent border-none uppercase rounded-md z-[1]";
+	const btnAfterStyle = "after:content-[''] after:absolute after:top-1 after:left-1 after:right-1 after:bottom-1 after:bg-transparent after:rounded-sm after:z-[2]"
+	const btnBeforeStyle = `before:content-[''] before:absolute before:inset-0 before:p-[1px] before:rounded-md before:bg-bg-gradient-dir
+		before:from-pitch-dark-blue before:from-10% before:via-deep-blue before:via-30% before:to-sky-blue
+		before:to-90% before:-z-[1] before:mask-content-box before:mask-composite-exclude`;
+
 	gsap.registerPlugin(useGSAP);
 
 	useGSAP(() => {
-		gsap.fromTo(btnRef.current, {
-			background: "linear-gradient(0deg, #bee8ff 0%, #438db5 30%, #202a30 100%)"
-		}, {
-			background: "linear-gradient(180deg, #bee8ff 0%, #438db5 30%, #202a30 100%)",
-			duration: 6,
-			ease: "none",
-			repeat: -1,
-			yoyo: false
-		});
-		console.info("Btn animationg...");
+		if (isAnimated) {
+			gsap.fromTo(btnRef.current, {
+				"--tw-gradient-direction": "0deg"
+			}, {
+				"--tw-gradient-direction": "360deg",
+				duration: 6,
+				ease: "none",
+				repeat: -1,
+				yoyo: false
+			});
+			console.info("Btn animationg...");
+		}
 	});
 
 	return (
-		<Link ref={btnRef} href={href} className={`flex justify-center items-center w-max p-[1px] rounded-md uppercase ${className}`}>
-			<span className="w-full h-full bg-white dark:bg-black rounded-md px-[1em] py-4">{children}</span>
+		<Link href={href} ref={btnRef} className={`${btnStyle} ${btnBeforeStyle} ${btnAfterStyle} ${className}`}>
+			{children}
 		</Link>
 	)
 }

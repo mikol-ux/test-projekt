@@ -9,7 +9,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 	return (
 		<html lang="en">
 			<body
-				className={`bg-white text-black dark:text-white dark:bg-black`}>
+				className={`relative bg-white text-black dark:text-white dark:bg-black`}>
 				{children}
 				<Script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js" />
 				<Script src="./js/index.js" />
