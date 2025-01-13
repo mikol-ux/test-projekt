@@ -1,5 +1,5 @@
 //
-import GradientBtn from "@/components/buttons/GradientBtn";
+import GradientBtn from "@/components/Buttons/GradientBtn";
 import Link from "next/link";
 
 const TheBeginning = () => {
