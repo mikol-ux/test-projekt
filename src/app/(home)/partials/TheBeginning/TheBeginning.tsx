@@ -42,7 +42,7 @@ const TheBeginning = () => {
 					<div id="tpk-nav-menu" className="items-center justify-between hidden w-full md:flex md:w-auto">
 						<ul className="font-normal flex flex-col p-4 md:p-0 mt-4 border-[.5px] border-muted-2 dark:border-muted-3 md:flex-row md:space-x-8 md:mt-0 md:border-0">
 							<li>
-								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0" aria-current="page">About Us</Link>
+								<Link href="/AboutUs" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0" aria-current="page">About Us</Link>
 							</li>
 							<li>
 								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">Services</Link>
