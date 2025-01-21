@@ -50,12 +50,27 @@ const TheBeginning = () => {
 							<li>
 								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">Pricing</Link>
 							</li>
-							<li>
-								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">Resources</Link>
+							<li className="relative group">
+								<Link
+									href="#"
+									className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0"
+								>
+									Resources
+								</Link>
+								<ul className="hidden absolute left-0 group-hover:block backdrop-blur-md bg-white/30 p-5 text-red-300 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+									<li>
+										<Link href="#" className="block px-4 py-2 text-inherit">
+											<span className="pe-1.5">
+												i
+											</span>
+											Dancing with machines &#40; Blog &#41;
+										</Link>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</div>
-					
+
 					<GradientBtn href="/login" className="hidden md:flex py-2 px-10" isAnimated={false}>Login</GradientBtn>
 				</div>
 
