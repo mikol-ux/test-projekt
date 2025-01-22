@@ -8,7 +8,7 @@ interface StatCardProps {
 
 const StatCard: React.FC<StatCardProps> = ({ value, title, description }) => {
   return (
-    <div className="bg-gradient-to-r from-black to-gray-900 p-6 w-66 h-66 border border-gray-900 rounded-lg shadow">
+    <div className="bg-gradient-to-r from-white to-gray-900 dark:from-black dark:to-gray-900 p-6 w-66 h-66 border border-gray-900 rounded-lg shadow">
       <h1 className="text-7xl mb-6">{value}</h1>
       <h4 className="text-xl mb-1">{title}</h4>
       <p className="text-sm">{description}</p>
