@@ -18,9 +18,9 @@ const OriginsPage: FC = () => {
             the digital era by creating tools, brands, and teams that <br />
             redefine what&apos;s possible.
           </p>
-          <button className={`px-8 py-3 border rounded-lg transition duration-300 ease-in-out text-white bg-black hover:bg-white hover:text-black`}>
+          <a href="#" className={`px-8 py-3 border rounded-lg transition duration-300 ease-in-out text-white bg-black hover:bg-white hover:text-black`}>
             THE PROJEKT STORY
-          </button>
+          </a>
         </div>
       </div>
     </section>
