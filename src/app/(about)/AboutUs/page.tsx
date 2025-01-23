@@ -10,7 +10,7 @@ import DreamSection from "../sections/BuildTogether/dream"
 export default function AboutUsPage() {
     return (
         <Fragment>
-            
+
             <main className="flex flex-col gap-32">
                 <OriginPage />
                 <VideoPlayer />
