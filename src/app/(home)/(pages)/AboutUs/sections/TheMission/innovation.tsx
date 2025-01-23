@@ -1,5 +1,5 @@
 import { FC } from "react";
-import GradientCircle from "../../../../components/circles/GradientCircle"; // Adjust the path as necessary
+import GradientCircle from "../../../../../../components/circles/GradientCircle"; // Adjust the path as necessary
 
 const Innovation: FC = () => {
   const highlights = ["INNOVATION", "CREATIVITY", "RELENTLESS FOCUS", "INNOVATION"];
