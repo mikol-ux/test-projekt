@@ -4,7 +4,7 @@ const ProfileCard = ({ name, title, description, imagePath, linkedin, twitter }:
   return (
     <div className="w-56 border border-gray-900 rounded-lg shadow-lg p-4">
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-l from-transparent to-gray-800 rounded-l-lg" />
+        <div className="absolute inset-0 rounded-l-lg" />
         <img
           src={imagePath}
           alt="Profile"
@@ -62,23 +62,15 @@ const BuildTeam = () => {
       name: "Neo D.",
       title: "Founder",
       description: "Bringing ideas to life with expertise in cybersecurity, design, and innovative concepts.",
-      imagePath: "/path-to-image1.jpg",
+      imagePath: "/img/aboutUs/Neo D.jpg",
       linkedin: "https://linkedin.com",
       twitter: "https://twitter.com",
-    },
-    {
-        name: "Neo D.",
-        title: "Founder",
-        description: "Bringing ideas to life with expertise in cybersecurity, design, and innovative concepts.",
-        imagePath: "/path-to-image1.jpg",
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
     },
     {
         name: "Edward G.",
         title: "Business Facilitator",
         description: "Crafting seamless digital experiences with cutting-edge tech.",
-        imagePath: "/path-to-image1.jpg",
+        imagePath: "/img/aboutUs/Edward G.jpg",
         linkedin: "https://linkedin.com",
         twitter: "https://twitter.com",
     },
@@ -86,9 +78,17 @@ const BuildTeam = () => {
         name: "Emmanuel A.",
         title: "Digital Marketer",
         description: "Bringing ideas to life with expertise in cybersecurity, design, and innovative concepts.",
-        imagePath: "/path-to-image1.jpg",
+        imagePath: "/img/aboutUs/Emmanuel A.jpg",
         linkedin: "https://linkedin.com",
         twitter: "https://twitter.com",
+    },
+    {
+      name: "Neo D.",
+      title: "Founder",
+      description: "Bringing ideas to life with expertise in cybersecurity, design, and innovative concepts.",
+      imagePath: "/img/aboutUs/Neo D.jpg",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
     },
   ];
 
