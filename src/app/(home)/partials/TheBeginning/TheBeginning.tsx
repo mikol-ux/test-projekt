@@ -1,5 +1,6 @@
 //
 import GradientBtn from "@/components/Buttons/GradientBtn";
+import LottieAni from "@/components/Lottie";
 import Link from "next/link";
 
 const TheBeginning = () => {
@@ -61,7 +62,7 @@ const TheBeginning = () => {
 									<li>
 										<Link href="#" className="block px-4 py-2 text-inherit">
 											<span className="pe-1.5">
-												i
+												<LottieAni json="/img/json/Newspaper.json" play className="w-10"/>
 											</span>
 											Dancing with machines &#40; Blog &#41;
 										</Link>
