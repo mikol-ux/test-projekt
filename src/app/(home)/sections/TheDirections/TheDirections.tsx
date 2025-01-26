@@ -1,53 +1,69 @@
 // 
 import { FC } from "react";
+import "./direction.css"
 
 const TheDirections: FC = () => {
 	return (
 		<section className="tpk-contained">
-			<div className="flex md:flex-row flex-col gap-12 md:gap-0">
+			<div className="flex md:flex-row flex-col gap-12 md:gap-0 py-24">
 				<div className="flex flex-row md:flex-col justify-between md:justify-normal items-center md:items-start md:gap-32 w-full md:basis-3/12">
-					<h4 className="font-semibold text-start text-white-800 dark:text-white-300">The Projekt</h4>
+					<h4 className="font-semibold text-start text-white-800 dark:text-white-300">THE PROJEKT</h4>
 					<span className="text-end text-white-800 dark:text-white-300 text-xs md:text-start">
-						Web Development & <br /> Cyber Security Agency
+					WHY CHOOSE US?
 					</span>
 				</div>
 				<div className="md:basis-9/12 flex flex-col gap-12">
-					<h2 className="text-muted-3 tpk-title">
-						One day or day one? Every big leap starts with a single step. <em className="text-black dark:text-white not-italic">Make today your day one.</em>
+					<h2 className=" font-light tpk-title">
+						One day or day one? Every big leap <br /> starts with a single step.<br /> <em className="font-normal dark:text-[#BEE8FF] not-italic">Make today your day one.</em>
 					</h2>
-					<div className="gap-8 md:gap-16 lg:gap-x-32 grid grid-cols-1 md:grid-cols-2 md:grid-flow-row">
-						<div className="flex flex-col gap-4">
-							<h6 className="py-3 border-b-2 border-b-white-300 w-full text-lg text-white-800 dark:text-white-300 3xl:text-3xl">01</h6>
-							<h5 className="text-muted-3 dark:text-white-300 text-xl 3xl:text-3xl">
-								Ensure your goals are achieved efficiently, with maximum impact and minimal risk
-							</h5>
-							<p className="text-muted-black dark:text-muted-4 text-sm lg:text-md 3xl:text-xl">
-								Strategy & Project Management streamlines your initiatives, ensuring that every project aligns with your vision, optimizes resources, and drives measurable results.
-							</p>
+					<div className="gap-8 md:gap-8 grid grid-cols-2 md:grid-cols-2 md:grid-flow-row">
+						<div className="flex flex-col justify-between border-muted-7 border rounded-md p-5 h-[28rem] gap-4 transition-all duration-300 overflow-hidden relative parent-radial-bg group ">
+							<div className="radial-bg w-[200%] h-[200%] absolute bottom-0 right-0 z-0 transition-all duration-300 group-hover:radial-bg-hover"></div>
+							<h6 className="py-3  w-full text-white-800  dark:text-muted-4 text-3xl md:text-5xl lg:text-7xl z-[1] ">01</h6>
+							<div className="z-[1]">
+								<h5 className="text-muted-3 mb-2 dark:text-white text-xl 3xl:text-3xl">
+									Achieve goals efficiently.
+								</h5>
+								<p className="text-muted-black font-extralight dark:text-white text-sm lg:text-md 3xl:text-xl">
+									Strategy & Project Management streamlines your initiatives, ensuring that every project aligns with your vision, optimizes resources, and drives measurable results.
+								</p>
+							</div>
 						</div>
-						<div className="flex flex-col gap-4">
-							<h6 className="py-3 border-b-2 border-b-white-300 w-full text-lg text-white-800 dark:text-white-300 3xl:text-3xl">02</h6>
-							<h5 className="text-muted-3 dark:text-white-300 text-xl 3xl:text-3xl">
-								Market-ready identity that attracts your audience
-							</h5>
-							<p className="text-muted-black dark:text-muted-4 text-sm lg:text-md 3xl:text-xl">
-								From strategy to execution, we ensure your brand is distinct, memorable, and positioned to connect with the right customers. It&apos;s more than just a logo—it&apos;s a complete identity that drives growth. 							</p>
+						<div className="flex flex-col justify-between border-muted-7 border rounded-md p-5 h-[28rem] gap-4 transition-all duration-300 overflow-hidden relative parent-radial-bg group">
+						<div className="radial-bg w-[200%] h-[200%] absolute bottom-0 right-0 z-0 transition-all duration-300 group-hover:radial-bg-hover"></div>
+							<h6 className="py-3  w-full text-white-800  dark:text-muted-4 z-[1] text-3xl md:text-5xl lg:text-7xl">02</h6>
+							<div className="z-[1]">
+								<h5 className="text-muted-3 mb-2 dark:text-white text-xl 3xl:text-3xl">
+									Engaging brand identity
+								</h5>
+								<p className="text-muted-black font-extralight dark:text-white text-sm lg:text-md 3xl:text-xl">
+									From strategy to execution, we make your brand unique and memorable, connecting you with the right customers. It’s more than just a logo—it’s a complete identity that drives growth. 							
+								</p>
+							</div>
 						</div>
-						<div className="flex flex-col gap-4">
-							<h6 className="py-3 border-b-2 border-b-white-300 w-full text-lg text-white-800 dark:text-white-300 3xl:text-3xl">03</h6>
-							<h5 className="text-muted-3 dark:text-white-300 text-xl 3xl:text-3xl">
-								Get high-quality results with video production for your business.
-							</h5>
-							<p className="text-muted-black dark:text-muted-4 text-sm lg:text-md 3xl:text-xl">
-								Use Rogue&apos;s Full-service multimedia production. Without the headache. We handle it all.</p>
+						<div className="flex flex-col justify-between border-muted-7 border rounded-md p-5 h-[28rem] gap-4 transition-all duration-300 overflow-hidden relative parent-radial-bg group">
+						<div className="radial-bg w-[200%] h-[200%] absolute bottom-0 right-0 z-0 transition-all duration-300 group-hover:radial-bg-hover"></div>
+							<h6 className="py-3  w-full text-white-800  dark:text-muted-4 z-[1] text-3xl md:text-5xl lg:text-7xl">03</h6>
+							<div className="z-[1]">
+								<h5 className="text-muted-3 mb-2 dark:text-white text-xl 3xl:text-3xl">
+									REMARKABLE MEDIA PRODUCTION
+								</h5>
+								<p className="text-muted-black font-extralight dark:text-white text-sm lg:text-md 3xl:text-xl">
+									Opt for Rogue&rsquo;&#39;
+s multimedia production services for a smooth experience. We handle everything, letting you enjoy the process without stress.
+								</p>
+							</div>
 						</div>
-						<div className="flex flex-col gap-4">
-							<h6 className="py-3 border-b-2 border-b-white-300 w-full text-lg text-white-800 dark:text-white-300 3xl:text-3xl">04</h6>
-							<h5 className="text-muted-3 dark:text-white-300 text-xl 3xl:text-3xl">
-								Save hours of manual work and reduce errors
-							</h5>
-							<p className="text-muted-black dark:text-muted-4 text-sm lg:text-md 3xl:text-xl">
-								Use The Watchman to hire certified and qualified candidates that match your criteria for 87% less than the cost of hiring in the U.S. or similar.							</p>
+						<div className="flex flex-col justify-between border-muted-7 border rounded-md p-5 h-[28rem] gap-4 transition-all duration-300 overflow-hidden relative parent-radial-bg group">
+						<div className="radial-bg w-[200%] h-[200%] absolute bottom-0 right-0 z-0 transition-all duration-300 group-hover:radial-bg-hover"></div>
+							<h6 className="py-3  w-full text-white-800  dark:text-muted-4 z-[1] text-3xl md:text-5xl lg:text-7xl">04</h6>
+							<div className="z-[1]">
+								<h5 className="text-muted-3 mb-2 dark:text-white text-xl 3xl:text-3xl">
+									CUT HIRING cost
+								</h5>
+								<p className="text-muted-black font-extralight dark:text-white text-sm lg:text-md 3xl:text-xl">
+								Use The Watchman to hire certified and qualified candidates that match your criteria for 87% less than the cost of hiring in the U.S. or similar. Save time and money effortlessly.							</p>
+							</div>
 						</div>
 					</div>
 				</div>
