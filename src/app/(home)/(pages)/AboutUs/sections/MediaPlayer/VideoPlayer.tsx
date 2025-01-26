@@ -1,11 +1,11 @@
 import { FC } from "react";
 
 const VideoPlayer: FC = () => {
-
   return (
-    <div className="flex justify-center h-90">
+    <div className="flex justify-center">
       <video
-        className="w-full max-w-5xl"
+        className="w-11/12"
+        style={{ height: '55vw' }}
         controls
         poster="/img/aboutUs/video-player-image.png"
       >
