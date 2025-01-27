@@ -1,0 +1,55 @@
+
+.radial-bg {
+	background: radial-gradient(circle, #000000 70%, #438DB5 100%);
+	filter: blur(8px); /* Apply blur to make it softer */
+	backdrop-filter: blur(8px); /* For content behind */
+  }
+  
+.parent-radial-bg:hover .radial-bg {
+	background: radial-gradient(circle, #000000 10%, #438DB5 100%);
+	filter: blur(12px); /* Increase blur on hover for effect */
+  }
+  .parent-radial-bg {
+	max-width: 372px;
+	height: 448px;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .parent-radial-bg:hover {
+	max-width: 382px;
+	height: 458px;
+  }
+  
+  @media (max-width: 1024px) { /* Tablets and smaller screens */
+	.parent-radial-bg {
+	  max-width: 320px;
+	  height: 400px;
+	}
+	.parent-radial-bg:hover {
+		max-width: 330px;
+	  height: 410px;
+	}
+  }
+  
+  @media (max-width: 768px) { /* Mobile screens */
+	.parent-radial-bg {
+		max-width: 280px;
+	  height: 360px;
+	}
+	.parent-radial-bg:hover {
+		max-width: 290px;
+	  height: 370px;
+	}
+  }
+  
+  @media (max-width: 480px) { /* Small mobile screens */
+	.parent-radial-bg {
+		max-width: 240px;
+	  height: 320px;
+	}
+	.parent-radial-bg:hover {
+		max-width: 250px;
+	  height: 330px;
+	}
+  }
+  

@@ -6,8 +6,9 @@ import Link from "next/link";
 const TheBeginning = () => {
 	return (
 		<header className="fixed w-full top-8 z-10">
-			<nav className="tpk-contained">
-				<div className="backdrop-blur-md bg-white/30 flex flex-wrap items-center justify-between mx-auto p-4 lg:p-6 xl:px-16">
+			<div className="tpk-contained backdrop-blur-m bg-red-500 w-full h-max "></div>
+			<nav className="tpk-contained absolute w-full h-full top-0">
+				<div className="flex flex-wrap items-center justify-between mx-auto p-4 lg:p-6 xl:px-16">
 					<Link className="w-[min-content]" href="/">
 						<svg className="w-14 h-full lg:hidden" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342.86 307.94">
 							<path className="fill-black dark:fill-white" d="M180.36,216.88l27.44,27.44c.78,.78,1.99,.93,2.93,.36l41.68-24.95c4.84-2.9,8.23-7.71,9.34-13.24l18.17-90.84c.22-1.11-.63-2.15-1.77-2.15h-13.89c-2.59,0-4.88,1.66-5.7,4.11l-2.94,8.87c-3.83,11.55-10.3,22.04-18.91,30.65l-56.35,56.35c-.94,.94-.94,2.46,0,3.39Z" />
@@ -52,19 +53,41 @@ const TheBeginning = () => {
 								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">Pricing</Link>
 							</li>
 							<li className="relative group">
-								<Link
-									href="#"
-									className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0"
-								>
+								<Link href="#"
+									className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">
 									Resources
 								</Link>
-								<ul className="hidden absolute left-0 group-hover:block backdrop-blur-md bg-white/30 p-5 text-red-300 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+								<ul className="hidden absolute left-0 group-hover:block backdrop-blur-lg bg-white/30 font-light dark:text-white w-max rounded-lg py-5 -translate-x-2/4">
 									<li>
-										<Link href="#" className="block px-4 py-2 text-inherit">
-											<span className="pe-1.5">
-												<LottieAni json="/img/json/Newspaper.json" play className="w-10"/>
+										<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+											<span className="pe-2">
+												<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
 											</span>
 											Dancing with machines &#40; Blog &#41;
+										</Link>
+									</li>
+									<li>
+										<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+											<span className="pe-2">
+												<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
+											</span>
+											Case studies
+										</Link>
+									</li>
+									<li>
+										<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+											<span className="pe-2">
+												<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
+											</span>
+											Process
+										</Link>
+									</li>
+									<li>
+										<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+											<span className="pe-2">
+												<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
+											</span>
+											The Forge
 										</Link>
 									</li>
 								</ul>
@@ -74,35 +97,6 @@ const TheBeginning = () => {
 
 					<GradientBtn href="/login" className="hidden md:flex py-2 px-10" isAnimated={false}>Login</GradientBtn>
 				</div>
-
-				{/* <div id="tpk-nav-menu-dropdown" className="hidden">
-					<div className="grid tpk-contained px-4 py-5 mx-auto text-sm text-muted-2 md:grid-cols-2 md:px-6 gap-4">
-						<ul className="mb-4 space-y-4 md:mb-0" aria-labelledby="tpk-nav-menu-button">
-							<li>
-								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-muted-3 dark:hover:text-muted-2 md:p-0">
-									<span className="font-medium">Dancing With Machine</span>
-									<span className="text-sm text-muted-2 normal-case hidden md:block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, inventore. Quisquam porro quos, veniam doloremque quasi dolore, a saepe cumque sint, architecto aliquam fugiat inventore! Ab, placeat reiciendis! Quam, eos?</span>
-								</Link>
-							</li>
-							<li>
-								<Link href="#" className="block uppercase py-2 px-3 text-black dark:text-white hover:text-muted-3 dark:hover:text-muted-2 md:p-0">
-									<span className="font-medium">Watch Man</span>
-									<span className="text-sm text-muted-2 normal-case hidden md:block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, inventore. Quisquam porro quos, veniam doloremque quasi dolore, a saepe cumque sint, architecto aliquam fugiat inventore! Ab, placeat reiciendis! Quam, eos?</span>
-								</Link>
-							</li>
-						</ul>
-						<Link href="#" className="bg-[url('https://picsum.photos/200/300/?blur=2')] p-8 bg-gray-500 bg-center bg-no-repeat bg-cover bg-blend-multiply hover:bg-blend-soft-light">
-							<p className="mb-5 text-white">Our latestest blog from DWM.</p>
-							<p className="mb-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam in nihil eos ratione dolore eaque nobis suscipit blanditiis odio. Veritatis cum fugit a unde numquam sed alias omnis deleniti laborum..</p>
-							<button type="button" className="inline-flex items-center px-4 py-2 text-md text-center text-white border border-white hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-gray-700">
-								Read Now
-								<svg className="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-									<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-								</svg>
-							</button>
-						</Link>
-					</div>
-				</div> */}
 			</nav>
 		</header>
 	)
