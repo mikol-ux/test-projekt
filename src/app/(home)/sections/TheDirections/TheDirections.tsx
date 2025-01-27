@@ -28,7 +28,7 @@ const TheDirections: FC = () => {
 									Strategy & Project Management streamlines your initiatives, ensuring that every project aligns with your vision, optimizes resources, and drives measurable results.
 								</p>
 							</div>
-						</div>
+					 	</div>
 						<div className="flex flex-col justify-between border-muted-7 border rounded-md p-5 h-[28rem] gap-4 transition-all duration-300 overflow-hidden relative parent-radial-bg group">
 						<div className="radial-bg w-[200%] h-[200%] absolute bottom-0 right-0 z-0 transition-all duration-300 group-hover:radial-bg-hover"></div>
 							<h6 className="py-3  w-full text-white-800  dark:text-muted-4 z-[1] text-3xl md:text-5xl lg:text-7xl">02</h6>

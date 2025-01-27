@@ -33,7 +33,10 @@ const config: Config = {
 				"muted": "var(--muted-text)",
 				"muted-2": "var(--muted-text-2)",
 				"muted-3": "var(--muted-text-3)",
-				"muted-4": "var(--muted-text-4)"
+				"muted-4": "var(--muted-text-4)",
+				"muted-5": "var(--muted-text-5)",
+				"muted-6": "var(--muted-text-6)",
+				"muted-7": "var(--muted-text-7)"
 			}
 		}
 	},
