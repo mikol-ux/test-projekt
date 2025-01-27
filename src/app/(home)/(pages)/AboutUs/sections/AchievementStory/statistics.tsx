@@ -8,7 +8,7 @@ interface StatCardProps {
 
 const StatCard: React.FC<StatCardProps> = ({ value, title, description }) => {
   return (
-    <div className="w-[300px] h-[232px] bg-gradient-to-br from-black via-black to-cyan-900 p-[20px] text-white border-neutral-900 rounded-lg shadow w-full h-auto hover:bg-gradient-radial hover:from-black hover:to-sky-400 flex flex-col justify-between duration-2000">
+    <div className="w-[300px] h-[232px] bg-gradient-to-br from-black via-black to-cyan-900 p-[20px] text-white border-neutral-900 rounded-lg transition-colors duration-5000 ease-in-out hover:bg-gradient-br hover:from-black hover:to-sky-400 flex flex-col justify-between">
       <h1 className="text-5xl md:text-7xl">{value}</h1>
       <div className="mt-auto">
         <h4 className="text-lg md:text-lg mb-1">{title}</h4>
@@ -28,9 +28,9 @@ const StatisticsSection = () => {
       {/* General Achievements Section */}
       <div className="mb-16">
         <h2 className="text-sky-500 text-2xl mb-6 text-center md:text-left">GENERAL <br /> ACHIEVEMENTS</h2>
-        <div className="flex flex-col md:flex-row gap-6">
-          <div className="md:flex-1">
-            <p className="mb-4 text-base">By engaging communities directly, we prioritize their needs, ensuring our tools address real-world challenges.</p>
+        <div className="flex flex-col lg:flex-row gap-6">
+          <div className="lg:flex-1">
+            <p className="mb-4 text-base text-center lg:text-left">By engaging communities directly, we prioritize their needs, ensuring our tools address real-world challenges.</p>
           </div>
           <div className="md:w-auto flex flex-col sm:flex-row gap-6">
             {/* Row 1: StatCard and first div */}
@@ -41,7 +41,7 @@ const StatisticsSection = () => {
                 description="From concept to execution, we’ve partnered with businesses on their journey to success."
               />
             </div>
-            <div className="w-[300px] h-[232px] border-neutral-900 p-6 border rounded-lg hover:bg-gradient-to-br hover:from-black hover:to-sky-400">
+            <div className="w-full sm:w-[300px] h-[232px] border-neutral-900 p-6 border rounded-lg hover:bg-gradient-to-br hover:from-black hover:to-sky-400">
               <h1 className="text-5xl md:text-7xl mb-4">15+</h1>
               <h4 className="text-lg md:text-lg mb-1">STREAMLINED OPERATIONS</h4>
               <p className="text-xs">Delivering tools and solutions to help teams work better together.</p>
@@ -49,7 +49,7 @@ const StatisticsSection = () => {
           </div>
         </div>
         {/* Row 2: Second div */}
-        <div className="md:w-[620px] h-[151px] col-span-1 md:col-span-2 border-neutral-900 p-6 rounded-lg shadow hover:bg-gradient-to-br hover:from-black hover:to-sky-400 mt-6 md:mt-6 ml-auto">
+        <div className="w-full md:w-[620px] h-[151px] border-neutral-900 p-6 rounded-lg shadow hover:bg-gradient-to-br hover:from-black hover:to-sky-400 mt-6 md:mt-0 ml-auto">
           <h2 className="text-lg md:text-3xl mb-4">GLOBAL REACH</h2>
           <p className="text-base">Serving clients across multiple countries, building connections that drive impact.</p>
         </div>
@@ -59,14 +59,14 @@ const StatisticsSection = () => {
       {/* Rogue Division */}
       <div className="mb-16">
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="md:flex-1">
+          <div className="md:flex-1 sm:w-auto text-center sm:text-left">
             <h3 className="text-sky-500 text-2xl mb-2 text-center md:text-left">ROGUE</h3>
             <h5 className="mt-4 mb-6 text-base text-center md:text-left">(MULTIMEDIA DIVISION)</h5>
             <a href="#" className="px-6 py-3 inline-block border rounded-lg bg-black text-sm text-white hover:bg-white hover:text-black">
               GO ROGUE
             </a>
           </div>
-          <div className="md:w-auto flex flex-col sm:flex-row gap-6">
+          <div className="md:w-auto flex flex-col sm:flex-row gap-6 justify-center items-center">
             <div className="flex-1">
               <StatCard
                 value="30+"
@@ -86,14 +86,14 @@ const StatisticsSection = () => {
       {/* Watchman Division */}
       <div className="mb-16">
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="md:flex-1">
+          <div className="md:flex-1 sm:w-auto text-center sm:text-left">
             <h3 className="text-sky-500 text-2xl mb-2 text-center md:text-left">WATCHMAN</h3>
             <h5 className="mt-4 mb-6 text-base text-center md:text-left">(OFFSHORE HIRING DIVISION)</h5>
             <a href="#" className="px-6 py-3 inline-block border rounded-lg bg-black text-sm text-white hover:bg-white hover:text-black">
               HIRE TALENT FOR LESS
             </a>
           </div>
-          <div className="md:w-auto flex flex-col sm:flex-row gap-6">
+          <div className="md:w-auto flex flex-col sm:flex-row gap-6 justify-center items-center">
             <div className="flex-1">
               <StatCard
                 value="50+"
@@ -113,14 +113,14 @@ const StatisticsSection = () => {
       {/* The Forge Division */}
       <div>
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="md:flex-1">
+          <div className="md:flex-1 sm:w-auto text-center sm:text-left">
             <h3 className="text-sky-500 text-2xl mb-2 text-center md:text-left">THE FORGE</h3>
             <h5 className="mt-4 mb-6 text-base text-center md:text-left">(COMMUNITY FOR EARLY FOUNDERS)</h5>
             <a href="#" className="px-6 py-3 inline-block border rounded-lg bg-black text-white text-sm hover:bg-white hover:text-black">
               JOIN THE FORGE
             </a>
           </div>
-          <div className="md:w-auto flex flex-col sm:flex-row gap-6">
+          <div className="md:w-auto flex flex-col sm:flex-row gap-6 justify-center items-center">
             <div className="flex-1">
               <StatCard
                 value="100+"
