@@ -6,9 +6,9 @@ import Link from "next/link";
 const TheBeginning = () => {
 	return (
 		<header className="fixed w-full top-8 z-10">
-			<div className="tpk-contained backdrop-blur-m bg-red-500 w-full h-max "></div>
-			<nav className="tpk-contained absolute w-full h-full top-0">
-				<div className="flex flex-wrap items-center justify-between mx-auto p-4 lg:p-6 xl:px-16">
+			<div className="tpk-contained absolute inset-0 -z-[1] backdrop-blur-md w-full h-full"></div>
+			<nav className="tpk-contained">
+				<div className="flex flex-wrap items-center justify-between mx-auto p-4 lg:p-2 xl:px-16">
 					<Link className="w-[min-content]" href="/">
 						<svg className="w-14 h-full lg:hidden" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342.86 307.94">
 							<path className="fill-black dark:fill-white" d="M180.36,216.88l27.44,27.44c.78,.78,1.99,.93,2.93,.36l41.68-24.95c4.84-2.9,8.23-7.71,9.34-13.24l18.17-90.84c.22-1.11-.63-2.15-1.77-2.15h-13.89c-2.59,0-4.88,1.66-5.7,4.11l-2.94,8.87c-3.83,11.55-10.3,22.04-18.91,30.65l-56.35,56.35c-.94,.94-.94,2.46,0,3.39Z" />
@@ -57,40 +57,43 @@ const TheBeginning = () => {
 									className="block uppercase py-2 px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">
 									Resources
 								</Link>
-								<ul className="hidden absolute left-0 group-hover:block backdrop-blur-lg bg-white/30 font-light dark:text-white w-max rounded-lg py-5 -translate-x-2/4">
-									<li>
-										<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
-											<span className="pe-2">
-												<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
-											</span>
-											Dancing with machines &#40; Blog &#41;
-										</Link>
-									</li>
-									<li>
-										<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
-											<span className="pe-2">
-												<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
-											</span>
-											Case studies
-										</Link>
-									</li>
-									<li>
-										<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
-											<span className="pe-2">
-												<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
-											</span>
-											Process
-										</Link>
-									</li>
-									<li>
-										<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
-											<span className="pe-2">
-												<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
-											</span>
-											The Forge
-										</Link>
-									</li>
-								</ul>
+								<div className="hidden absolute group-hover:block -left-12 sm:left-0 md:-translate-x-2/4 pt-12">
+									<ul className="backdrop-blur-md bg-white/30 font-extralight dark:text-white w-max rounded-lg py-5">
+										<li>
+											<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+												<span className="pe-2">
+													<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
+												</span>
+												Dancing with machines &#40; Blog &#41;
+											</Link>
+										</li>
+										<li>
+											<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+												<span className="pe-2">
+													<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
+												</span>
+												Case studies
+											</Link>
+										</li>
+										<li>
+											<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+												<span className="pe-2">
+													<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
+												</span>
+												Process
+											</Link>
+										</li>
+										<li>
+											<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+												<span className="pe-2">
+													<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
+												</span>
+												The Forge
+											</Link>
+										</li>
+									</ul>
+								</div>
+
 							</li>
 						</ul>
 					</div>
