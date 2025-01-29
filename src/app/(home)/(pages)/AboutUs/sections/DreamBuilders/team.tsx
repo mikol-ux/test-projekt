@@ -1,14 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
-
-
 'use client';
 import React from 'react';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ProfileCard = ({ name, title, description, imagePath, linkedin, twitter }: any) => {
   return (
-    <div className="w-[310px] border hover:cursor-pointer hover:scale-105 transition-all border-gray-900 rounded-lg shadow-lg p-4">
-      <div className="relative overflow-hidden   group">
+    <div className="w-full max-w-[310px] border hover:cursor-pointer hover:scale-105 transition-all border-gray-900 rounded-lg shadow-lg p-4">
+      <div className="relative overflow-hidden rounded-lg group">
         {/* Profile Image */}
         <img
           src={imagePath}
@@ -18,14 +15,13 @@ const ProfileCard = ({ name, title, description, imagePath, linkedin, twitter }:
 
         {/* Transparent div */}
         <div
-          className="absolute bottom-0 right-48 bg-transparent rounded-lg shadow-md transition-all delay-100
+          className="absolute top-0 right-48 bg-transparent rounded-lg shadow-md transition-all delay-100
            h-full w-full bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 overflow-hidden "
         ></div>
 
         {/* Animated Blur Div */}
-
         <div
-          className="absolute bottom-0 left-[-100%] rounded-lg shadow-md bg-transparent
+          className="absolute top-0 left-[-100%] rounded-lg shadow-md bg-transparent
           h-full w-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50
           transition-transform duration-500 ease-in-out group-hover:translate-x-full"
         ></div>
@@ -34,17 +30,17 @@ const ProfileCard = ({ name, title, description, imagePath, linkedin, twitter }:
       {/* Card Content */}
       <div className="mt-4 group">
         <h3
-          className="text-sm font-light  text-sky-blue  "
+          className="text-sm font-light  text-sky-200  "
         >
           {name}
         </h3>
         <p
-          className="text-[15px] font-light transition-opacity duration-500 "
+          className="text-sm font-light transition-opacity duration-500 "
         >
           {title}
         </p>
         <p
-          className="mt-2 text-zinc-500 text-xs transition-transform duration-500 "
+          className="mt-2 text-neutral-400 text-xs transition-transform duration-500 "
         >
           {description}
         </p>
@@ -128,7 +124,7 @@ const BuildTeam = () => {
   ];
 
   return (
-    <section className="tpk-container flex flex-col items-center">
+    <section className="tpk-container flex flex-col items-center py-12">
       <div className="text-center mb-8">
         <h2 className="text-3xl mb-8">MEET THE DREAM BUILDERS</h2>
         <p className="text-muted mb-12">
@@ -136,10 +132,12 @@ const BuildTeam = () => {
           solvers united by a shared vision: building remarkable dreams.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 w-4/5 mx-auto">
-        {profiles.map((profile, index) => (
-          <ProfileCard key={index} {...profile} />
-        ))}
+      <div className="flex justify-center w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 w-[90vw] md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl px-4">
+          {profiles.map((profile, index) => (
+            <ProfileCard key={index} {...profile} />
+          ))}
+        </div>
       </div>
     </section>
   );
