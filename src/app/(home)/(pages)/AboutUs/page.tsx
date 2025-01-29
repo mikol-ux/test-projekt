@@ -13,13 +13,13 @@ export default function AboutUsPage() {
         <Fragment>
 
             <main className="flex flex-col gap-32">
-                {/* <OriginPage /> */}
-                {/* <VideoPlayer /> */}
-                {/* <Innovation /> */}
-                {/* <BuildingPublic /> */}
-                {/* <StatisticsSection /> */}
+                <OriginPage />
+                <VideoPlayer />
+                <Innovation />
+                <BuildingPublic />
+                <StatisticsSection />
                 <BuildTeam />
-                {/* <DreamSection /> */}
+                <DreamSection />
             </main>
         </Fragment>
     );
