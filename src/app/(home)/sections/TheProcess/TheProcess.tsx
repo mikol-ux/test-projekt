@@ -1,57 +1,185 @@
-// 
-import Link from "next/link";
-import { FC } from "react";
+"use client"
 
-const TheProcess: FC = () => {
-	return (
-		<section className="tpk-contained">
-			<div className="flex flex-col md:flex-row gap-12 lg:gap-24">
-				<div className="md:basis-5/12">
-					<div className="md:basis-4/12 flex flex-row items-start justify-start gap-3 mb-12 md:mb-auto">
-						<svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M22.5 10.1639V11.8361C22.5 12.0229 22.348 12.1749 22.1612 12.1793C19.7505 12.2618 17.5701 13.2043 15.9109 14.7246C15.8544 14.7724 15.7979 14.8245 15.7458 14.8766C15.698 14.92 15.6502 14.9635 15.6068 15.0113C15.5764 15.0417 15.546 15.0721 15.5113 15.1068C15.4678 15.1502 15.4244 15.198 15.3766 15.2458C13.7738 16.9224 12.7661 19.168 12.6793 21.6612C12.6749 21.848 12.5229 22 12.3361 22H10.6639C10.4771 22 10.3251 21.848 10.3207 21.6612C10.2425 19.2592 9.29566 17.0831 7.78845 15.4239C7.6842 15.3066 7.57562 15.1937 7.46703 15.0851C7.44965 15.0677 7.43662 15.0547 7.41925 15.0373C7.31066 14.9287 7.19339 14.8201 7.08045 14.7159C7.01965 14.6638 6.96318 14.6116 6.90237 14.5639C5.26486 13.1435 3.15824 12.2618 0.834452 12.1836C0.64768 12.1793 0.5 12.0316 0.5 11.8448V10.1682C0.5 9.98144 0.652024 9.82942 0.838796 9.82507C3.32764 9.7382 5.57759 8.7305 7.25419 7.12774C7.30197 7.0843 7.34541 7.04087 7.39319 6.99309C7.42359 6.96269 7.454 6.93228 7.48875 6.89753C7.53218 6.8541 7.57562 6.80632 7.6234 6.75854C9.22616 5.07759 10.2382 2.83198 10.3207 0.343139C10.3251 0.152024 10.4771 0 10.6639 0H12.3361C12.5229 0 12.6749 0.152024 12.6793 0.338796C12.7661 2.82764 13.7695 5.0689 15.3679 6.74551C15.4939 6.87581 15.6198 7.00612 15.7501 7.12774C15.8023 7.17552 15.8544 7.22764 15.9109 7.27108C15.9673 7.3232 16.0238 7.37532 16.0803 7.4231C17.7178 8.85212 19.8331 9.7382 22.1612 9.81639C22.348 9.82073 22.4957 9.96841 22.4957 10.1552L22.5 10.1639Z" fill="#808080" />
-						</svg>
-						<h4 className="text-muted-4 dark:text-muted text-normal uppercase">How it works</h4>
-					</div>
-					<h2 className="text-xl md:text-2xl font-normal mt-4 uppercase tpk-text-muted">Let&apos;s transform your dream to a remarkable business</h2>
-				</div>
-				<div className="md:basis-7/12">
-					<ul className="flex flex-col gap-3">
-						<li className="tpk-btn-white border-[0.75px] text-start py-6 hover:text-white dark:hover:text-black">
-							<h6 className="text-muted-4 text-sm normal-case">Stop 01</h6>
-							<h3 className="text-inherit text-xl md:text-2xl font-normal mt-2">Select a Program/Fill out the questionnaire</h3>
-							<p className="text-muted-3 dark:text-muted-4 text-sm mt-2 normal-case lg:w-3/4 xl:w-3/4">We&apos;ll help you select the right program for your business and fill out a questionnaire to help us understand your business better.</p>
-						</li>
-						<li className="tpk-btn-white border-[0.75px] text-start py-6 hover:text-white dark:hover:text-black">
-							<h6 className="text-muted-4 text-sm normal-case">Stop 02</h6>
-							<h3 className="text-inherit text-xl md:text-2xl font-normal mt-2">Log in/make a refundable deposit</h3>
-							<p className="text-muted-3 dark:text-muted-4 text-sm mt-2 normal-case lg:w-3/4 xl:w-3/4">
-								You&apos;ll log in to your account, make a refundable deposit, and we&apos;ll get started on your business.
-							</p>
-						</li>
-						<li className="tpk-btn-white border-[0.75px] text-start py-6 hover:text-white dark:hover:text-black">
-							<h6 className="text-muted-4 text-sm normal-case">Stop 03</h6>
-							<h3 className="text-inherit text-xl md:text-2xl font-normal mt-2">Schedule a call</h3>
-							<p className="text-muted-3 dark:text-muted-4 text-sm mt-2 normal-case lg:w-3/4 xl:w-3/4">
-								We&apos;ll schedule a call to discuss your business, goals, and how we can help you achieve them.
-							</p>
-						</li>
-						<li className="tpk-btn-white border-[0.75px] text-start py-6 hover:text-white dark:hover:text-black">
-							<h6 className="text-muted-4 text-sm normal-case">Stop 04</h6>
-							<h3 className="text-inherit text-xl md:text-2xl font-normal mt-2">Projekt Kick off</h3>
-							<p className="text-muted-3 dark:text-muted-4 text-sm mt-2 normal-case lg:w-3/4 xl:w-3/4">
-								We&apos;ll kick off your project and start working on your business. You&apos;ll have access to your account to track our progress.
-							</p>
-						</li>
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import GradientBtn from "@/components/Buttons/GradientBtn";
 
-						<li>
-							<Link href="#x" className="tpk-btn-white">I WANT TO BEGIN</Link>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-	);
+gsap.registerPlugin(ScrollTrigger);
+
+const ProcessSteps = () => {
+  const sectionRef = useRef(null);
+  const timelineRef = useRef(null);
+
+  const steps = [
+    {
+      step: "STEP 01",
+      title: "SELECT A PROGRAM/FILL OUT THE QUESTIONNAIRE",
+      description: "Pick a program that fits your goals and complete a short questionnaire. This helps us tailor the perfect solution for you.",
+      buttonText: "CHECK PROGRAM"
+    },
+    {
+      step: "STEP 02",
+      title: "LOG IN/MAKE A REFUNDABLE DEPOSIT",
+      description: "Create an account and make a refundable deposit to confirm your commitment. This ensures we're ready to dive in.",
+      buttonText: "LOG IN / SIGN UP"
+    },
+    {
+      step: "STEP 03",
+      title: "SCHEDULE A CALL",
+      description: "Book a quick call with our team to align on your needs, goals, and expectations before starting.",
+      buttonText: "BOOK A CALL"
+    },
+    {
+      step: "STEP 04",
+      title: "PROJECT KICK OFF",
+      description: "Once everything is set, we'll kick off the project and bring your vision to life.",
+      buttonText: "START THE PROJECT"
+    }
+  ];
+
+  useEffect(() => {
+    // Set first step as active by default
+    const firstCard = document.querySelector('.timeline-card');
+    const firstDot = document.querySelector('.timeline-dot');
+    const firstStepNumber = firstCard.querySelector('.step-number');
+    const firstStepTitle = firstCard.querySelector('.step-title');
+
+    gsap.set(firstStepNumber, { color: "#BEE8FF" });
+    gsap.set(firstStepTitle, { color: "#ffffff" });
+    gsap.set(firstDot, { 
+      backgroundColor: "#BEE8FF",
+      scale: 1.2
+    });
+
+    // Progress line animation
+    const progressLine = gsap.fromTo(
+      timelineRef.current,
+      { height: "0%" },
+      { 
+        height: "100%",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        }
+      }
+    );
+
+    // Animate cards and content (skip first card)
+    gsap.utils.toArray('.timeline-card').forEach((card, index) => {
+      if (index === 0) return; // Skip first card animation since it's active by default
+
+      const xOffset = index % 2 === 0 ? -50 : 50;
+      const stepTitle = card.querySelector('.step-title');
+      const stepNumber = card.querySelector('.step-number');
+      
+      // Initial card animation
+      gsap.fromTo(card,
+        { 
+          opacity: 0, 
+          x: xOffset 
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.8,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+          }
+        }
+      );
+
+      // Create a timeline for text color animations
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: card,
+          start: "top 75%",
+          toggleActions: "play reverse play reverse"
+        }
+      })
+      .to(stepNumber, {
+        color: "#BEE8FF",
+        duration: 0.3
+      })
+      .to(stepTitle, {
+        color: "#ffffff",
+        duration: 0.3
+      }, "-=0.2");
+    });
+
+    // Animate timeline dots (skip first dot)
+    gsap.utils.toArray('.timeline-dot').forEach((dot, index) => {
+      if (index === 0) return; // Skip first dot animation since it's active by default
+
+      gsap.fromTo(dot,
+        { 
+          scale: 1,
+          backgroundColor: '#1f2937' 
+        },
+        {
+          scale: 1.2,
+          backgroundColor: '#BEE8FF',
+          scrollTrigger: {
+            trigger: dot,
+            start: "top 75%",
+            toggleActions: "play reverse play reverse"
+          }
+        }
+      );
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
+
+  return (
+    <div ref={sectionRef} className="min-h-screen bg-black text-white p-8">
+      <p className='border border-sky-blue rounded-full w-fit mx-auto mb-10 py-1 px-10'>HOW IT WORKS</p>
+
+      <h1 className="text-4xl font-normal text-center mb-24">
+        LET'S TRANSFORM YOUR DREAM <br /> TO A REMARKABLE BUSINESS
+      </h1>
+
+      <div className="relative max-w-6xl mx-auto">
+        {/* Vertical Timeline Line */}
+        <div className="absolute md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gray-800">
+          <div 
+            ref={timelineRef} 
+            className="w-full bg-sky-blue origin-top"
+          />
+        </div>
+
+        {/* Timeline Items */}
+        {steps.map((step, index) => (
+          <div key={index} className="relative mb-16">
+            <div className={`flex ${index % 2 !== 0 ? 'justify-start pl-5 md:justify-end md:pr-20' : 'justify-start pl-5 md:pl-20'} relative`}>
+              {/* Timeline Dot */}
+              <div className="timeline-dot absolute -left-1.5 md:left-1/2 top-0 transform md:-translate-x-1/2 w-4 h-4 rounded-full border border-gray-800 bg-gray-800" />
+
+              {/* Content Card */}
+              <div className="timeline-card w-96">
+                <p className="text-muted-4 step-number font-normal mb-2 transition-colors duration-300">
+                  {step.step}
+                </p>
+                <h3 className="step-title text-xl font-normal mb-3 text-muted-4 transition-colors duration-300">
+                  {step.title}
+                </h3>
+                <p className="step-description text-muted-4 font-normal mb-6 transition-colors duration-300">
+                  {step.description}
+                </p>
+                <GradientBtn href="#" className="inline-flex" isAnimated={true}>{step.buttonText}</GradientBtn>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
-export default TheProcess;
+export default ProcessSteps;
