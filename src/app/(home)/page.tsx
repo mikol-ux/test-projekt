@@ -10,16 +10,18 @@ import TheBlog from "./sections/TheBlog/TheBlog";
 import TheForge from "./sections/TheForge/TheForge";
 import HeroPumpkin from "@/components/Hero Pumpkin";
 import TheVideo from "./sections/TheVideo";
-import TheOffers from "./sections/TheOffers";
 import TheQuestions from "./sections/TheQuestions";
 import TheProof from "./sections/TheProof";
+import TheOffers from "./sections/TheOffers";
+import TheQuote from "./sections/TheQuote";
 
 export default function Home() {
 	return (
 		<Fragment>
-			<div className="relative overflow-hidden">
+			<div className="relative overflow-hidden border border-green-400">
 				<HeroPumpkin />
 				<TheHero />
+				<TheQuote />
 			</div>
 			<main className="flex flex-col gap-32">
 				<TheDirections /> {/* Robert */}

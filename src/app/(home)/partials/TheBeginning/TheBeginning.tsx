@@ -98,7 +98,7 @@ const TheBeginning = () => {
 						</ul>
 					</div>
 
-					<GradientBtn href="/login" className="hidden md:flex py-2 px-10" isAnimated={false}>Login</GradientBtn>
+					<GradientBtn href="/login" className="hidden md:flex py-2 px-14" isAnimated={false}>Login</GradientBtn>
 				</div>
 			</nav>
 		</header>
