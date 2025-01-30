@@ -21,11 +21,23 @@ const Innovation: FC = () => {
         moments, we sought to build not just products but partnerships.
       </p>
       {/* Highlight Circles */}
-      <div className="py-16 flex justify-center items-center space-x-[-10px]">
+      <div className="relative py-16 flex justify-center items-center space-x-[-25px]">
         {highlights.map((text, index) => (
           <GradientCircle key={index} text={text} />
         ))}
+
+        <div className="bottom-[40px]  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 absolute h-[220px] w-[1150px] ">
+
+         </div>
+         <div className="drop-shadow-2xl flex justify-around items-center bottom-[145px]  bg-clip-padding backdrop-filter backdrop-blur-none bg-opacity-30 absolute h-[120px] w-[1100px] ">
+              <div className="flex justify-center items-center h-[100px] w-[200px] "><p className="text-blue-200 ml-10 text-sm">INOVATION</p></div>
+              <div className="flex justify-center items-center h-[100px] w-[200px] "><p className="text-blue-200 ml-6 text-sm">CREATIVITY</p></div>
+              <div className="flex justify-center items-center h-[100px] w-[200px] "><p className="text-blue-200 ml-2 text-sm">RELENTLESS FOCUS</p></div>
+              <div className="flex justify-center items-center h-[100px] w-[200px] "><p className="text-blue-200 text-sm">INOVATION</p></div>
+         </div>
+
       </div>
+
     </section>
   );
 };
