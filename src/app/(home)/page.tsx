@@ -26,7 +26,7 @@ export default function Home() {
 				<TheService /> {/* Michael */}
 				<TheVideo /> {/* Michael */}
 				<TheOffers /> {/* Michael */}
-				<TheProcess /> {/* Robert */}
+				<TheProcess /> {/* Robert  */}
 				<TheEvidence /> {/* Robert */}
 				<TheForge /> {/* Michael */}
 				<TheBlog /> {/* Robert */}
