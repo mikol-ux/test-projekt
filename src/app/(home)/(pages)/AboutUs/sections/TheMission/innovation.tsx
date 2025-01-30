@@ -27,7 +27,7 @@ const Innovation: FC = () => {
 				{highlights.map((text, index, items) => (
 					<GradientCircle key={index} children={text} href="#x" className={`flex items-center justify-center text-sky-blue w-40 h-40 xl:w-80 xl:h-80 ${index !== items.length - 1 ? "-me-8" : ""}`} />
 				))}
-				<div className="absolute bottom-0 backdrop-blur-md bg-white/30 bg-red-500 border border-green-500 w-full h-2/3"></div>
+				<div className="absolute bottom-0 backdrop-blur-md bg-white/30 bg-red-500 border border-green-500 w-full h-1/3"></div>
 			</div>
 		</section>
 	);
