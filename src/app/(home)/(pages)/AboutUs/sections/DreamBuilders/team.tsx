@@ -42,20 +42,23 @@ const BuildTeam = () => {
 	];
 
 	return (
-		<section className="tpk-container flex flex-col items-center py-12">
+		<section className="tpk-container flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
 			<div className="text-center mb-8">
-				<h2 className="text-3xl mb-8">MEET THE DREAM BUILDERS</h2>
-				<p className="text-muted mb-12">
-					We’re more than a team—we’re collaborators, creators, and problem- <br />
-					solvers united by a shared vision: building remarkable dreams.
+				<h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">MEET THE DREAM BUILDERS</h2>
+				<p className="text-muted text-sm sm:text-base lg:text-lg">
+					We’re more than a team—we’re collaborators, creators, and problem-solvers united by a shared vision: building remarkable dreams.
 				</p>
 			</div>
-			<div className="flex justify-center w-full">
-				<div className="grid grid-cols-1 sm:grid-cols-2 w-[90vw] md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl px-4">
+			<div className="w-full">
+			<div className="w-full">
+				<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 max-w-7xl mx-auto justify-items-center">
 					{profiles.map((profile, index) => (
-						<ProfileCard key={index} {...profile} />
+						<div key={index} className="w-full max-w-[150px] md:max-w-none">
+						<ProfileCard {...profile} />
+						</div>
 					))}
 				</div>
+			</div>
 			</div>
 		</section>
 	);
