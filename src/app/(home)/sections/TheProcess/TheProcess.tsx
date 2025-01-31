@@ -138,7 +138,8 @@ const ProcessSteps = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} className="min-h-screen bg-black text-white p-8">
+	<section className="tpk-contained w-screen">
+    <div ref={sectionRef} className="min-h-screen text-white p-8">
       <p className='border border-sky-blue rounded-full w-fit mx-auto mb-10 py-1 px-10'>HOW IT WORKS</p>
 
       <h1 className="text-4xl font-normal text-center mb-24">
@@ -179,6 +180,7 @@ const ProcessSteps = () => {
         ))}
       </div>
     </div>
+	</section>
   );
 };
 

@@ -1,61 +1,133 @@
-//
-import { FC } from "react";
-import Link from "next/link";
 
-const TheEvidence: FC = () => {
-	return (
-		<section>
-			<div className="tpk-contained">
-				<div className="md:basis-4/12 flex flex-row items-start justify-start gap-3">
-					<svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M22.5 10.1639V11.8361C22.5 12.0229 22.348 12.1749 22.1612 12.1793C19.7505 12.2618 17.5701 13.2043 15.9109 14.7246C15.8544 14.7724 15.7979 14.8245 15.7458 14.8766C15.698 14.92 15.6502 14.9635 15.6068 15.0113C15.5764 15.0417 15.546 15.0721 15.5113 15.1068C15.4678 15.1502 15.4244 15.198 15.3766 15.2458C13.7738 16.9224 12.7661 19.168 12.6793 21.6612C12.6749 21.848 12.5229 22 12.3361 22H10.6639C10.4771 22 10.3251 21.848 10.3207 21.6612C10.2425 19.2592 9.29566 17.0831 7.78845 15.4239C7.6842 15.3066 7.57562 15.1937 7.46703 15.0851C7.44965 15.0677 7.43662 15.0547 7.41925 15.0373C7.31066 14.9287 7.19339 14.8201 7.08045 14.7159C7.01965 14.6638 6.96318 14.6116 6.90237 14.5639C5.26486 13.1435 3.15824 12.2618 0.834452 12.1836C0.64768 12.1793 0.5 12.0316 0.5 11.8448V10.1682C0.5 9.98144 0.652024 9.82942 0.838796 9.82507C3.32764 9.7382 5.57759 8.7305 7.25419 7.12774C7.30197 7.0843 7.34541 7.04087 7.39319 6.99309C7.42359 6.96269 7.454 6.93228 7.48875 6.89753C7.53218 6.8541 7.57562 6.80632 7.6234 6.75854C9.22616 5.07759 10.2382 2.83198 10.3207 0.343139C10.3251 0.152024 10.4771 0 10.6639 0H12.3361C12.5229 0 12.6749 0.152024 12.6793 0.338796C12.7661 2.82764 13.7695 5.0689 15.3679 6.74551C15.4939 6.87581 15.6198 7.00612 15.7501 7.12774C15.8023 7.17552 15.8544 7.22764 15.9109 7.27108C15.9673 7.3232 16.0238 7.37532 16.0803 7.4231C17.7178 8.85212 19.8331 9.7382 22.1612 9.81639C22.348 9.82073 22.4957 9.96841 22.4957 10.1552L22.5 10.1639Z" fill="#808080" />
-					</svg>
-					<h4 className="tpk-text-muted text-normal uppercase">PORTFOLIO</h4>
-				</div>
-				<h3 className="tpk-text-muted uppercase text-4xl text-normal mt-8">
-					We help small businesses and tech founders everywhere—whether you&apos;re launching, scaling, or building custom software. Think of us as your secret weapon for remote hiring, in-house tools, and everything in between. Real results, no fluff. You focus on the vision; we&apos;ll handle the heavy lifting.
-				</h3>
-			</div>
-			{/* */}
-			<div className="overflow-x-scroll scroll-smooth snap-x snap-mandatory no-scrollbar w-full">
-				<div className="tpk-contained">
-					<div className="grid grid-rows-1 lg:grid-flow-col gap-4 overflow-x-s items-start md:max-lg:flex md:max-lg:flex-wrap">
-						<Link href="#x" className="snap-center border-[1px] border-muted-4 dark:border-muted p-1.5 lg:min-w-[30em] md:max-lg:basis-[48.915%]">
-							<div className="bg-[url('/img/portfolio/web-design-conduit.png')] bg-cover bg-center h-80 md:h-[20em] lg:h-[25em] xl:h-[30em]"></div>
-							<h6 className="tpk-text-muted text-sm mt-4">UI,UX</h6>
-							<h5 className="tpk-text-white text-lg">Manage your Upwork and Fiver account all in one place</h5>
-						</Link>
-						<Link href="#x" className="snap-center border-[1px] border-muted-4 dark:border-muted p-1.5 lg:min-w-[30em] md:max-lg:basis-[48.915%]">
-							<div className="bg-[url('/img/portfolio/rentoll-landing-page.png')] bg-cover bg-center h-80 md:h-[15em] lg:h-[20em] xl:h-[25em]"></div>
-							<h6 className="tpk-text-muted text-sm mt-4">SaaS</h6>
-							<h5 className="tpk-text-white text-lg">Real Estate and Renting, Browse beautiful house for sell or rent quickly</h5>
-						</Link>
-						<Link href="#x" className="snap-center border-[1px] border-muted-4 dark:border-muted p-1.5 lg:min-w-[30em] md:max-lg:basis-[48.915%]">
-							<div className="bg-[url('/img/portfolio/3d-web-design-chief-nylah.png')] bg-cover bg-center h-80 md:h-[15em] lg:h-[25em] xl:h-[30em]"></div>
-							<h6 className="tpk-text-muted text-sm mt-4">Site</h6>
-							<h5 className="tpk-text-white text-lg">Select your favourite spice collection with the beautiful 3d effect</h5>
-						</Link>
-						<Link href="#x" className="snap-center border-[1px] border-muted-4 dark:border-muted p-1.5 lg:min-w-[30em] md:max-lg:basis-[48.915%] md:max-lg:mt-[-5em]">
-							<div className="bg-[url('/img/portfolio/brand-design-chief-nylah.webp')] bg-cover bg-center h-80 md:h-[20em] lg:h-[15em] xl:h-[20em]"></div>
-							<h6 className="tpk-text-muted text-sm mt-4">Design</h6>
-							<h5 className="tpk-text-white text-lg">Showcase your brand with beautiful designs</h5>
-						</Link>
-					</div>
-				</div>
-			</div>
-			<div className="tpk-contained">
-				<div className="flex flex-col lg:flex-row">
-					<div className="basis-5/12"></div>
-					<div className="basis-7/12">
-						<Link href="#x"
-							className="tpk-btn-white">
-							SEE ALL PROJECTS
-						</Link>
-					</div>
-				</div>
-			</div>
-		</section>
-	)
-}
+"use client";
 
-export default TheEvidence;
+import React, { useState } from "react";
+import venue from "../../../../../public/img/home/venue.png"
+import Image from "next/image";
+
+const VisionList = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const items = [
+    {
+      number: "01",
+      title: "The Projekt",
+      tags: ["2024", "UI/UX", "Branding"],
+    },
+    {
+      number: "02",
+      title: "Designing Narratives",
+      tags: ["2024", "UI/UX", "Branding"],
+    },
+    {
+      number: "03",
+      title: "Protokol",
+      tags: ["2024", "UI/UX", "Branding"],
+    },
+    {
+      number: "04",
+      title: "Build with the public",
+      tags: ["2024", "UI/UX", "Branding"],
+    },
+    {
+      number: "05",
+      title: "Conduit",
+      tags: ["2024", "UI/UX", "Branding"],
+    },
+  ];
+
+  return (
+    <section className="tpk-contained w-screen">
+      <div className=" flex flex-col justify-center items-center text-white p-8">
+        <div className="flex basis-full w-full   justify-center">
+          <Image
+				src={venue} // Path to the image in the public folder
+				alt="Example Image"
+				// width={600} // Required
+				// height={800} // Required
+				className="rounded-lg object-cover  w-full" 
+			/>
+        </div>
+		
+		<div className=" flex flex-col md:flex-row justify-between mt-10 items-start">
+			<h1 className="md:w-1/2 text-4xl text-start font-normal mb-24">Innovative Solutions That <br/> Scale Seamlessly With <br /> Your Vision</h1>
+			<p className="md:w-1/2 text-xl font-normal ps-10 mb-3 text-muted-4 ">Whether you’re launching or scaling, we handle the heavy lifting for small businesses and tech founders. Remote hiring, custom tools, and seamless execution—your success is priority.</p>
+		</div>
+
+
+        <div className="w-full lg:p-20 ">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="relative group cursor-pointer"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <div
+                className={`
+					absolute inset-0 transition-all duration-500 ease-in-out rounded-xl
+					${
+            hoveredIndex === index
+              ? "bg-gradient-to-r from-sky-900/50 to-sky-600/30"
+              : "bg-transparent"
+          }
+				`}
+              />
+
+              <div className="flex items-center p-8 border-b border-gray-800 relative  border-none rounded-lg  before:absolute before:inset-0 before:p-[1px] before:rounded-lg before:bg-bg-gradient-dir
+		before:from-pitch-dark-blue before:from-10% before:via-deep-blue before:via-30% before:to-sky-blue
+		before:to-90% before:-z-[1] before:mask-content-box before:mask-composite-exclude      hover:bg-bg-gradient-dir
+		hover:from-pitch-dark-blue hover:from-40% hover:via-deep-blue hover:via-100% hover:to-sky-blue
+		hover:to-100%">
+                <span
+                      className={`
+						text-2xl font-light w-20
+						${
+              hoveredIndex === index
+                ? "text-sky-blue"
+                : "text-white"
+            }
+						transition-all duration-300
+						`}
+				>{item.number}</span>
+                <span
+                      className={`
+						text-2xl font-light flex-grow
+						${
+              hoveredIndex === index
+                ? "text-sky-blue"
+                : "text-white"
+            }
+						transition-all duration-300
+						`}
+				>
+                  {item.title}
+                </span>
+                <div className="flex gap-3">
+                  {item.tags.map((tag, tagIndex) => (
+                    <span
+                      key={tagIndex}
+                      className={`
+						px-3 py-1 rounded-full text-sm border
+						${
+              hoveredIndex === index
+                ? "border-white text-white"
+                : "border-muted text-muted"
+            }
+						transition-all duration-300
+						`}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default VisionList;
