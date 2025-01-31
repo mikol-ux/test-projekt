@@ -51,12 +51,14 @@ const BuildTeam = () => {
 			</div>
 			<div className="w-full">
 			<div className="w-full">
-				<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 max-w-7xl mx-auto justify-items-center">
-					{profiles.map((profile, index) => (
-						<div key={index} className="w-full max-w-[150px] md:max-w-none">
+			<div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 max-w-7xl mx-auto justify-items-center">
+				{profiles.map((profile, index) => (
+					<div key={index} className="w-full flex justify-center">
+					<div className="w-full max-w-[280px] md:max-w-[320px] lg:max-w-[240px]">
 						<ProfileCard {...profile} />
-						</div>
-					))}
+					</div>
+					</div>
+				))}
 				</div>
 			</div>
 			</div>
