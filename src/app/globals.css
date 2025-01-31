@@ -155,6 +155,9 @@ body {
   .tpk-btn-muted {
     @apply block text-center uppercase p-3 border-[0.75px] border-muted-4 dark:border-muted text-muted-4 dark:text-muted hover:bg-muted dark:hover:bg-muted-4 hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black;
   }
+  .tpk-btn-fade {
+    @apply block text-center uppercase p-3 border-[0.75px] text-muted-4 dark:text-muted bg-black hover:bg-transparent dark:hover:bg-transparent hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black border-none;
+  }
   .tpk-btn-white {
     @apply block text-center uppercase p-3 border-[0.5px] border-muted-4 dark:border-white text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black;
   }
