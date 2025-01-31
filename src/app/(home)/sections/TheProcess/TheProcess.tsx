@@ -1,86 +1,90 @@
-"use client"
+"use client";
 
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GradientBtn from "@/components/Buttons/GradientBtn";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ProcessSteps = () => {
-  const sectionRef = useRef(null);
-  const timelineRef = useRef(null);
+interface Step {
+  step: string;
+  title: string;
+  description: string;
+  buttonText: string;
+}
 
-  const steps = [
+const ProcessSteps: React.FC = () => {
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const timelineRef = useRef<HTMLDivElement | null>(null);
+
+  const steps: Step[] = [
     {
       step: "STEP 01",
       title: "SELECT A PROGRAM/FILL OUT THE QUESTIONNAIRE",
-      description: "Pick a program that fits your goals and complete a short questionnaire. This helps us tailor the perfect solution for you.",
-      buttonText: "CHECK PROGRAM"
+      description:
+        "Pick a program that fits your goals and complete a short questionnaire. This helps us tailor the perfect solution for you.",
+      buttonText: "CHECK PROGRAM",
     },
     {
       step: "STEP 02",
       title: "LOG IN/MAKE A REFUNDABLE DEPOSIT",
-      description: "Create an account and make a refundable deposit to confirm your commitment. This ensures we're ready to dive in.",
-      buttonText: "LOG IN / SIGN UP"
+      description:
+        "Create an account and make a refundable deposit to confirm your commitment. This ensures we're ready to dive in.",
+      buttonText: "LOG IN / SIGN UP",
     },
     {
       step: "STEP 03",
       title: "SCHEDULE A CALL",
-      description: "Book a quick call with our team to align on your needs, goals, and expectations before starting.",
-      buttonText: "BOOK A CALL"
+      description:
+        "Book a quick call with our team to align on your needs, goals, and expectations before starting.",
+      buttonText: "BOOK A CALL",
     },
     {
       step: "STEP 04",
       title: "PROJECT KICK OFF",
       description: "Once everything is set, we'll kick off the project and bring your vision to life.",
-      buttonText: "START THE PROJECT"
-    }
+      buttonText: "START THE PROJECT",
+    },
   ];
 
   useEffect(() => {
-    // Set first step as active by default
-    const firstCard = document.querySelector('.timeline-card');
-    const firstDot = document.querySelector('.timeline-dot');
-    const firstStepNumber = firstCard.querySelector('.step-number');
-    const firstStepTitle = firstCard.querySelector('.step-title');
+    if (!sectionRef.current || !timelineRef.current) return;
+    
+    const firstCard = document.querySelector<HTMLDivElement>(".timeline-card");
+    const firstDot = document.querySelector<HTMLDivElement>(".timeline-dot");
+    const firstStepNumber = firstCard?.querySelector<HTMLParagraphElement>(".step-number");
+    const firstStepTitle = firstCard?.querySelector<HTMLHeadingElement>(".step-title");
 
-    gsap.set(firstStepNumber, { color: "#BEE8FF" });
-    gsap.set(firstStepTitle, { color: "#ffffff" });
-    gsap.set(firstDot, { 
-      backgroundColor: "#BEE8FF",
-      scale: 1.2
-    });
+    if (firstStepNumber && firstStepTitle && firstDot) {
+      gsap.set(firstStepNumber, { color: "#BEE8FF" });
+      gsap.set(firstStepTitle, { color: "#ffffff" });
+      gsap.set(firstDot, { backgroundColor: "#BEE8FF", scale: 1.2 });
+    }
 
-    // Progress line animation
-    const progressLine = gsap.fromTo(
+    gsap.fromTo(
       timelineRef.current,
       { height: "0%" },
-      { 
+      {
         height: "100%",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top center",
           end: "bottom center",
           scrub: true,
-        }
+        },
       }
     );
 
-    // Animate cards and content (skip first card)
-    gsap.utils.toArray('.timeline-card').forEach((card, index) => {
-      if (index === 0) return; // Skip first card animation since it's active by default
-
+    gsap.utils.toArray<HTMLDivElement>(".timeline-card").forEach((card, index) => {
+      if (index === 0) return;
       const xOffset = index % 2 === 0 ? -50 : 50;
-      const stepTitle = card.querySelector('.step-title');
-      const stepNumber = card.querySelector('.step-number');
-      
-      // Initial card animation
-      gsap.fromTo(card,
-        { 
-          opacity: 0, 
-          x: xOffset 
-        },
+      const stepTitle = card.querySelector<HTMLHeadingElement>(".step-title");
+      const stepNumber = card.querySelector<HTMLParagraphElement>(".step-number");
+
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: xOffset },
         {
           opacity: 1,
           x: 0,
@@ -88,52 +92,41 @@ const ProcessSteps = () => {
           scrollTrigger: {
             trigger: card,
             start: "top 80%",
-            toggleActions: "play none none reverse"
-          }
+            toggleActions: "play none none reverse",
+          },
         }
       );
 
-      // Create a timeline for text color animations
       gsap.timeline({
         scrollTrigger: {
           trigger: card,
           start: "top 75%",
-          toggleActions: "play reverse play reverse"
-        }
+          toggleActions: "play reverse play reverse",
+        },
       })
-      .to(stepNumber, {
-        color: "#BEE8FF",
-        duration: 0.3
-      })
-      .to(stepTitle, {
-        color: "#ffffff",
-        duration: 0.3
-      }, "-=0.2");
+        .to(stepNumber, { color: "#BEE8FF", duration: 0.3 })
+        .to(stepTitle, { color: "#ffffff", duration: 0.3 }, "-=0.2");
     });
 
-    // Animate timeline dots (skip first dot)
-    gsap.utils.toArray('.timeline-dot').forEach((dot, index) => {
-      if (index === 0) return; // Skip first dot animation since it's active by default
-
-      gsap.fromTo(dot,
-        { 
-          scale: 1,
-          backgroundColor: '#1f2937' 
-        },
+    gsap.utils.toArray<HTMLDivElement>(".timeline-dot").forEach((dot, index) => {
+      if (index === 0) return;
+      gsap.fromTo(
+        dot,
+        { scale: 1, backgroundColor: "#1f2937" },
         {
           scale: 1.2,
-          backgroundColor: '#BEE8FF',
+          backgroundColor: "#BEE8FF",
           scrollTrigger: {
             trigger: dot,
             start: "top 75%",
-            toggleActions: "play reverse play reverse"
-          }
+            toggleActions: "play reverse play reverse",
+          },
         }
       );
     });
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
