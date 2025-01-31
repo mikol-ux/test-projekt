@@ -30,7 +30,7 @@ const OriginsPage: FC = () => {
           {/* Button */}
           <a
             href="#"
-            className="px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 lg:px-8 lg:py-3 xl:px-12 xl:py-5 2xl:px-14 2xl:py-6 border rounded-lg transition duration-300 ease-in-out text-white bg-black hover:bg-white hover:text-black text-base sm:text-lg md:text-lg lg:text-lg xl:text-3xl 2xl:text-4xl"
+            className="px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 lg:px-8 lg:py-3 xl:px-8 xl:py-3 2xl:px-14 2xl:py-6 border rounded-lg transition duration-300 ease-in-out text-white bg-black hover:bg-white hover:text-black text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl"
           >
             THE PROJEKT STORY
           </a>
