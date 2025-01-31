@@ -14,7 +14,7 @@ export const ProfileCard: React.FC<ProfileCardData> = ({ name, title, descriptio
         <div className="group w-full md:max-w-[310px] border hover:cursor-pointer hover:scale-105 transition-all border-gray-900 rounded-lg shadow-lg p-2 md:p-4">
             <div className="relative overflow-hidden rounded-lg">
                 {/* Transparent div */}
-                <div className="group-hover:right-0 absolute top-0 right-48 rounded-lg shadow-md transition-all delay-100 h-full w-full backdrop-blur-md bg-white/30"></div>
+                <div className="group-hover:right-0 top-0 right-3/4 absolute rounded-lg shadow-md transition-all duration-500 ease-in-out delay-100 h-full w-full backdrop-blur-md hidden lg:block bg-white/30"></div>
                 {/* Profile Image */}
                 <img
                     src={imagePath}

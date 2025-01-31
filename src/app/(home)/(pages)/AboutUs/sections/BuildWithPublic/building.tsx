@@ -39,47 +39,43 @@ const BuildingPublic: FC = () => {
           </div>
         </div>
 
-        {/* Animation Component */}
-        <div className="w-full lg:w-[60%] mt-8 lg:mt-0 flex justify-center items-center">
-      <div className="relative flex justify-center items-center">
-        {/* Left Circle */}
-        <div className="w-28 h-28 xs:w-32 xs:h-32 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-80 lg:h-80
-                      rounded-full z-30
-                      absolute left-0 translate-x-[60%] md:translate-x-[50%] lg:translate-x-[40%]
-                      xs:translate-x-[20%]
-                      transition-all duration-300
-                      backdrop-blur-xl bg-white/10
-                      shadow-[0_4px_24px_-1px_rgba(0,0,0,0.1)]">
-        </div>
-
-        {/* Middle Circle */}
-        <div className="w-24 h-24 xs:w-28 xs:h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-52 lg:h-52
-                      rounded-full z-20 relative
-                      transition-all duration-300">
-          {/* Gradient Border */}
-          <div className="absolute inset-0 rounded-full p-[1px]">
-            <div className="w-full h-full rounded-full bg-gradient-to-bl from-[#438DB5] via-[#438DB5] to-[#BEE8FF]">
-            </div>
-          </div>
-          {/* Inner White Shadow */}
-          <div className="absolute inset-0 rounded-full shadow-[inset_0_0_10px_2px_rgba(255,255,255,1)]">
-          </div>
-          {/* Content Area */}
-          <div className="absolute inset-[2px] bg-white/10 rounded-full">
-          </div>
-        </div>
-
-        {/* Right Circle */}
-        <div className="w-28 h-28 xs:w-32 xs:h-32 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-80 lg:h-80
-                      rounded-full z-30
-                      absolute right-0 -translate-x-[60%] md:-translate-x-[50%] lg:-translate-x-[40%]
-                      xs:-translate-x-[20%]
-                      transition-all duration-300
-                      backdrop-blur-xl bg-white/10
-                      shadow-[0_4px_24px_-1px_rgba(0,0,0,0.1)]">
+{/* Animation Component */}
+<div className="w-full lg:w-[60%] mt-8 lg:mt-0 flex justify-center items-center">
+  <div className="relative flex justify-center items-center">
+    {/* Left Circle */}
+    <div className="w-28 h-28 xs:w-32 xs:h-32 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-80 lg:h-80
+                  rounded-full z-30
+                  absolute left-0 translate-x-[50%] xs:translate-x-[20%] sm:translate-x-[40%] md:translate-x-[50%] lg:translate-x-[40%]
+                  transition-all duration-300
+                  backdrop-blur-xl bg-white/10
+                  shadow-[0_4px_24px_-1px_rgba(0,0,0,0.1)]">
+    </div>
+    {/* Middle Circle */}
+    <div className="w-24 h-24 xs:w-28 xs:h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-52 lg:h-52
+                  rounded-full z-20 relative
+                  transition-all duration-300">
+      {/* Gradient Border */}
+      <div className="absolute inset-0 rounded-full p-[1px]">
+        <div className="w-full h-full rounded-full bg-gradient-to-bl from-[#438DB5] via-[#438DB5] to-[#BEE8FF]">
         </div>
       </div>
+      {/* Inner White Shadow */}
+      <div className="absolute inset-0 rounded-full shadow-[inset_0_0_10px_2px_rgba(255,255,255,1)]">
+      </div>
+      {/* Content Area */}
+      <div className="absolute inset-[2px] bg-white/10 rounded-full">
+      </div>
     </div>
+    {/* Right Circle */}
+    <div className="w-28 h-28 xs:w-32 xs:h-32 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-80 lg:h-80
+                  rounded-full z-30
+                  absolute right-0 -translate-x-[50%] xs:-translate-x-[20%] sm:-translate-x-[40%] md:-translate-x-[50%] lg:-translate-x-[40%]
+                  transition-all duration-300
+                  backdrop-blur-xl bg-white/10
+                  shadow-[0_4px_24px_-1px_rgba(0,0,0,0.1)]">
+    </div>
+  </div>
+</div>
       </div>
     </div>
   );

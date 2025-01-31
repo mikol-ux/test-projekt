@@ -15,7 +15,7 @@ export default function AboutUsPage() {
             <main className="flex flex-col gap-32">
                 <OriginPage />
                 <VideoPlayer />
-                <Innovation />
+                {/* <Innovation /> */}
                 <BuildingPublic />
                 <StatisticsSection />
                 <BuildTeam />
