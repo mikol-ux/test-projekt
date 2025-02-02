@@ -19,10 +19,10 @@ const AboutUs: React.FC<AboutUsProps> = () => {
     <section className=" flex flex-col items-center justify-center tpk-contained">
     <div className="flex flex-col md:flex-row justify-start gap-24 md:gap-0 tpk-contained">
 				<div className="md:basis-4/12 flex flex-row items-start justify-start gap-3">
-					<h4 className="text-muted-4 dark:text-muted xl:text-base 2xl:text-2xl uppercase">Who Are We</h4>
+					<h4 className="text-black dark:text-white xl:text-base 2xl:text-2xl uppercase">Who Are We</h4>
 				</div>
 				<div className="md:basis-8/12 flex flex-col gap-6">
-					<h3 className="text-muted-4 dark:text-muted text-start uppercase text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-relaxed font-normal">
+					<h3 className="text-black dark:text-white text-start uppercase text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-relaxed font-normal">
 						WE ARE A WEB DEVELOPMENT & CYBER SECURITY AGENCY
 					</h3>
 					<p className="text-muted-4 dark:text-muted text-start text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-4xl text-normal">
