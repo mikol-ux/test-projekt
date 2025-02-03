@@ -131,7 +131,7 @@ const ProcessSteps: React.FC = () => {
   }, []);
 
   return (
-	<section className="tpk-contained w-screen">
+	<section className="tpk-contained">
     <div ref={sectionRef} className="min-h-screen text-white p-8">
       <p className='border border-sky-blue rounded-full w-fit mx-auto mb-10 py-1 px-10'>HOW IT WORKS</p>
 
@@ -157,16 +157,16 @@ const ProcessSteps: React.FC = () => {
 
               {/* Content Card */}
               <div className="timeline-card w-96">
-                <p className="text-muted-4 step-number font-normal mb-2 transition-colors duration-300">
+                <p className="text-sky-blue step-number font-normal mb-2 transition-colors duration-300">
                   {step.step}
                 </p>
-                <h3 className="step-title text-xl font-normal mb-3 text-muted-4 transition-colors duration-300">
+                <h3 className="step-title text-xl font-normal mb-3 text-black dark:text-white transition-colors duration-300">
                   {step.title}
                 </h3>
-                <p className="step-description text-muted-4 font-normal mb-6 transition-colors duration-300">
+                <p className="step-description text-muted-8 font-normal mb-6 transition-colors duration-300">
                   {step.description}
                 </p>
-                <GradientBtn href="#" className="inline-flex" isAnimated={true}>{step.buttonText}</GradientBtn>
+                <GradientBtn href="#" className="inline-flex text-sm" isAnimated={true}>{step.buttonText}</GradientBtn>
               </div>
             </div>
           </div>

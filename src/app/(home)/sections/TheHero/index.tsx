@@ -18,7 +18,7 @@ const TheHero: FC = () => {
 							We help upcoming passionate founders turn their dreams into profitable businesses- research, brand, build, launch, and scale their products/services. For Established businesses, we provide tools to stay ahead, leveraging automation, design, software development, artificial intelligence, and an exclusive highly vetted founders community.
 						</p>
 
-						<GradientBtn href="/about" className="mt-12 inline-flex" isAnimated={false}>I Want To Learn More</GradientBtn>
+						<GradientBtn href="/about" className="mt-12 inline-flex" isAnimated={true}>I Want To Learn More</GradientBtn>
 					</div>
 					<div className="md:basis-4/12 lg:basis-6/12"></div>
 				</div>

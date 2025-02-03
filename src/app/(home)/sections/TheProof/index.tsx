@@ -142,7 +142,7 @@ const TestimonialSlider = () => {
   );
 
   return (
-	<section className="tpk-contained w-screen">
+	<section className="tpk-contained">
 		<div className="w-full text-white px-4 py-16">
 		<div className=" mx-auto">
 			<h2 className="text-2xl md:text-3xl font-light mb-12">

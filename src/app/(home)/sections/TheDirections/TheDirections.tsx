@@ -16,7 +16,7 @@ const TheDirections: FC = () => {
 					<h2 className=" font-light tpk-title">
 						One day or day one? Every big leap <br /> starts with a single step.<br /> <em className="font-normal dark:text-[#BEE8FF] not-italic">Make today your day one.</em>
 					</h2>
-					<div className="gap-8 md:gap-8 grid grid-cols-2 md:grid-cols-2 md:grid-flow-row">
+					<div className="gap-8 md:gap-8 grid grid-cols-2 md:grid-cols-2 md:grid-flow-row uppercase">
 						<div className="flex flex-col justify-between border-muted-7 border rounded-md p-5 h-[28rem] gap-4 transition-all duration-300 overflow-hidden relative parent-radial-bg group ">
 							<div className="radial-bg w-[200%] h-[200%] absolute bottom-0 right-0 z-0 transition-all duration-300 group-hover:radial-bg-hover"></div>
 							<h6 className="py-3  w-full text-white-800  dark:text-muted-4 text-3xl md:text-5xl lg:text-7xl z-[1] ">01</h6>

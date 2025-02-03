@@ -37,7 +37,7 @@ const VisionList = () => {
   ];
 
   return (
-    <section className="tpk-contained w-screen">
+    <section className="tpk-contained">
       <div className=" flex flex-col justify-center items-center text-white p-8">
         <div className="flex basis-full w-full   justify-center">
           <Image
