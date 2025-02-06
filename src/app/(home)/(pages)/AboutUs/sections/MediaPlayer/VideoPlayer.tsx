@@ -6,7 +6,6 @@ const VideoPlayer: FC = () => {
       <div className="w-full max-w-[400px] sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1200px] aspect-video">
         <video
           className="w-full h-full object-cover rounded-lg shadow-lg"
-          controls
           poster="/img/aboutUs/video-player-image.png"
         >
           <source src="path/to/video.mp4" type="video/mp4" />
