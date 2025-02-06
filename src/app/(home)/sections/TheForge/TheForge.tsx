@@ -5,6 +5,7 @@ import Image from 'next/image';
 import cafe from '../../../../../public/img/home/Casual Office or Café Gathering 1.png'
 import hoodie from '../../../../../public/img/home/Person in Red Hoodie Coding copy 1.png'
 import Link from 'next/link';
+import GradientBtn from '@/components/Buttons/GradientBtn';
 const ForgeSection = () => {
 	return (
 	<section className='min-h-screen'>
@@ -32,18 +33,15 @@ const ForgeSection = () => {
 			JOIN THE PRIVATE NETWORK FOR DREAMERS TURNED HIGH-PERFORMING UPCOMING FOUNDERS.
 		  </p>
 		  
-		  <div className="w-1/2 xl:w-1/3 2xl:w-1/2 rounded bg-gradient-to-r from-[#BEE8FF] via-[#438DB5] to-[#202A30] border-none mt-8 p-[1px]">
-      <Link href="#" className="rounded transition-all tpk-btn-fade p-3 xl:p-4 2xl:p-6">
-	  <span className="text-[--white] text-[8px] md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl ">
-        JOIN THE FORGE
-		</span>
-      </Link>
-	  </div>
+		  <GradientBtn href="/" className="mt-12 inline-flex" isAnimated={true}>
+      JOIN THE PROJEKT
+    </GradientBtn>
+
 		</div>
 		
 		{/* Community Channel Section */}
 		<div className="2xl:basis-1/2 p-4 backdrop-blur-[60px] rounded-lg flex w-full flex-col md:flex-row">
-		  <p className="mb-4 md:mb-0 text- 2xl:text-3xl font-light mt-2 basis-1/2 dark:text-white text-black ">
+		  <p className="mb-4 md:mb-0 2xl:text-2xl font-light mt-2 basis-1/2 dark:text-white text-black ">
 		  A private network for dreamers who become high-performing founders. Applicants face a tough interview process, leading to an acceptance rate under 10%. This guarantees that only committed individuals join The Forge, enhancing connections and experiences.
 		  </p>
 		
