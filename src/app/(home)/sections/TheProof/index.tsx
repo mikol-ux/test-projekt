@@ -41,13 +41,13 @@ const TestimonialSlider = () => {
   ];
 
   // Helper function to get paired testimonials
-  const getPairedTestimonials = (index) => {
+  const getPairedTestimonials = (index: any) => {
     const firstIndex = index;
     const secondIndex = (index + 1) % testimonials.length;
     return [testimonials[firstIndex], testimonials[secondIndex]];
   };
 
-  const handleSlideChange = useCallback((newDirection) => {
+  const handleSlideChange = useCallback((newDirection: any) => {
     if (isAnimating) return;
     
     setIsAnimating(true);
@@ -73,13 +73,13 @@ const TestimonialSlider = () => {
     return () => clearInterval(timer);
   }, [handleSlideChange]);
 
-  const goToSlide = (index) => {
+  const goToSlide = (index: any) => {
     if (isAnimating || index === currentSlide) return;
     const newDirection = index > currentSlide ? 'right' : 'left';
     handleSlideChange(newDirection);
   };
 
-  const getSlidePosition = (index) => {
+  const getSlidePosition = (index: any) => {
     const position = index - currentSlide;
     
     let transform = 'translate-x-full';
@@ -119,7 +119,7 @@ const TestimonialSlider = () => {
     return `${transform} ${opacity} ${zIndex}`;
   };
 
-  const renderTestimonialCard = (testimonial) => (
+  const renderTestimonialCard = (testimonial: any) => (
     <div className="border border-gray-800 rounded-lg p-8 min-h-72 min-h-96 flex flex-col justify-between  backdrop-blur">
       <span className="inline-block px-4 py-1 w-fit text-xs border border-muted text-muted rounded-full mb-6">
         {testimonial.category}
