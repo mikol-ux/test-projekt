@@ -17,10 +17,10 @@ const StatCard: React.FC<StatCardProps> = ({ value, title, description }) => {
 
       {/* Content */}
       <div className="relative z-20 flex flex-col justify-between h-full">
-        <h1 className="text-4xl md:text-7xl">{value}</h1>
+        <h1 className="text-7xl">{value}</h1>
         <div className="mt-auto">
           <h4 className="text-lg mb-1">{title}</h4>
-          <p className="text-xs text-neutral-400">{description}</p>
+          <p className="text-xs text-neutral-300">{description}</p> {/* Lighter text for description */}
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@ const StatCard: React.FC<StatCardProps> = ({ value, title, description }) => {
 
 const StatisticsSection = () => {
   return (
-    <section className="tpk-contained mx-auto px-8 sm:px-12 lg:px-16 py-12">
+    <section className="tpk-contained mx-auto px-8 sm:px-12 lg:px-16 py-20"> {/* Increased padding */}
       <div className="text-center mb-24">
         <h2 className="text-2xl md:text-4xl">THE NUMBERS THAT TELL OUR STORY</h2>
       </div>
@@ -38,8 +38,8 @@ const StatisticsSection = () => {
       <div className="mb-16">
         <h2 className="text-sky-500 text-2xl mb-6 text-center md:text-left">GENERAL <br /> ACHIEVEMENTS</h2>
         <div className="flex flex-col lg:flex-row gap-6 mb-8">
-          <div className="lg:flex-1">
-            <p className="mb-4 text-base text-center lg:text-left">By engaging communities directly, we prioritize their needs, ensuring our tools address real-world challenges.</p>
+          <div className="lg:flex-1 pr-4">
+            <p className="mb-4 text-muted text-base text-center lg:text-left">By engaging communities directly, we prioritize their needs, ensuring our tools address real-world challenges.</p>
           </div>
           <div className="md:w-auto flex flex-col sm:flex-row gap-6">
             {/* Row 1: StatCard and first div */}
@@ -55,7 +55,7 @@ const StatisticsSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-black to-sky-400 opacity-0 z-10 transition-opacity duration-1000 ease-in-out group-hover:opacity-100"></div>
               {/* Content */}
               <div className="relative z-20">
-                <h1 className="text-5xl md:text-7xl mb-12">15+</h1>
+                <h1 className="text-7xl mb-12">15+</h1>
                 <h4 className="text-lg md:text-lg mb-1">STREAMLINED OPERATIONS</h4>
                 <p className="text-xs text-neutral-400">Delivering tools and solutions to help teams work better together.</p>
               </div>
@@ -76,12 +76,15 @@ const StatisticsSection = () => {
       </div>
 
       {/* Rogue Division */}
-      <div className="mb-16">
+      <div className="mb-20"> {/* Increased margin */}
         <div className="flex flex-col md:flex-row gap-6">
           <div className="md:flex-1 sm:w-auto text-center sm:text-left">
             <h3 className="text-sky-500 text-2xl mb-2 text-center md:text-left">ROGUE</h3>
             <h5 className="mt-4 mb-6 text-base text-center md:text-left">(MULTIMEDIA DIVISION)</h5>
-            <a href="#" className="px-6 py-3 inline-block border rounded-lg bg-black text-sm text-white hover:bg-white hover:text-black transition-all duration-1000 ease-in-out">
+            <a
+              href="#"
+              className="inline-block px-6 py-2 md:px-8 md:py-3 text-base md:text-lg border border-sky-200 rounded-md bg-[#BEE8FF1A] text-white hover:bg-[#BEE8FF33] transition-colors duration-300"
+            >
               GO ROGUE
             </a>
           </div>
@@ -100,21 +103,24 @@ const StatisticsSection = () => {
               {/* Content */}
               <div className="relative z-20 flex flex-col h-full">
                 <p className="text-2xl">CONTENT REVOLUTION</p>
-                <p className="text-xs mt-auto text-neutral-400">Redefining content creation across <b>tech, education, and lifestyle industries.</b></p>
+                <p className="text-xs mt-auto text-neutral-300">Redefining content creation across <b>tech, education, and lifestyle industries.</b></p>
               </div>
             </div>
           </div>
         </div>
-        <hr className="h-px my-8 bg-gradient-to-r from-white via-sky-200 to-cyan-600 border-0" />
+        <hr className="h-px my-12 bg-gradient-to-r from-white via-sky-200 to-cyan-600 border-0" /> {/* Increased margin */}
       </div>
 
       {/* Watchman Division */}
-      <div className="mb-16">
+      <div className="mb-20"> {/* Increased margin */}
         <div className="flex flex-col md:flex-row gap-6">
           <div className="md:flex-1 sm:w-auto text-center sm:text-left">
             <h3 className="text-sky-500 text-2xl mb-2 text-center md:text-left">WATCHMAN</h3>
             <h5 className="mt-4 mb-6 text-base text-center md:text-left">(OFFSHORE HIRING DIVISION)</h5>
-            <a href="#" className="px-6 py-3 inline-block border rounded-lg bg-black text-sm text-white hover:bg-white hover:text-black transition-all duration-1000 ease-in-out">
+            <a
+              href="#"
+              className="inline-block px-6 py-2 md:px-8 md:py-3 text-base md:text-lg border border-sky-200 rounded-md bg-[#BEE8FF1A] text-white hover:bg-[#BEE8FF33] transition-colors duration-300"
+            >
               HIRE TALENT FOR LESS
             </a>
           </div>
@@ -133,21 +139,24 @@ const StatisticsSection = () => {
               {/* Content */}
               <div className="relative z-20 flex flex-col h-full">
                 <p className="mb-4 text-2xl">SMART HIRING SAVINGS</p>
-                <p className="text-xs mt-auto text-neutral-400">Reduced hiring costs by up to <b>90% for businesses scaling smarter.</b></p>
+                <p className="text-xs mt-auto text-neutral-300">Reduced hiring costs by up to <b>90% for businesses scaling smarter.</b></p>
               </div>
             </div>
           </div>
         </div>
-        <hr className="h-px my-8 bg-gradient-to-r from-white via-sky-200 to-cyan-600 border-0" />
+        <hr className="h-px my-12 bg-gradient-to-r from-white via-sky-200 to-cyan-600 border-0" /> {/* Increased margin */}
       </div>
 
       {/* The Forge Division */}
-      <div>
+      <div className="mb-20"> {/* Increased margin */}
         <div className="flex flex-col md:flex-row gap-6">
           <div className="md:flex-1 sm:w-auto text-center sm:text-left">
             <h3 className="text-sky-500 text-2xl mb-2 text-center md:text-left">THE FORGE</h3>
             <h5 className="mt-4 mb-6 text-base text-center md:text-left">(COMMUNITY FOR EARLY FOUNDERS)</h5>
-            <a href="#" className="px-6 py-3 inline-block border rounded-lg bg-black text-white text-sm hover:bg-white hover:text-black transition-all duration-1000 ease-in-out">
+            <a
+              href="#"
+              className="inline-block px-6 py-2 md:px-8 md:py-3 text-base md:text-lg border border-sky-200 rounded-md bg-[#BEE8FF1A] text-white hover:bg-[#BEE8FF33] transition-colors duration-300"
+            >
               JOIN THE FORGE
             </a>
           </div>
@@ -166,12 +175,12 @@ const StatisticsSection = () => {
               {/* Content */}
               <div className="relative z-20 flex flex-col h-full">
                 <p className="mb-4 text-2xl">Innovative Solutions</p>
-                <p className="text-xs mt-auto text-neutral-400">A thriving community <b>fostering ideas into impactful solutions.</b></p>
+                <p className="text-xs mt-auto text-neutral-300">A thriving community <b>fostering ideas into impactful solutions.</b></p>
               </div>
             </div>
           </div>
         </div>
-        <hr className="h-px my-8 bg-gradient-to-r from-white via-sky-200 to-cyan-600 border-0" />
+        <hr className="h-px my-12 bg-gradient-to-r from-white via-sky-200 to-cyan-600 border-0" /> {/* Increased margin */}
       </div>
     </section>
   );
