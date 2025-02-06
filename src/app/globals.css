@@ -162,6 +162,15 @@ body {
   .tpk-btn-white {
     @apply block text-center uppercase p-3 border-[0.5px] border-muted-4 dark:border-white text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black;
   }
+  .tpk-p-text-sm {
+	@apply text-sm 2xl:text-lg;
+  }
+  .tpk-p-text-md {
+	@apply text-base xl:text-lg 2xl:text-2xl;
+  }
+  .tpk-p-text-lg {
+	@apply text-lg xl:text-xl 2xl:text-2xl;
+  }
 }
 
 @layer utilities {
