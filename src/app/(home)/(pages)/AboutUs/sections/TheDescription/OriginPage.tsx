@@ -1,3 +1,4 @@
+import HighLightBtn from "@/components/Buttons/HighLightBtn";
 import { FC } from "react";
 
 const OriginsPage: FC = () => {
@@ -28,12 +29,7 @@ const OriginsPage: FC = () => {
             redefine what&apos;s possible.
           </p>
           {/* Button */}
-          <a
-            href="#"
-            className="px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 lg:px-8 lg:py-3 xl:px-8 xl:py-3 2xl:px-14 2xl:py-6 border border-sky-200 rounded-md bg-[#BEE8FF1A] bg:opacity-0.1 text-white text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl"
-          >
-            THE PROJEKT STORY
-          </a>
+          <HighLightBtn href="/about-us" className="tpk-text-md mt-4 uppercase">The Projekt Story</HighLightBtn>
         </div>
       </div>
     </section>

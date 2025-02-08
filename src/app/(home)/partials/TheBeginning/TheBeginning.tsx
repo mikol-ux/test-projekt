@@ -62,7 +62,7 @@ const TheBeginning = () => {
 										<li>
 											<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
 												<span className="pe-2">
-													<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
+													<LottieAni json="/json/home/Newspaper.json" play={false} className="w-10" />
 												</span>
 												Dancing with machines &#40; Blog &#41;
 											</Link>
@@ -70,7 +70,7 @@ const TheBeginning = () => {
 										<li>
 											<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
 												<span className="pe-2">
-													<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
+													<LottieAni json="/json/home/Processor.json" play={false} className="w-10" />
 												</span>
 												Case studies
 											</Link>
@@ -78,7 +78,7 @@ const TheBeginning = () => {
 										<li>
 											<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
 												<span className="pe-2">
-													<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
+													<LottieAni json="/json/home/Team.json" play={false} className="w-10" />
 												</span>
 												Process
 											</Link>
@@ -86,7 +86,7 @@ const TheBeginning = () => {
 										<li>
 											<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
 												<span className="pe-2">
-													<LottieAni json="/img/json/Newspaper.json" play={false} className="w-10" />
+													<LottieAni json="/json/home/Cyber Security.json" play={false} className="w-10" />
 												</span>
 												The Forge
 											</Link>

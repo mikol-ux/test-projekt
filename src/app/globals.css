@@ -3,105 +3,105 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --black: #000000;
-    --white: #ffffff;
-    --muted-blue: #6c8ea3;
-    --pitch-dark-blue: #202a30;
-    --sky-blue: #bee8ff;
-    --deep-blue: #438db5;
-    --muted-text: #999999;
-    --muted-text-2: #cccccc;
-    --muted-text-3: #595959;
-    --muted-text-4: #333333;
-    --muted-text-5: #B3B3B3;
-    --muted-text-7: #1A1A1A;
-    --muted-text-8: #808080;
-  }
+	:root {
+		--black: #000000;
+		--white: #ffffff;
+		--muted-blue: #6c8ea3;
+		--pitch-dark-blue: #202a30;
+		--sky-blue: #bee8ff;
+		--deep-blue: #438db5;
+		--muted-text: #999999;
+		--muted-text-2: #cccccc;
+		--muted-text-3: #595959;
+		--muted-text-4: #333333;
+		--muted-text-5: #B3B3B3;
+		--muted-text-7: #1A1A1A;
+		--muted-text-8: #808080;
+	}
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Extralight.woff2') format('woff2');
-  font-weight: 200;
-  font-style: normal;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Extralight.woff2') format('woff2');
+	font-weight: 200;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Semibold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Semibold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Extralightitalic.woff2') format('woff2');
-  font-weight: 200;
-  font-style: italic;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Extralightitalic.woff2') format('woff2');
+	font-weight: 200;
+	font-style: italic;
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Lightitalic.woff2') format('woff2');
-  font-weight: 300;
-  font-style: italic;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Lightitalic.woff2') format('woff2');
+	font-weight: 300;
+	font-style: italic;
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Italic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Mediumitalic.woff2') format('woff2');
-  font-weight: 500;
-  font-style: italic;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Mediumitalic.woff2') format('woff2');
+	font-weight: 500;
+	font-style: italic;
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Semibolditalic.woff2') format('woff2');
-  font-weight: 600;
-  font-style: italic;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Semibolditalic.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
 }
 
 @font-face {
-  font-family: 'General Sans';
-  src: url('/fonts/GeneralSans-Bolditalic.woff2') format('woff2');
-  font-weight: 700;
-  font-style: italic;
+	font-family: 'General Sans';
+	src: url('/fonts/GeneralSans-Bolditalic.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
 }
 
 /* .theme-dark {
@@ -133,54 +133,72 @@
 } */
 
 body {
-  font-family: 'General Sans', sans-serif;
-  height: 100vh;
+	font-family: 'General Sans', sans-serif;
+	height: 100vh;
 }
 
 @layer components {
-  .center-center {
-    @apply flex justify-center items-center;
-  }
-  .tpk-contained {
-    @apply max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto w-full p-4;
-  }
-  .tpk-title {
-    @apply text-2xl text-black md:text-4xl dark:text-white uppercase;
-  }
-  .tpk-text-muted {
-    @apply text-muted-4 dark:text-muted;
-  }
-  .tpk-text-white {
-    @apply text-black dark:text-white;
-  }
-  .tpk-btn-muted {
-    @apply block text-center uppercase p-3 border-[0.75px] border-muted-4 dark:border-muted text-muted-4 dark:text-muted hover:bg-muted dark:hover:bg-muted-4 hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black;
-  }
-  .tpk-btn-fade {
-    @apply block text-center uppercase p-3 border-[0.75px] text-muted-4 dark:text-muted bg-black hover:bg-transparent dark:hover:bg-transparent hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black border-none;
-  }
-  .tpk-btn-white {
-    @apply block text-center uppercase p-3 border-[0.5px] border-muted-4 dark:border-white text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black;
-  }
-  .tpk-p-text-sm {
-	@apply text-sm 2xl:text-lg;
-  }
-  .tpk-p-text-md {
-	@apply text-base xl:text-lg 2xl:text-2xl;
-  }
-  .tpk-p-text-lg {
-	@apply text-lg xl:text-xl 2xl:text-2xl;
-  }
+	.center-center {
+		@apply flex justify-center items-center;
+	}
+
+	.tpk-contained {
+		@apply max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto w-full p-4;
+	}
+
+	.tpk-title {
+		@apply text-2xl text-black md:text-4xl dark:text-white uppercase;
+	}
+
+	.tpk-text-muted {
+		@apply text-muted-4 dark:text-muted;
+	}
+
+	.tpk-text-white {
+		@apply text-black dark:text-white;
+	}
+
+	.tpk-btn-muted {
+		@apply block text-center uppercase p-3 border-[0.75px] border-muted-4 dark:border-muted text-muted-4 dark:text-muted hover:bg-muted dark:hover:bg-muted-4 hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black;
+	}
+
+	.tpk-btn-fade {
+		@apply block text-center uppercase p-3 border-[0.75px] text-muted-4 dark:text-muted bg-black hover:bg-transparent dark:hover:bg-transparent hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black border-none;
+	}
+
+	.tpk-btn-white {
+		@apply block text-center uppercase p-3 border-[0.5px] border-muted-4 dark:border-white text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black;
+	}
+
+	/* font sizes */
+	.tpk-text-sm {
+		@apply text-sm 2xl:text-lg;
+	}
+
+	.tpk-text-md {
+		@apply text-base xl:text-lg 3xl:text-2xl;
+	}
+
+	.tpk-text-lg {
+		@apply text-lg xl:text-xl 3xl:text-2xl;
+	}
+
+	.tpk-text-2xl {
+		@apply text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl
+	}
 }
 
 @layer utilities {
-  /* Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
 
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
+	/* Chrome, Safari and Opera */
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		/* IE and Edge */
+		scrollbar-width: none;
+		/* Firefox */
+	}
 }
