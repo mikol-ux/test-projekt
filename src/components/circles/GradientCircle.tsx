@@ -25,7 +25,7 @@ const GradientCircle: FC<GradientCircleProps> = ({ href, className, children, is
 	const btnAfterStyle = "after:content-[''] after:absolute after:top-1 after:left-1 after:right-1 after:bottom-1 after:bg-transparent after:rounded-full after:z-[2]"
 	const btnBeforeStyle = `before:content-[''] before:absolute before:inset-0 before:p-[2.53px] before:rounded-full before:bg-bg-gradient-dir
 		before:from-pitch-dark-blue before:from-10% before:via-deep-blue before:via-30% before:to-sky-blue
-		before:to-90% before:-z-[1] before:mask-content-box before:mask-composite-exclude`;
+		before:to-90% before:-z-[1] before:mask-content-box`;
 
 	gsap.registerPlugin(useGSAP);
 

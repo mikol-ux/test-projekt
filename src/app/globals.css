@@ -1,23 +1,50 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
 
-@layer base {
-	:root {
-		--black: #000000;
-		--white: #ffffff;
-		--muted-blue: #6c8ea3;
-		--pitch-dark-blue: #202a30;
-		--sky-blue: #bee8ff;
-		--deep-blue: #438db5;
-		--muted-text: #999999;
-		--muted-text-2: #cccccc;
-		--muted-text-3: #595959;
-		--muted-text-4: #333333;
-		--muted-text-5: #B3B3B3;
-		--muted-text-7: #1A1A1A;
-		--muted-text-8: #808080;
-	}
+@theme {
+	/* Base Colors */
+	--black: #000000;
+	--white: #ffffff;
+	--muted-blue: #6c8ea3;
+	--pitch-dark-blue: #202a30;
+	--sky-blue: #bee8ff;
+	--deep-blue: #438db5;
+
+	/* Muted Text Colors */
+	--muted-text: #999999;
+	--muted-text-2: #cccccc;
+	--muted-text-3: #595959;
+	--muted-text-4: #333333;
+	--muted-text-5: #b3b3b3;
+	--muted-text-6: #a6a6a6;
+	--muted-text-7: #1a1a1a;
+	--muted-text-8: #808080;
+
+	/* Break Points */
+	--breakpoint-3xl: 160rem;
+	--breakpoint-4xl: 200rem;
+	--breakpoint-5xl: 480rem;
+
+	/* Font */
+	--font-General-Sans: "General Sans", sans-serif;
+
+	/* Mapped Colors */
+	--color-black: var(--black);
+	--color-white: var(--white);
+	--color-muted-blue: var(--muted-blue);
+	--color-pitch-dark-blue: var(--pitch-dark-blue);
+	--color-sky-blue: var(--sky-blue);
+	--color-deep-blue: var(--deep-blue);
+
+	/* Mapped Muted Colors */
+	--color-muted: var(--muted-text);
+	--color-muted-2: var(--muted-text-2);
+	--color-muted-3: var(--muted-text-3);
+	--color-muted-4: var(--muted-text-4);
+	--color-muted-5: var(--muted-text-5);
+	--color-muted-6: var(--muted-text-6);
+	--color-muted-7: var(--muted-text-7);
+	--color-muted-8: var(--muted-text-8);
 }
 
 @font-face {
@@ -29,7 +56,7 @@
 
 @font-face {
 	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Light.woff2') format('woff2');
+	src: url('/fonts/GeneralSans-Extralight.woff2') format('woff2');
 	font-weight: 300;
 	font-style: normal;
 }
@@ -104,37 +131,10 @@
 	font-style: italic;
 }
 
-/* .theme-dark {
-	--black: #000000;
-	--white: #ffffff;
-	--muted-blue: #6C8EA3;
-	--pitch-dark-blue: #202A30;
-	--sky-blue: #BEE8FF;
-	--deep-blue: #438DB5;
-	--muted-text: #999999;
-	--muted-text-2: #CCCCCC;
-	--muted-text-3: #595959;
-	--muted-text-4: #808080;
-	@apply transition-colors duration-500 ease-in-out;
-}
-
-.theme-light {
-	--black: #ffffff;
-	--white: #000000;
-	--muted-blue: #6C8EA3;
-	--pitch-dark-blue: #202A30;
-	--sky-blue: #BEE8FF;
-	--deep-blue: #438DB5;
-	--muted-text: #999999;
-	--muted-text-2: #CCCCCC;
-	--muted-text-3: #595959;
-	--muted-text-4: #808080;
-	@apply transition-colors duration-500 ease-in-out;
-} */
-
-body {
-	font-family: 'General Sans', sans-serif;
-	height: 100vh;
+@layer base {
+	* {
+		@apply font-General-Sans;
+	}
 }
 
 @layer components {
@@ -172,33 +172,32 @@ body {
 
 	/* font sizes */
 	.tpk-text-sm {
-		@apply text-sm 2xl:text-lg;
+		@apply text-sm 3xl:text-lg tracking-wider;
 	}
 
 	.tpk-text-md {
-		@apply text-base xl:text-lg 3xl:text-2xl;
+		@apply text-base xl:text-lg 3xl:text-2xl tracking-wider;
 	}
 
 	.tpk-text-lg {
-		@apply text-lg xl:text-xl 3xl:text-2xl;
+		@apply text-lg xl:text-xl 3xl:text-3xl tracking-wider;
 	}
 
 	.tpk-text-2xl {
-		@apply text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl
+		@apply text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl tracking-wider;
 	}
 }
 
-@layer utilities {
+/* for button border gradient */
+@utility mask-content-box {
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: destination-out;
+	mask-composite: exclude;
+}
 
-	/* Chrome, Safari and Opera */
-	.no-scrollbar::-webkit-scrollbar {
-		display: none;
-	}
-
-	.no-scrollbar {
-		-ms-overflow-style: none;
-		/* IE and Edge */
-		scrollbar-width: none;
-		/* Firefox */
-	}
+@utility bg-gradient-dir {
+	content: var(--tw-content);
+	--tw-gradient-position: var(--tw-gradient-direction, to right) in oklab;
+	background-image: linear-gradient(var(--tw-gradient-stops));
 }

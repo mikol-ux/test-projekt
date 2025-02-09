@@ -14,26 +14,26 @@ const BenefitsSection = () => {
 
 	return (
 		<section className="tpk-contained bg-black text-white flex flex-col items-center gap-6 2xl:gap-14">
-			<div className="text-center">
+			<div className="flex flex-col items-center justify-center text-center">
 				<h2 className="tpk-text-2xl font-normal leading-tight text-black dark:text-white">
 					BUILDING DREAMS, <br /> NAVIGATING THE UNKNOWN
 				</h2>
-				<p className="mt-4 tpk-text-lg font-light text-muted-4 dark:text-muted-5">
+				<p className="mt-4 tpk-text-lg font-light text-muted-4 dark:text-muted-5 md:w-4/6 xl:w-3/6">
 					We exist to help founders launch & test demand for their idea(s) without investing large amounts of money with designers, devs, or manufacturers.
 				</p>
 			</div>
 
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
 				{benefits.map((benefit, index) => (
-					<div key={index} className="flex flex-col items-start space-x-4">
+					<div key={index} className="flex flex-col items-center md:items-start">
 						<div className="p-4 flex justify-between items-center gap-4">
 							<LottieAni json={benefit.icon} className="w-10" play />
-							<h3 className="text-sky-blue tpk-text-lg font-light">
+							<h6 className="text-sky-blue tpk-text-lg font-light">
 								{benefit.title}
-							</h3>
+							</h6>
 						</div>
-						<div className="p-1">
-							<p className="text-black dark:text-white font-light tpk-text-md">
+						<div>
+							<p className="text-black dark:text-white text-center md:text-start font-light tpk-text-md">
 								{benefit.description}
 							</p>
 						</div>

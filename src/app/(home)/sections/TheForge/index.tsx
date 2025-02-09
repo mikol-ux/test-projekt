@@ -15,9 +15,8 @@ const ForgeSection = () => {
 		  <Image 
 			src={cafe} 
 			alt="The Forge Background" 
-			layout="fill" 
-			objectFit="cover" 
-			className="opacity-80 w-full"
+			fill 
+			className="opacity-80 w-full object-cover"
 		  />
 		</div>
 		
@@ -51,8 +50,7 @@ const ForgeSection = () => {
 			  alt="Community Channel" 
 			//   width={288} 
 			//   height={221} 
-			  className="rounded-lg w-full"
-			  objectFit='cover'
+			  className="rounded-lg w-full object-cover"
 			/>
 		  </div>
 		</div>

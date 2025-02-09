@@ -5,7 +5,7 @@ import GradientBtn from "@/components/Buttons/GradientBtn";
 const TheHero: FC = () => {
 	return (
 		<section className="relative border border-red-500">
-			<div className="tpk-contained min-h-screen flex items-end py-16 lg:py-32 2xl:py-64">
+			<div className="tpk-contained min-h-screen flex items-end py-16 2xl:py-32">
 				<div className="flex">
 					<div className="md:basis-8/12 lg:basis-10/12 xl:basis-9/12">
 						<div className="bg-[#141414] rounded-md text-center px-5 py-3 w-max mb-8">

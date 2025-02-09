@@ -4,10 +4,6 @@ import Link from "next/link";
 interface AboutUsProps { }
 
 const AboutUs: React.FC<AboutUsProps> = () => {
-	const btnAfterStyle = "after:content-[''] after:absolute after:top-1 after:left-1 after:right-1 after:bottom-1 after:bg-transparent after:rounded-sm after:z-[2]"
-	const btnBeforeStyle = `before:content-[''] before:absolute before:inset-0 before:p-[1px] before:rounded-md before:bg-bg-gradient-dir
-		before:from-pitch-dark-blue before:from-10% before:via-deep-blue before:via-30% before:to-sky-blue
-		before:to-90% before:-z-[1] before:mask-content-box before:mask-composite-exclude`;
 	const options: string[] = [
 		"(A) FULL-SERVICE WEB & CYBER SECURITY DEVELOPMENT COMPANY",
 		"(B) UX/UI DESIGNERS AND BRAND STRATEGISTS",
@@ -18,14 +14,14 @@ const AboutUs: React.FC<AboutUsProps> = () => {
 
 	return (
 		<section className="flex flex-col items-center justify-center tpk-contained">
-			<div className="flex flex-col md:flex-row justify-start gap-24 md:gap-0">
-				<div className="md:basis-4/12 flex flex-row items-start justify-start gap-3">
-					<h4 className="text-black dark:text-white tpk-text-sm uppercase">
+			<div className="flex flex-col md:flex-row justify-start gap-10 md:gap-0">
+				<div className="md:basis-3/12 flex flex-row items-start justify-start gap-3">
+					<h4 className="text-black dark:text-muted-5 tpk-text-md font-normal uppercase md:mt-4">
 						Who Are We
 					</h4>
 				</div>
-				<div className="md:basis-8/12 flex flex-col gap-6">
-					<h2 className="text-black dark:text-white text-start uppercase tpk-text-2xl leading-relaxed font-normal">
+				<div className="md:basis-9/12 flex flex-col gap-6">
+					<h2 className="text-black dark:text-white text-start tpk-text-2xl leading-relaxed font-normal uppercase">
 						WE ARE A WEB DEVELOPMENT & CYBER SECURITY AGENCY
 					</h2>
 					<p className="text-muted-4 dark:text-muted text-start tpk-text-lg">
@@ -44,16 +40,15 @@ const AboutUs: React.FC<AboutUsProps> = () => {
 
 			<div className="w-full mt-8">
 				<ul className="grid grid-rows-5">
-					{options.map((option, index) => (
+					{options.map((option, index, arrLen) => (
 						<li
 							key={index}
-							className={`group bg-gradient-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[0.8px] rounded-lg cursor-pointer transition-all duration-300 md:items-center justify-start gap-2 md:gap-10 tpk-text-lg font-light`}>
+							className={`group bg-linear-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[0.8px] ${index < arrLen.length - 1? "pb-0": ''} rounded-lg cursor-pointer transition-background duration-300 md:items-center justify-start gap-2 md:gap-10`}>
 							{/* Icon & Text */}
-							<div className="flex flex-col md:flex-row rounded-lg h-full ps-4 md:ps-0 py-4 lg:py-5 xl:py-7 2xl:py-10 bg-black hover:bg-gradient-to-r hover:from-black hover:to-deep-blue hover:text-white">
-								<span className="basis-4/12 flex md:items-center justify-start gap-8 md:gap-16 xl:gap-32 text-black dark:text-white uppercase transition-opacity duration-500 md:px-8 lg:px-16 opacity-0 group-hover:opacity-100 tpk-text-sm md:tpk-text-lg">
+							<div className="flex flex-col md:flex-row rounded-lg h-full ps-4 md:ps-0 py-4 lg:py-5 xl:py-7 2xl:py-10 bg-black hover:bg-gradient-to-r hover:from-black hover:to-deep-blue hover:text-white tpk-text-lg font-normal">
+								<div className="basis-3/12 flex md:items-center justify-start gap-8 md:gap-16 text-black dark:text-white uppercase transition-opacity duration-500 md:px-8 lg:px-16 opacity-0 group-hover:opacity-100">
 									<span>
-										<svg className="tpk-text-sm md:tpk-text-lg"
-											width="23"
+										<svg width="23"
 											height="22"
 											viewBox="0 0 23 22"
 											fill="none"
@@ -65,11 +60,11 @@ const AboutUs: React.FC<AboutUsProps> = () => {
 											/>
 										</svg>
 									</span>
-									WE ARE
-								</span>
-								<span className="basis-8/12 text-sky-blue">
-									{option.toUpperCase()}
-								</span>
+									<span>WE ARE</span>
+								</div>
+								<div className="basis-9/12 flex text-sky-blue">
+									<p>{option}</p>
+								</div>
 							</div>
 						</li>
 					))}
