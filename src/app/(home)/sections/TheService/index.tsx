@@ -43,7 +43,7 @@ const AboutUs: React.FC<AboutUsProps> = () => {
 					{options.map((option, index, arrLen) => (
 						<li
 							key={index}
-							className={`group bg-linear-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[0.8px] ${index < arrLen.length - 1? "pb-0": ''} rounded-lg cursor-pointer transition-background duration-300 md:items-center justify-start gap-2 md:gap-10`}>
+							className={`group bg-linear-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[1px] ${index < arrLen.length - 1? "pb-0": ''} rounded-lg cursor-pointer transition-background duration-300 md:items-center justify-start gap-2 md:gap-10`}>
 							{/* Icon & Text */}
 							<div className="flex flex-col md:flex-row rounded-lg h-full ps-4 md:ps-0 py-4 lg:py-5 xl:py-7 2xl:py-10 bg-black hover:bg-gradient-to-r hover:from-black hover:to-deep-blue hover:text-white tpk-text-lg font-normal">
 								<div className="basis-3/12 flex md:items-center justify-start gap-8 md:gap-16 text-black dark:text-white uppercase transition-opacity duration-500 md:px-8 lg:px-16 opacity-0 group-hover:opacity-100">

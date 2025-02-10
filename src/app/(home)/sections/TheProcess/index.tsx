@@ -138,7 +138,7 @@ const ProcessSteps: React.FC = () => {
 	}, []);
 
 	return (
-		<section className="tpk-contained">
+		<section className="tpk-contained overflow-hidden">
 			<div ref={sectionRef}>
 				<div className="w-full text-center">
 					<SolidBtn href="#x" className="block w-fit mx-auto mb-10 uppercase cursor-default tpk-text-sm font-light">How It Works</SolidBtn>

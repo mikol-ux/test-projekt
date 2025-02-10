@@ -18,11 +18,11 @@ import TheQuote from "./sections/TheQuote";
 export default function Home() {
 	return (
 		<Fragment>
-			<div className="relative overflow-hidden border border-green-400">
+			<section className="relative overflow-hidden">
 				<HeroPumpkin />
 				<TheHero />
 				<TheQuote />
-			</div>
+			</section>
 			<main className="flex flex-col gap-32">
 				<TheDirections /> {/* Robert */}
 				<TheService /> {/* Michael */}

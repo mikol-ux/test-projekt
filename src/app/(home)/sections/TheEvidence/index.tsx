@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import GradientBtn from "@/components/Buttons/GradientBtn";
 
 const VisionList = () => {
 	const items = [
@@ -58,16 +59,16 @@ const VisionList = () => {
 						{items.map((item, index, arrLen) => (
 							<li
 								key={index}
-								className={`group bg-linear-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[0.8px] ${index < arrLen.length - 1? "pb-0": ''} rounded-lg cursor-pointer transition-all duration-300 md:items-center justify-start gap-2 md:gap-10`}>
+								className={`group bg-linear-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[1px] ${index < arrLen.length - 1 ? "pb-0" : ''} rounded-lg cursor-pointer transition-all duration-300 md:items-center justify-start gap-2 md:gap-10`}>
 								{/* Icon & Text */}
 								<div className="flex flex-col md:flex-row h-full gap-2.5 md:gap-0 p-4 md:px-12 md:py-8 3xl:px-20 3xl:py-12 rounded-lg bg-black hover:bg-gradient-to-r hover:from-black hover:to-deep-blue hover:text-white tpk-text-lg font-normal">
 									{/* Animated Number */}
-									<span className="tpk-text-lg font-light flex-none w-20 transition-all duration-300 text-white hover:text-sky-blue">
+									<span className="tpk-text-lg font-light flex-none w-20 transition-colors duration-300 text-white group-hover:text-sky-blue">
 										{item.number}
 									</span>
 
 									{/* Animated Title */}
-									<p className="tpk-text-lg font-light flex-grow transition-all duration-300 text-white hover:text-sky-blue">
+									<p className="tpk-text-lg font-light flex-grow transition-colors duration-300 text-white group-hover:text-sky-blue">
 										{item.title}
 									</p>
 
@@ -76,7 +77,7 @@ const VisionList = () => {
 										{item.tags.map((tag, tagIndex) => (
 											<span
 												key={`${item.number}-${tagIndex}`} // Unique key
-												className="px-3 py-1 rounded-full tpk-text-sm border-[0.5px] transition-all duration-300 border-muted text-muted hover:border-white hover:text-white">
+												className="px-3 py-1 rounded-full tpk-text-sm border-[0.5px] transition-all duration-300 border-muted text-muted group-hover:border-white group-hover:text-white">
 												{tag}
 											</span>
 										))}
@@ -85,6 +86,10 @@ const VisionList = () => {
 							</li>
 						))}
 					</ul>
+				</div>
+
+				<div className="block w-full mt-28">
+					<GradientBtn href="/portfolio" className="tpk-text-md">Explore Projects</GradientBtn>
 				</div>
 			</div>
 		</section>
