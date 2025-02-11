@@ -48,7 +48,7 @@ const VisionList = () => {
 					<h1 className="basis-1/2 lg:basis-4/6 3xl:basis-3/6 tpk-text-2xl text-start font-normal uppercase">
 						Innovative Solutions That Scale Seamlessly With Your Vision
 					</h1>
-					<p className="basis-1/2 lg:basis-2/6 3xl:basis-3/6 tpk-text-lg font-normal text-muted-5">
+					<p className="basis-1/2 lg:basis-2/6 3xl:basis-3/6 tpk-text-lg font-light text-muted-5">
 						Whether you’re launching or scaling, we handle the heavy lifting for small businesses and tech founders.
 						Remote hiring, custom tools, and seamless execution—your success is priority.
 					</p>
