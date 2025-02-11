@@ -2,202 +2,202 @@
 @config "../../tailwind.config.ts";
 
 @theme {
-	/* Base Colors */
-	--black: #000000;
-	--white: #ffffff;
-	--muted-blue: #6c8ea3;
-	--pitch-dark-blue: #202a30;
-	--sky-blue: #bee8ff;
-	--deep-blue: #438db5;
+  /* Base Colors */
+  --black: #000000;
+  --white: #ffffff;
+  --muted-blue: #6c8ea3;
+  --pitch-dark-blue: #202a30;
+  --sky-blue: #bee8ff;
+  --deep-blue: #438db5;
 
-	/* Muted Text Colors */
-	--muted-text: #999999;
-	--muted-text-2: #cccccc;
-	--muted-text-3: #595959;
-	--muted-text-4: #333333;
-	--muted-text-5: #b3b3b3;
-	--muted-text-6: #a6a6a6;
-	--muted-text-7: #1a1a1a;
-	--muted-text-8: #808080;
+  /* Muted Text Colors */
+  --muted-text: #999999;
+  --muted-text-2: #cccccc;
+  --muted-text-3: #595959;
+  --muted-text-4: #333333;
+  --muted-text-5: #b3b3b3;
+  --muted-text-6: #a6a6a6;
+  --muted-text-7: #1a1a1a;
+  --muted-text-8: #808080;
 
-	/* Break Points */
-	--breakpoint-3xl: 160rem;
-	--breakpoint-4xl: 200rem;
-	--breakpoint-5xl: 480rem;
+  /* Break Points */
+  --breakpoint-3xl: 160rem;
+  --breakpoint-4xl: 200rem;
+  --breakpoint-5xl: 480rem;
 
-	/* Font */
-	--font-General-Sans: "General Sans", sans-serif;
+  /* Font */
+  --font-General-Sans: "General Sans", sans-serif;
 
-	/* Mapped Colors */
-	--color-black: var(--black);
-	--color-white: var(--white);
-	--color-muted-blue: var(--muted-blue);
-	--color-pitch-dark-blue: var(--pitch-dark-blue);
-	--color-sky-blue: var(--sky-blue);
-	--color-deep-blue: var(--deep-blue);
+  /* Mapped Colors */
+  --color-black: var(--black);
+  --color-white: var(--white);
+  --color-muted-blue: var(--muted-blue);
+  --color-pitch-dark-blue: var(--pitch-dark-blue);
+  --color-sky-blue: var(--sky-blue);
+  --color-deep-blue: var(--deep-blue);
 
-	/* Mapped Muted Colors */
-	--color-muted: var(--muted-text);
-	--color-muted-2: var(--muted-text-2);
-	--color-muted-3: var(--muted-text-3);
-	--color-muted-4: var(--muted-text-4);
-	--color-muted-5: var(--muted-text-5);
-	--color-muted-6: var(--muted-text-6);
-	--color-muted-7: var(--muted-text-7);
-	--color-muted-8: var(--muted-text-8);
+  /* Mapped Muted Colors */
+  --color-muted: var(--muted-text);
+  --color-muted-2: var(--muted-text-2);
+  --color-muted-3: var(--muted-text-3);
+  --color-muted-4: var(--muted-text-4);
+  --color-muted-5: var(--muted-text-5);
+  --color-muted-6: var(--muted-text-6);
+  --color-muted-7: var(--muted-text-7);
+  --color-muted-8: var(--muted-text-8);
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Extralight.woff2') format('woff2');
-	font-weight: 200;
-	font-style: normal;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Extralight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Extralight.woff2') format('woff2');
-	font-weight: 300;
-	font-style: normal;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Extralight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Regular.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Medium.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Semibold.woff2') format('woff2');
-	font-weight: 600;
-	font-style: normal;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Bold.woff2') format('woff2');
-	font-weight: 700;
-	font-style: normal;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Extralightitalic.woff2') format('woff2');
-	font-weight: 200;
-	font-style: italic;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Extralightitalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Lightitalic.woff2') format('woff2');
-	font-weight: 300;
-	font-style: italic;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Lightitalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Italic.woff2') format('woff2');
-	font-weight: 400;
-	font-style: italic;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Mediumitalic.woff2') format('woff2');
-	font-weight: 500;
-	font-style: italic;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Mediumitalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Semibolditalic.woff2') format('woff2');
-	font-weight: 600;
-	font-style: italic;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Semibolditalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
 }
 
 @font-face {
-	font-family: 'General Sans';
-	src: url('/fonts/GeneralSans-Bolditalic.woff2') format('woff2');
-	font-weight: 700;
-	font-style: italic;
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Bolditalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
 }
 
 @layer base {
-	* {
-		@apply font-General-Sans;
-	}
+  * {
+    @apply font-General-Sans;
+  }
 }
 
 @layer components {
-	.center-center {
-		@apply flex justify-center items-center;
-	}
+  .center-center {
+    @apply flex justify-center items-center;
+  }
 
-	.tpk-contained {
-		@apply max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto w-full p-4;
-	}
+  .tpk-contained {
+    @apply max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto w-full p-4;
+  }
 
-	.tpk-title {
-		@apply text-2xl text-black md:text-4xl dark:text-white uppercase;
-	}
+  .tpk-title {
+    @apply text-2xl text-black md:text-4xl dark:text-white uppercase;
+  }
 
-	.tpk-text-muted {
-		@apply text-muted-4 dark:text-muted;
-	}
+  .tpk-text-muted {
+    @apply text-muted-4 dark:text-muted;
+  }
 
-	.tpk-text-white {
-		@apply text-black dark:text-white;
-	}
+  .tpk-text-white {
+    @apply text-black dark:text-white;
+  }
 
-	.tpk-btn-muted {
-		@apply block text-center uppercase p-3 border-[0.75px] border-muted-4 dark:border-muted text-muted-4 dark:text-muted hover:bg-muted dark:hover:bg-muted-4 hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black;
-	}
+  .tpk-btn-muted {
+    @apply block text-center uppercase p-3 border-[0.75px] border-muted-4 dark:border-muted text-muted-4 dark:text-muted hover:bg-muted dark:hover:bg-muted-4 hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black;
+  }
 
-	.tpk-btn-fade {
-		@apply block text-center uppercase p-3 border-[0.75px] text-muted-4 dark:text-muted bg-black hover:bg-transparent dark:hover:bg-transparent hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black border-none;
-	}
+  .tpk-btn-fade {
+    @apply block text-center uppercase p-3 border-[0.75px] text-muted-4 dark:text-muted bg-black hover:bg-transparent dark:hover:bg-transparent hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black border-none;
+  }
 
-	.tpk-btn-white {
-		@apply block text-center uppercase p-3 border-[0.5px] border-muted-4 dark:border-white text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black;
-	}
+  .tpk-btn-white {
+    @apply block text-center uppercase p-3 border-[0.5px] border-muted-4 dark:border-white text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black focus:bg-black focus:text-white dark:focus:bg-white dark:focus:text-black;
+  }
 
-	/* font sizes */
-	.tpk-text-sm {
-		@apply text-sm 3xl:text-lg tracking-wider;
-	}
+  /* font sizes */
+  .tpk-text-sm {
+    @apply text-sm 3xl:text-lg tracking-wider;
+  }
 
-	.tpk-text-md {
-		@apply text-base xl:text-lg 3xl:text-2xl tracking-wider;
-	}
+  .tpk-text-md {
+    @apply text-base xl:text-lg 3xl:text-2xl tracking-wider;
+  }
 
-	.tpk-text-lg {
-		@apply text-lg xl:text-xl 3xl:text-3xl tracking-wider;
-	}
+  .tpk-text-lg {
+    @apply text-lg xl:text-xl 3xl:text-3xl tracking-wider;
+  }
 
-	.tpk-text-2xl {
-		@apply text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl tracking-wider;
-	}
+  .tpk-text-2xl {
+    @apply text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl tracking-wider;
+  }
 }
 
 /* for button border gradient */
 @utility mask-content-box {
-	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-	-webkit-mask-composite: destination-out;
-	mask-composite: exclude;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 
 @utility bg-gradient-dir {
-	content: var(--tw-content);
-	--tw-gradient-position: var(--tw-gradient-direction, to right) in oklab;
-	background-image: linear-gradient(var(--tw-gradient-stops));
+  content: var(--tw-content);
+  --tw-gradient-position: var(--tw-gradient-direction, to right) in oklab;
+  background-image: linear-gradient(var(--tw-gradient-stops));
 }
