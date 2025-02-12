@@ -1,3 +1,4 @@
+import GradientBtn from "@/components/Buttons/GradientBtn";
 import Link from "next/link";
 
 interface AboutUsProps {}
