@@ -1,15 +1,15 @@
 import GradientBtn from "@/components/Buttons/GradientBtn";
 import Link from "next/link";
 
-interface AboutUsProps {}
+interface TheServiceProps {}
 
-const AboutUs: React.FC<AboutUsProps> = () => {
+const TheService: React.FC<TheServiceProps> = () => {
   const options: string[] = [
-    "(A)FULL-SERVICE WEB & CYBER SECURITY DEVELOPMENT COMPANY",
-    "(B)UX/UI DESIGNERS AND BRAND STRATEGISTS",
-    "(C)COMMUNITY OF DREAMERS TURNED ENTREPRENEURS",
-    "(D)MULTIMEDIA CREATIVE STUDIO",
-    "(E)WE ARE TALENT ACQUISITION SPECIALISTS - THE WATCHMEN",
+    "(A) FULL-SERVICE WEB & CYBER SECURITY DEVELOPMENT COMPANY",
+    "(B) UX/UI DESIGNERS AND BRAND STRATEGISTS",
+    "(C) COMMUNITY OF DREAMERS TURNED ENTREPRENEURS",
+    "(D) MULTIMEDIA CREATIVE STUDIO",
+    "(E) WE ARE TALENT ACQUISITION SPECIALISTS - THE WATCHMEN",
   ];
 
   return (
@@ -92,4 +92,4 @@ const AboutUs: React.FC<AboutUsProps> = () => {
   );
 };
 
-export default AboutUs;
+export default TheService;
