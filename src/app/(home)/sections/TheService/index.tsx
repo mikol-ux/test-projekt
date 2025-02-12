@@ -1,15 +1,14 @@
-import GradientBtn from "@/components/Buttons/GradientBtn";
 import Link from "next/link";
 
-interface TheServiceProps {}
+interface AboutUsProps {}
 
-const TheService: React.FC<TheServiceProps> = () => {
+const AboutUs: React.FC<AboutUsProps> = () => {
   const options: string[] = [
-    "(A) FULL-SERVICE WEB & CYBER SECURITY DEVELOPMENT COMPANY",
-    "(B) UX/UI DESIGNERS AND BRAND STRATEGISTS",
-    "(C) COMMUNITY OF DREAMERS TURNED ENTREPRENEURS",
-    "(D) MULTIMEDIA CREATIVE STUDIO",
-    "(E) WE ARE TALENT ACQUISITION SPECIALISTS - THE WATCHMEN",
+    "(A)FULL-SERVICE WEB & CYBER SECURITY DEVELOPMENT COMPANY",
+    "(B)UX/UI DESIGNERS AND BRAND STRATEGISTS",
+    "(C)COMMUNITY OF DREAMERS TURNED ENTREPRENEURS",
+    "(D)MULTIMEDIA CREATIVE STUDIO",
+    "(E)WE ARE TALENT ACQUISITION SPECIALISTS - THE WATCHMEN",
   ];
 
   return (
@@ -35,22 +34,29 @@ const TheService: React.FC<TheServiceProps> = () => {
           </p>
         </div>
       </div>
-
       {/* Options */}
-
-      <div className="w-full mt-8">
-        <ul className="grid grid-rows-5">
-          {options.map((option, index, arrLen) => (
+      <div className="mt-8 w-full flex flex-col justify-center items-center tpk-contained">
+        <ul className="grid grid-rows-5 w-full ">
+          {options.map((option, index) => (
             <li
               key={index}
-              className={`group bg-linear-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[1px] ${
-                index < arrLen.length - 1 ? "" : ""
-              } rounded-lg cursor-pointer transition-background duration-1000 ease-in-out md:items-center justify-start gap-2 md:gap-10 mr-1.5 hover:mr-0 hover:p-0`}
+              className={`group bg-gradient-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[1px] transition-all duration-1000 ease-in-out hover:p-0 w-full md:w-[90%] md:hover:w-[93%] hover:bg-none rounded-lg md:mx-auto `}
             >
-              {/* Icon & Text */}
-              <div className="flex flex-col md:flex-row rounded-lg h-full ps-4 md:ps-0 py-4 lg:py-5 xl:py-7 2xl:py-10 bg-black hover:bg-gradient-to-r transition-colors duration-1000 ease-in-out hover:from-black hover:to-deep-blue hover:text-white tpk-text-lg font-normal">
-                <div className="basis-3/12 flex md:items-center justify-start gap-8 md:gap-16 text-black dark:text-white uppercase transition-opacity duration-1000 ease-in-out md:px-8 lg:px-16 opacity-0 group-hover:opacity-100">
-                  <span>
+              <div
+                key={index}
+                className="group relative w-full h-full ps-4 md:ps-0 py-4 lg:py-5 xl:py-7 2xl:py-10 
+                    rounded-lg cursor-pointer 
+                    transition-all duration-1000 ease-in-out 
+                    overflow-hidden flex flex-col md:flex-row items-center justify-center md:justify-start gap-2 md:gap-10 
+                    tpk-text-lg font-light 
+                    bg-black text-gray-300 hover:text-white hover:border-none 
+                     before:absolute before:inset-0 before:bg-gradient-to-r 
+                    before:from-black before:to-[#438DB5] before:z-0 
+                    before:transition-opacity before:duration-1000 before:opacity-0 
+                    hover:before:opacity-100"
+              >
+                <span className="relative z-10 basis-1/4 flex md:items-center justify-between gap-1 text-black dark:text-white uppercase transition-opacity duration-1000 ease-in-out px-2 md:px-8 lg:px-16 opacity-0 group-hover:opacity-100">
+                  <span className="">
                     <svg
                       width="23"
                       height="22"
@@ -64,11 +70,13 @@ const TheService: React.FC<TheServiceProps> = () => {
                       />
                     </svg>
                   </span>
-                  <span>WE ARE</span>
-                </div>
-                <div className="basis-9/12 flex text-sky-blue">
-                  <p>{option}</p>
-                </div>
+                  WE ARE
+                </span>
+
+                {/* The Option Text (Always visible) */}
+                <span className="relative z-10 text-sky-blue">
+                  {option.toUpperCase()}
+                </span>
               </div>
             </li>
           ))}
@@ -83,4 +91,4 @@ const TheService: React.FC<TheServiceProps> = () => {
   );
 };
 
-export default TheService;
+export default AboutUs;
