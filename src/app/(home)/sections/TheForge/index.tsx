@@ -5,8 +5,8 @@ import Link from "next/link";
 import GradientBtn from "@/components/Buttons/GradientBtn";
 const ForgeSection = () => {
   return (
-    <section className="bg-[url(/img/home/theforge.png)] bg-cover bg-no-repeat bg-center w-full min-h-screen border border-red-600">
-      <div className="relative flex items-center justify-center mt-[60vh] mb-[15vh] tpk-contained border border-emerald-500">
+    <section className="bg-[url(/img/home/theforge.png)] bg-cover bg-no-repeat bg-center w-full min-h-screen ">
+      <div className="relative flex items-center justify-center mt-[40vh] md:mt-[60vh] mb-[15vh] tpk-contained">
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col lg:flex-row justify-between items-center w-full relative">
             <h2 className=" text-3xl md:text-4xl lg:text-5xl xl:text-[100px] 2xl:text-[170px] font-normal text-white">
@@ -17,7 +17,7 @@ const ForgeSection = () => {
             </span>
           </div>
           <div className="flex flex-col  lg:flex-row justify-between items-center">
-            <div className="2xl:basis-1/2 relative mb-8 md:mb-0">
+            <div className="2xl:basis-1/2 relative mb-8 lg:mb-0">
               <p className="text-center md:text-left tpk-text-lg mb-8 md:mb-0">
                 JOIN THE PRIVATE NETWORK FOR DREAMERS TURNED HIGH-PERFORMING
                 UPCOMING FOUNDERS.

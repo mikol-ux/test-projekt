@@ -33,7 +33,7 @@ const TheEnding = () => {
 	return (
 		<footer className="tpk-contained">
 			<div className="flex justify-center items-center mb-32 w-full">
-				<h2 className="tpk-footer-theprojekt text-black dark:text-white text-nowrap whitespace-nowrap font-medium tracking-normal text-center">
+				<h2 className="text-black dark:text-white text-nowrap whitespace-nowrap font-medium tracking-normal text-center 3xl:text-">
 					THE PROJEKT
 				</h2>
 			</div>

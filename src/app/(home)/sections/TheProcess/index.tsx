@@ -114,6 +114,7 @@ const ProcessSteps: React.FC = () => {
 		});
 
 		// Animate Timeline Dots
+		// Make the dot blink once it comes on
 		gsap.utils.toArray<HTMLDivElement>(".timeline-dot").forEach((dot, index) => {
 			if (index === 0) return;
 			gsap.fromTo(
@@ -174,7 +175,7 @@ const ProcessSteps: React.FC = () => {
 									<p className="step-description tpk-text-sm text-muted-8 font-normal mb-6 transition-colors duration-300">
 										{step.description}
 									</p>
-									<GradientBtn href="#x" className="inline-flex tpk-text-sm" isAnimated={true}>{step.buttonText}</GradientBtn>
+									<GradientBtn href="#x" className="inline-flex text-sm" isAnimated={true}>{step.buttonText}</GradientBtn>
 								</div>
 								<div className="basis-6/12 2xl:basis-4/12"></div>
 							</div>
