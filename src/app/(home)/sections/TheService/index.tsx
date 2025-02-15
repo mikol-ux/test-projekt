@@ -1,5 +1,4 @@
 import GradientBtn from "@/components/Buttons/GradientBtn";
-import Link from "next/link";
 
 interface TheServiceProps {}
 
@@ -41,7 +40,7 @@ const TheService: React.FC<TheServiceProps> = () => {
           {options.map((option, index) => (
             <li
               key={index}
-              className={`group bg-gradient-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[1px] transition-all duration-1000 ease-in-out hover:p-0 w-full md:w-[90%] md:hover:w-[93%] hover:bg-none rounded-lg md:mx-auto `}
+              className={`group bg-linear-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[1px] transition-all duration-1000 ease-in-out hover:p-0 w-full md:w-[90%] md:hover:w-[93%] hover:bg-none rounded-lg md:mx-auto `}
             >
               <div
                 key={index}

@@ -42,7 +42,7 @@ const BuildTeam = () => {
 	];
 
 	return (
-		<section className="tpk-container flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+		<section className="tpk-contained flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
 			<div className="text-center mb-8">
 				<h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">MEET THE DREAM BUILDERS</h2>
 				<p className="text-muted text-sm sm:text-base lg:text-lg">

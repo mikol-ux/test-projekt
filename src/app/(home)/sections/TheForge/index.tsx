@@ -4,59 +4,57 @@ import hoodie from "../../../../../public/img/home/Person in Red Hoodie Coding c
 import Link from "next/link";
 import GradientBtn from "@/components/Buttons/GradientBtn";
 const ForgeSection = () => {
-  return (
-    <section className="bg-[url(/img/home/theforge.png)] bg-cover bg-no-repeat bg-center w-full min-h-screen ">
-      <div className="relative flex items-center justify-center mt-[40vh] md:mt-[60vh] mb-[15vh] tpk-contained">
-        <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-col lg:flex-row justify-between items-center w-full relative">
-            <h2 className=" text-3xl md:text-4xl lg:text-5xl xl:text-[100px] 2xl:text-[170px] font-normal text-white">
-              THE FORGE
-            </h2>
-            <span className="uppercase tpk-text-sm text-black dark:text-white">
-              community Channel
-            </span>
-          </div>
-          <div className="flex flex-col  lg:flex-row justify-between items-center">
-            <div className="2xl:basis-1/2 relative mb-8 lg:mb-0">
-              <p className="text-center md:text-left tpk-text-lg mb-8 md:mb-0">
-                JOIN THE PRIVATE NETWORK FOR DREAMERS TURNED HIGH-PERFORMING
-                UPCOMING FOUNDERS.
-              </p>
+	return (
+		<section className="flex justify-center items-end bg-[url(/img/home/theforge.png)] bg-cover bg-no-repeat bg-center w-full h-screen lg:pb-20 2xl:pb-28 3xl:p-36">
+			<div className="tpk-contained flex items-center justify-center pt-8">
+				<div className="flex flex-col justify-center items-center">
+					<div className="flex flex-col-reverse lg:flex-row justify-between lg:items-center w-full border-b-[0.5px] border-white mb-6">
+						<h2 className="text-[10vw] 2xl:text-[6vw] font-normal text-white">
+							THE FORGE
+						</h2>
+						<span className="uppercase font-normal tpk-text-md text-black dark:text-white">
+							community Channel
+						</span>
+					</div>
+					<div className="flex flex-col-reverse lg:flex-row justify-between items-center">
+						<div className="2xl:basis-1/2 lg:mb-0">
+							<p className="tpk-text-lg font-normal text-left mt-8 md:mb-0">
+								JOIN THE PRIVATE NETWORK FOR DREAMERS TURNED HIGH-PERFORMING
+								UPCOMING FOUNDERS.
+							</p>
 
-              <GradientBtn
-                href="/"
-                className="mt-12 inline-flex align-middle m-auto"
-                isAnimated={true}
-              >
-                JOIN THE PROJEKT
-              </GradientBtn>
-            </div>
+							<GradientBtn href="/"
+								className="mt-12 inline-flex align-middle m-auto"
+								isAnimated={true}>
+								JOIN THE Forge
+							</GradientBtn>
+						</div>
 
-            {/* Community Channel Section */}
-            <div className="2xl:basis-1/2 p-4 backdrop-blur-[60px] rounded-lg flex w-full flex-col md:flex-row">
-              <p className="mb-4 md:mb-0 tpk-text-sm font-light mt-2 basis-1/2 dark:text-white text-black ">
-                A private network for dreamers who become high-performing
-                founders. Applicants face a tough interview process, leading to
-                an acceptance rate under 10%. This guarantees that only
-                committed individuals join The Forge, enhancing connections and
-                experiences.
-              </p>
+						{/* Community Channel Section */}
+						<div className="2xl:basis-1/2 flex-col md:flex-row gap-4 backdrop-blur-[60px] bg-[#FFFFFF12] rounded-lg flex w-full p-4">
+							<p className="tpk-text-sm font-light mt-2 basis-5/12 dark:text-white text-black mb-4 md:mb-0">
+								A private network for dreamers who become high-performing
+								founders. Applicants face a tough interview process, leading to
+								an acceptance rate under 10%. This guarantees that only
+								committed individuals join The Forge, enhancing connections and
+								experiences.
+							</p>
 
-              <div className="mt-4 basis-1/2">
-                <Image
-                  src={hoodie}
-                  alt="Community Channel"
-                  //   width={288}
-                  //   height={221}
-                  className="rounded-lg w-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+							<div className="basis-7/12 mt-4">
+								<Image
+									src={hoodie}
+									alt="Community Channel"
+									width={288}
+									height={221}
+									className="rounded-lg w-full h-48 lg:h-auto object-cover"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default ForgeSection;
