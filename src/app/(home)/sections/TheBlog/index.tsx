@@ -39,7 +39,7 @@ const DancingMachines = () => {
 				</p>
 			</div>
 
-			<div className="flex gap-4 w-full xl:justify-center overflow-x-auto ps-4 xl:ps-0">
+			<div className="grid grid-rows-1 grid-flow-col gap-4 w-full xl:justify-center overflow-x-auto py-8 ps-4 xl:ps-0">
 				{blogs.map((profile, index) => <BlogCard key={index} {...profile} />)}
 			</div>
 
