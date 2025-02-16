@@ -34,16 +34,17 @@ const HeroPumpkin: FC = () => {
 					scrollTrigger: {
 						trigger: imageRef.current,
 						start: "top+=200 top", // Start after scrolling 200px
-						end: "bottom+=300 center", // Ends when the image moves further down
+						end: "bottom center+=400", // Ends when the image moves further down
 						scrub: true, // Smoothly syncs animation with scroll
+						markers: true
 					}
 				});
 
 				ti.to(imageRef.current, {
-					scale: sm ? 0.8 : md ? 0.7 : lg ? 0.6 : xl ? 0.5 : 0.4, // Shrinks more on bigger screens
-					y: sm ? "60em" : md ? "60%" : lg ? "60em" : xl ? "80%" : "90%", // Moves further down on bigger screens
-					x: sm ? "-20%" : md ? "-30%" : lg ? "-40%" : xl ? "-50%" : "-60%", // Adjusts left position per screen
-					rotate: sm ? 50 : md ? 20 : lg ? 70 : xl ? 40 : 50, // Rotates more on larger screens
+					scale: sm ? 0.8 : md ? 0.7 : lg ? 0.6 : xl ? 0.5 : 0.25, // Shrinks more on bigger screens
+					y: sm ? "60em" : md ? "60%" : lg ? "60em" : xl ? "40vh" : "110vh", // Moves further down on bigger screens
+					x: sm ? "-20%" : md ? "-30%" : lg ? "-40%" : xl ? "-50%" : "-35vw", // Adjusts left position per screen
+					rotateZ: sm ? 50 : md ? 20 : lg ? 70 : xl ? 40 : 180, // Rotates more on larger screens
 					ease: "none",
 				});
 			}
@@ -53,8 +54,8 @@ const HeroPumpkin: FC = () => {
 	return (
 		<Image
 			ref={imageRef}
-			src="/img/home/decoration-pumpkin-1.png"
-			className="w-full xl:w-5/6 object-cover absolute top-0 -right-1/3 scale-110 -z-[1]"
+			src="/img/home/pumpkin.png"
+			className="border border-green-300 w-full object-cover absolute top-0 -right-1/3 scale-110 -z-[1]"
 			width="1237"
 			height="910"
 			alt="Hero Background"

@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { generalMetaData } from "./header";
 import Script from "next/script";
+import SmooothPage from "@/utils/SmoothPage";
+import LoadPage from "./template";
 
 export const metadata: Metadata = generalMetaData;
 

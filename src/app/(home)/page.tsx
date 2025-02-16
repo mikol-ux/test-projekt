@@ -19,6 +19,7 @@ export default function Home() {
 	return (
 		<Fragment>
 			<section className="relative overflow-hidden">
+				<div className="absolute inset-0 bg-linear-90 from-black via-black/20 to-black/55"></div>
 				<HeroPumpkin />
 				<TheHero />
 				<TheQuote />

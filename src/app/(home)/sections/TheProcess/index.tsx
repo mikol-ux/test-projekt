@@ -59,7 +59,7 @@ const ProcessSteps: React.FC = () => {
 		const firstStepTitle = firstCard?.querySelector<HTMLHeadingElement>(".step-title");
 
 		if (firstStepNumber && firstStepTitle && firstDot) {
-			console.log("first step", firstStepNumber, firstStepTitle, firstDot);
+			// console.log("first step", firstStepNumber, firstStepTitle, firstDot);
 			gsap.set(firstStepNumber, { color: "#BEE8FF" });
 			gsap.set(firstStepTitle, { color: "#ffffff" });
 			gsap.set(firstDot, { backgroundColor: "#BEE8FF", scale: 1.2 });

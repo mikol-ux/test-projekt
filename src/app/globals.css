@@ -143,7 +143,7 @@
   }
 
   .tpk-contained {
-    @apply max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto w-full p-4;
+    @apply border border-blue-400 max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto w-full p-4;
   }
 
   .tpk-title {

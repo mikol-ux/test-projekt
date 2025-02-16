@@ -12,7 +12,7 @@ const TheService: React.FC<TheServiceProps> = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-center tpk-contained">
+    <section className="tpk-contained flex flex-col items-center justify-center">
       <div className="flex flex-col md:flex-row justify-start gap-10 md:gap-0">
         <div className="md:basis-3/12 flex flex-row items-start justify-start gap-3">
           <h4 className="text-black dark:text-muted-5 tpk-text-md font-normal uppercase md:mt-4">
@@ -35,7 +35,7 @@ const TheService: React.FC<TheServiceProps> = () => {
         </div>
       </div>
       {/* Options */}
-      <div className="mt-8 w-full flex flex-col justify-center items-center tpk-contained">
+      <div className="mt-8 w-full flex flex-col justify-center items-center">
         <ul className="grid grid-rows-5 w-full ">
           {options.map((option, index) => (
             <li
