@@ -47,15 +47,15 @@ const TheService: React.FC<TheServiceProps> = () => {
                 className="group relative w-full h-full ps-4 md:ps-0 py-4 lg:py-5 xl:py-7 2xl:py-10 
                     rounded-lg cursor-pointer 
                     transition-all duration-1000 ease-in-out 
-                    overflow-hidden flex flex-col md:flex-row items-center justify-center md:justify-start gap-2 md:gap-10 
+                    overflow-hidden flex flex-col md:flex-row items-start md:items-center justify-center md:justify-start gap-2 md:gap-10 
                     tpk-text-lg font-light 
                     bg-black text-gray-300 hover:text-white hover:border-none 
                      before:absolute before:inset-0 before:bg-gradient-to-r 
                     before:from-black before:to-[#438DB5] before:z-0 
                     before:transition-opacity before:duration-1000 before:opacity-0 
-                    hover:before:opacity-100"
+                    hover:before:opacity-100 focus:before:opacity-100"
               >
-                <span className="relative z-10 basis-1/4 flex md:items-center justify-between gap-1 text-black dark:text-white uppercase transition-opacity duration-1000 ease-in-out px-2 md:px-8 lg:px-16 opacity-0 group-hover:opacity-100">
+                <span className="relative z-10 basis-1/4 flex md:items-center justify-between gap-2 md:gap-1 text-black dark:text-white uppercase transition-opacity duration-1000 ease-in-out px-2.5 xl:px-16 opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100">
                   <span className="">
                     <svg
                       width="23"
