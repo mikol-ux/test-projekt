@@ -36,7 +36,7 @@ const HeroPumpkin: FC = () => {
 						start: "top+=200 top", // Start after scrolling 200px
 						end: "bottom center+=400", // Ends when the image moves further down
 						scrub: true, // Smoothly syncs animation with scroll
-						markers: true
+						// markers: true
 					}
 				});
 
@@ -55,7 +55,7 @@ const HeroPumpkin: FC = () => {
 		<Image
 			ref={imageRef}
 			src="/img/home/pumpkin.png"
-			className="border border-green-300 w-full object-cover absolute top-0 -right-1/3 scale-110 -z-[1]"
+			className="w-full object-cover absolute top-0 -right-1/3 scale-110 -z-[1]"
 			width="1237"
 			height="910"
 			alt="Hero Background"

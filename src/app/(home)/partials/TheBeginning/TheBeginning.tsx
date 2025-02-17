@@ -1,6 +1,7 @@
 //
 import GradientBtn from "@/components/Buttons/GradientBtn";
 import LottieAni from "@/components/Lottie";
+import GoTo from "@/utils/GoTo";
 import Link from "next/link";
 
 const TheBeginning = () => {
@@ -10,7 +11,7 @@ const TheBeginning = () => {
 				<div className="relative w-full h-full">
 					<div className="absolute inset-0 -z-[1] backdrop-blur-md w-full h-full"></div>
 					<div className="flex flex-wrap items-center justify-between mx-auto p-4 lg:p-2 xl:px-16">
-						<Link className="w-[min-content]" href="/">
+						<GoTo className="w-[min-content]" href="/">
 							<svg className="w-14 h-full lg:hidden" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342.86 307.94">
 								<path className="fill-black dark:fill-white" d="M180.36,216.88l27.44,27.44c.78,.78,1.99,.93,2.93,.36l41.68-24.95c4.84-2.9,8.23-7.71,9.34-13.24l18.17-90.84c.22-1.11-.63-2.15-1.77-2.15h-13.89c-2.59,0-4.88,1.66-5.7,4.11l-2.94,8.87c-3.83,11.55-10.3,22.04-18.91,30.65l-56.35,56.35c-.94,.94-.94,2.46,0,3.39Z" />
 								<path className="fill-black dark:fill-white" d="M162.5,216.88l-27.44,27.44c-.78,.78-1.99,.93-2.93,.36l-41.68-24.95c-4.84-2.9-8.23-7.71-9.34-13.24l-18.17-90.84c-.22-1.11,.63-2.15,1.77-2.15h13.89c2.59,0,4.88,1.66,5.7,4.11l2.94,8.87c3.83,11.55,10.3,22.04,18.91,30.65l56.35,56.35c.94,.94,.94,2.46,0,3.39Z" />
@@ -33,7 +34,7 @@ const TheBeginning = () => {
 									<path className="fill-black dark:fill-white" d="M1055.03,113.37v9.63h29.02v77.55h10.98V123h29.02v-9.63h-69.02Z" />
 								</g>
 							</svg>
-						</Link>
+						</GoTo>
 						<button data-collapse-toggle="tpk-nav-menu" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black dark:text-white md:hidden focus:outline-none" aria-controls="tpk-nav-menu" aria-expanded="false">
 							<span className="sr-only">Open main menu</span>
 							<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,52 +46,52 @@ const TheBeginning = () => {
 						<div id="tpk-nav-menu" className="items-center justify-between hidden w-full md:flex md:w-auto">
 							<ul className="font-normal flex flex-col p-4 md:p-0 mt-4 border-[.5px] border-muted-2 dark:border-muted-3 md:flex-row md:space-x-8 md:mt-0 md:border-0">
 								<li>
-									<Link href="/AboutUs" className="block uppercase py-2 xl:px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0" aria-current="page">About Us</Link>
+									<GoTo href="/AboutUs" className="block uppercase py-2 xl:px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0" aria-current="page">About Us</GoTo>
 								</li>
 								<li>
-									<Link href="#" className="block uppercase py-2 xl:px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">Services</Link>
+									<GoTo href="#" className="block uppercase py-2 xl:px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">Services</GoTo>
 								</li>
 								<li>
-									<Link href="#" className="block uppercase py-2 xl:px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">Pricing</Link>
+									<GoTo href="#" className="block uppercase py-2 xl:px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">Pricing</GoTo>
 								</li>
 								<li className="relative group">
-									<Link href="#"
+									<GoTo href="#"
 										className="block uppercase py-2 xl:px-3 text-black dark:text-white hover:text-sky-blue hover:font-medium md:max-lg:p-0">
 										Resources
-									</Link>
+									</GoTo>
 									<div className="hidden absolute group-hover:block -left-12 sm:left-0 md:-translate-x-2/4 pt-12">
 										<ul className="backdrop-blur-md bg-white/30 font-extralight dark:text-white w-max rounded-lg py-5">
 											<li>
-												<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+												<GoTo href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
 													<span className="pe-2">
 														<LottieAni json="/json/home/Newspaper.json" play={false} className="w-10" />
 													</span>
 													Dancing with machines &#40; Blog &#41;
-												</Link>
+												</GoTo>
 											</li>
 											<li>
-												<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+												<GoTo href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
 													<span className="pe-2">
 														<LottieAni json="/json/home/Processor.json" play={false} className="w-10" />
 													</span>
 													Case studies
-												</Link>
+												</GoTo>
 											</li>
 											<li>
-												<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+												<GoTo href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
 													<span className="pe-2">
 														<LottieAni json="/json/home/Team.json" play={false} className="w-10" />
 													</span>
 													Process
-												</Link>
+												</GoTo>
 											</li>
 											<li>
-												<Link href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
+												<GoTo href="#" className="flex items-center justify-start px-4 pe-8 py-1 text-inherit">
 													<span className="pe-2">
 														<LottieAni json="/json/home/Cyber Security.json" play={false} className="w-10" />
 													</span>
 													The Forge
-												</Link>
+												</GoTo>
 											</li>
 										</ul>
 									</div>

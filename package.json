@@ -11,17 +11,20 @@
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "gsa": "npm:@gsap/shockingly@^3.12.5",
+    "gsap": "^3.12.7",
     "lenis": "^1.1.20",
     "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-lottie-player": "^2.1.0"
+    "react-lottie-player": "^2.1.0",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.5",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-transition-group": "^4.4.12",
     "eslint": "^8",
     "eslint-config-next": "15.0.4",
     "postcss": "^8",
