@@ -144,7 +144,7 @@ const ProcessSteps: React.FC = () => {
 				<div className="w-full text-center">
 					<SolidBtn href="#x" className="block w-fit mx-auto mb-10 uppercase cursor-default tpk-text-sm font-light">How It Works</SolidBtn>
 					<h2 className="tpk-text-2xl font-normal text-center mb-24">
-						LET'S TRANSFORM YOUR DREAM <br /> TO A REMARKABLE BUSINESS
+						LET&apos;S TRANSFORM YOUR DREAM <br /> TO A REMARKABLE BUSINESS
 					</h2>
 				</div>
 

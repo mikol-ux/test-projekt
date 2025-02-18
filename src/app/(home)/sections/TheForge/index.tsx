@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import hoodie from "../../../../../public/img/home/Person in Red Hoodie Coding copy 1.png";
-import Link from "next/link";
+// import Link from "next/link";
 import GradientBtn from "@/components/Buttons/GradientBtn";
 const ForgeSection = () => {
 	return (
@@ -33,7 +33,7 @@ const ForgeSection = () => {
 						{/* Community Channel Section */}
 						<div className="2xl:basis-1/2 flex-col md:flex-row gap-4 backdrop-blur-[60px] bg-[#FFFFFF12] rounded-lg flex w-full p-4">
 							<p className="tpk-text-sm font-light mt-2 basis-5/12 dark:text-white text-black mb-4 md:mb-0">
-								A private network for dreamers who become high-performing
+								A private network for dreamers who became high-performing
 								founders. Applicants face a tough interview process, leading to
 								an acceptance rate under 10%. This guarantees that only
 								committed individuals join The Forge, enhancing connections and

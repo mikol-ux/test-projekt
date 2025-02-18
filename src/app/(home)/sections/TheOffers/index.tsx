@@ -4,7 +4,7 @@ import GradientBtn from '@/components/Buttons/GradientBtn';
 
 const BenefitsSection = () => {
 	const benefits = [
-		{ icon: "/json/home/Create Dashboard.json", title: 'DASHBOARD', description: 'Ensure your goals are achieved efficiently, with maximum impact and minimal risk.' },
+		{ icon: "/json/home/Create Dashboard.json", title: 'DASHBOARD', description: 'Track and manage your projects efficiently with maximum impact and minimal risk from one place.' },
 		{ icon: "/json/home/Loading.json", title: 'MARKET READY', description: 'Market-ready identity that attracts your audience.' },
 		{ icon: "/json/home/Share.json", title: 'CONNECT', description: 'Learn from and connect with other founders and share your experiences.' },
 		{ icon: "/json/home/Cyber Security.json", title: 'SECURE', description: 'We comply with security protocols (CIA) throughout the cycle of development.' },

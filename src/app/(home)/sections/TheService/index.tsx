@@ -1,8 +1,6 @@
 import GradientBtn from "@/components/Buttons/GradientBtn";
 
-interface TheServiceProps {}
-
-const TheService: React.FC<TheServiceProps> = () => {
+const TheService: React.FC = () => {
   const options: string[] = [
     "(A) FULL-SERVICE WEB & CYBER SECURITY DEVELOPMENT COMPANY",
     "(B) UX/UI DESIGNERS AND BRAND STRATEGISTS",

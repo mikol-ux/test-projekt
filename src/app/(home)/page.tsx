@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 import TheHero from "./sections/TheHero";
-import TheDescription from "./sections/TheDescription";
+// import TheDescription from "./sections/TheDescription";
 import TheDirections from "./sections/TheDirections";
 import TheService from "./sections/TheService";
-import TheAdvice from "./sections/TheAdvice";
+// import TheAdvice from "./sections/TheAdvice";
 import TheEvidence from "./sections/TheEvidence";
 import TheProcess from "./sections/TheProcess";
 import TheBlog from "./sections/TheBlog";

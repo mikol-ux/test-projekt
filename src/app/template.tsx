@@ -9,45 +9,33 @@ import { SwitchTransition, Transition } from "react-transition-group";
 const PageTransition = ({ children }: { children: React.ReactNode }) => {
 	const pathname = usePathname(); // Next.js App Router replacement for `useRouter().pathname`
 	const { setAnimating } = useContext(TransitionContext);
-	const nodeRef = useRef<HTMLDivElement | null>(null); // Explicit nodeRef to avoid findDOMNode()
+	const nodeRef = useRef<HTMLDivElement | null>(null);
 
 	return (
 		<SwitchTransition mode="out-in">
 			<Transition
-				key={pathname} // Triggers transition when route changes
+				key={pathname}
 				timeout={600}
-				nodeRef={nodeRef} // Explicitly set nodeRef
+				nodeRef={nodeRef}
 				onEnter={() => {
-					if (!nodeRef.current) return; // Type safety check
-
-					console.log("set animatoin");
-					setAnimating(true); // Mark transition as active
+					if (!nodeRef.current) return;
+					setAnimating(true);
 
 					gsap.fromTo(
 						nodeRef.current,
-						{ autoAlpha: 0, y: 50, scale: 0.95 }, // Start animation state
+						{ autoAlpha: 0, y: 50, scale: 0.95 },
 						{
 							autoAlpha: 1,
 							y: 0,
 							scale: 1,
 							duration: 0.6,
 							ease: "power2.out",
-							onComplete: () => setAnimating(false), // Mark transition as completed
+							onComplete: () => setAnimating(false),
 						}
 					);
 				}}
-				onExit={() => {
-					if (!nodeRef.current) return; // Type safety check
-
-					gsap.to(nodeRef.current, {
-						autoAlpha: 0,
-						y: -50,
-						scale: 0.95,
-						duration: 0.5,
-						ease: "power2.in",
-					});
-				}}>
-				<div ref={nodeRef} className="w-full">{children}</div>
+			>
+				<div ref={nodeRef} id="tpk-page-wrapper" className="w-full">{children}</div>
 			</Transition>
 		</SwitchTransition>
 	);

@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+// import { Fragment } from "react";
 import FindingTalent from "./sections/FindingTalent";
 
 export default function AboutUsPage() {

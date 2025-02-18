@@ -15,7 +15,7 @@ const HeroPumpkin: FC = () => {
 		if (!imageRef.current) return;
 		console.log("Image Animating...");
 
-		let mm = gsap.matchMedia();
+		const mm = gsap.matchMedia();
 
 		mm.add(
 			{
@@ -26,7 +26,7 @@ const HeroPumpkin: FC = () => {
 				xxl: "(min-width: 1280px)", // Tailwind '2xl'
 			},
 			(context) => {
-				let { sm, md, lg, xl, xxl } = context.conditions!;
+				const { sm, md, lg, xl } = context.conditions!;
 
 				console.log("size", context.conditions);
 

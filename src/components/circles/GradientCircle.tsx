@@ -5,10 +5,6 @@ import { FC, useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 
-interface ButtonProps {
-
-}
-
 interface GradientCircleProps {
 	href: string;
 	className?: string;

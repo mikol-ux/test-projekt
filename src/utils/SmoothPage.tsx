@@ -4,7 +4,6 @@ import gsap from "gsap";
 import { ReactLenis } from "lenis/react";
 import { useEffect, useRef } from "react";
 import type { LenisRef } from "lenis/react";
-import { useGSAP } from "@gsap/react";
 
 function SmooothPage({ children }: { children: React.ReactNode }) {
 	// Correctly type the ref for ReactLenis

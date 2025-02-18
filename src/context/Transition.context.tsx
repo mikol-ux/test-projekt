@@ -1,14 +1,19 @@
 "use client";
 
-import { createContext, useState } from "react";
+import { createContext, useState, ReactNode } from "react";
 
-const TransitionContext = createContext({
-	isAnimating: false,
-	setAnimating: (value: boolean) => { },
+interface TransitionContextProps {
+	isAnimating: boolean;
+	setAnimating: (value: boolean) => void;
+}
+
+const TransitionContext = createContext<TransitionContextProps>({
+	isAnimating: false, // Initial value
+	setAnimating: () => { }, // Placeholder function
 });
 
-export function TransitionProvider({ children }: { children: React.ReactNode }) {
-	const [isAnimating, setAnimating] = useState(false);
+export function TransitionProvider({ children }: { children: ReactNode }) {
+	const [isAnimating, setAnimating] = useState(false); // ✅ This updates the state!
 
 	return (
 		<TransitionContext.Provider value={{ isAnimating, setAnimating }}>

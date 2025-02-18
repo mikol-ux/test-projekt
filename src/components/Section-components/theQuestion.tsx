@@ -14,7 +14,7 @@ const FAQComponent: React.FC<{ faq: FAQ; index: number }> = ({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full">
+    <div key={index} className="w-full">
       <div className="group bg-gradient-to-r from-pitch-dark-blue via-deep-blue to-sky-blue p-[1px] rounded-[4px] cursor-pointer">
         <div
           className={`py-2 text-black dark:text-white transition-colors rounded-[4px] ${
