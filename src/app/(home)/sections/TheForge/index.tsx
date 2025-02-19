@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import hoodie from "../../../../../public/img/home/Person in Red Hoodie Coding copy 1.png";
+
 // import Link from "next/link";
 import GradientBtn from "@/components/Buttons/GradientBtn";
 const ForgeSection = () => {
@@ -42,7 +42,7 @@ const ForgeSection = () => {
 
 							<div className="basis-7/12 mt-4">
 								<Image
-									src={hoodie}
+									src="/img/home/Person in Red Hoodie Coding copy 1.png"
 									alt="Community Channel"
 									width={288}
 									height={221}
