@@ -1,8 +1,12 @@
 //
 import GradientBtn from "@/components/Buttons/GradientBtn";
-import LottieAni from "@/components/Lottie";
+//import LottieAni from "@/components/Lottie";
 import GoTo from "@/utils/GoTo";
 // import Link from "next/link";
+import dynamic from "next/dynamic";
+
+// Dynamically import the Lottie component, disabling SSR
+const LottieAni = dynamic(() => import("@/components/Lottie"), { ssr: false });
 
 const TheBeginning = () => {
   return (
