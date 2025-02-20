@@ -3,9 +3,9 @@ import { FC } from "react";
 import Lottie from "react-lottie-player";
 
 interface LottieData {
-  json: any; // Changed from string to any (should be a JSON object)
+  json: object; // JSON object, not AnimationItem
   play: boolean;
-  className?: string; // Made className optional
+  className?: string;
 }
 
 const LottieAni: FC<LottieData> = ({ json, play, className = "" }) => {

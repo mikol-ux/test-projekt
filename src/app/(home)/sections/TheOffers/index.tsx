@@ -1,40 +1,50 @@
+"use client";
+
 import React from "react";
 import LottieAni from "@/components/Lottie";
 import GradientBtn from "@/components/Buttons/GradientBtn";
 
+// Import JSON animations directly
+import DashboardAnimation from "../../../../../public/json/home/Create Dashboard.json";
+import LoadingAnimation from "../../../../../public/json/home/Loading.json";
+import ShareAnimation from "../../../../../public/json/home/Share.json";
+import SecurityAnimation from "../../../../../public/json/home/Cyber Security.json";
+import QualityAnimation from "../../../../../public/json/home/Brick Wall.json";
+import FileSharingAnimation from "../../../../../public/json/home/File Sharing.json";
+
 const BenefitsSection = () => {
   const benefits = [
     {
-      icon: "/json/home/Create Dashboard.json",
+      icon: DashboardAnimation,
       title: "DASHBOARD",
       description:
         "Track and manage your projects efficiently with maximum impact and minimal risk from one place.",
     },
     {
-      icon: "/json/home/Loading.json",
+      icon: LoadingAnimation,
       title: "MARKET READY",
       description: "Market-ready identity that attracts your audience.",
     },
     {
-      icon: "/json/home/Share.json",
+      icon: ShareAnimation,
       title: "CONNECT",
       description:
         "Learn from and connect with other founders and share your experiences.",
     },
     {
-      icon: "/json/home/Cyber Security.json",
+      icon: SecurityAnimation,
       title: "SECURE",
       description:
         "We comply with security protocols (CIA) throughout the cycle of development.",
     },
     {
-      icon: "/json/home/Brick Wall.json",
+      icon: QualityAnimation,
       title: "TOP NOTCH QUALITY",
       description:
         "Get high-quality premium results with web, software, media for your business.",
     },
     {
-      icon: "/json/home/File Sharing.json",
+      icon: FileSharingAnimation,
       title: "SYNCHRONOUS",
       description:
         "We love meetings as essential moments to connect and brainstorm as a team.",

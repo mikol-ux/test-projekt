@@ -2,6 +2,10 @@
 import GradientBtn from "@/components/Buttons/GradientBtn";
 import LottieAni from "@/components/Lottie";
 import GoTo from "@/utils/GoTo";
+import Newspaper from "../../../../../public/json/home/Newspaper.json";
+import Processor from "../../../../../public/json/home/Processor.json";
+import Team from "../../../../../public/json/home/Team.json";
+import Cyber from "../../../../../public/json/home/Cyber Security.json";
 // import Link from "next/link";
 
 const TheBeginning = () => {
@@ -173,7 +177,7 @@ const TheBeginning = () => {
                         >
                           <span className="pe-2">
                             <LottieAni
-                              json="/json/home/Newspaper.json"
+                              json={Newspaper}
                               play={false}
                               className="w-10"
                             />
@@ -188,7 +192,7 @@ const TheBeginning = () => {
                         >
                           <span className="pe-2">
                             <LottieAni
-                              json="/json/home/Processor.json"
+                              json={Processor}
                               play={false}
                               className="w-10"
                             />
@@ -203,7 +207,7 @@ const TheBeginning = () => {
                         >
                           <span className="pe-2">
                             <LottieAni
-                              json="/json/home/Team.json"
+                              json={Team}
                               play={false}
                               className="w-10"
                             />
@@ -218,7 +222,7 @@ const TheBeginning = () => {
                         >
                           <span className="pe-2">
                             <LottieAni
-                              json="/json/home/Cyber Security.json"
+                              json={Cyber}
                               play={false}
                               className="w-10"
                             />
