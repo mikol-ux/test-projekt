@@ -1,10 +1,6 @@
 import React from "react";
-//import LottieAni from "@/components/Lottie";
+import LottieAni from "@/components/Lottie";
 import GradientBtn from "@/components/Buttons/GradientBtn";
-import dynamic from "next/dynamic";
-
-// Dynamically import the Lottie component, disabling SSR
-const LottieAni = dynamic(() => import("@/components/Lottie"), { ssr: false });
 
 const BenefitsSection = () => {
   const benefits = [
