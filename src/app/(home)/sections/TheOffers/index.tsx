@@ -1,5 +1,5 @@
 import React from "react";
-//import LottieAni from '@/components/Lottie';
+import LottieAni from "@/components/Lottie";
 import GradientBtn from "@/components/Buttons/GradientBtn";
 
 const BenefitsSection = () => {
@@ -61,7 +61,7 @@ const BenefitsSection = () => {
             className="flex flex-col items-center md:items-start"
           >
             <div className="p-4 flex justify-between items-center gap-4">
-              {/* <LottieAni json={benefit.icon} className="w-10" play /> */}
+              <LottieAni json={benefit.icon} className="w-10" play />
               <h6 className="text-sky-blue tpk-text-lg font-light">
                 {benefit.title}
               </h6>

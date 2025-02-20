@@ -1,6 +1,6 @@
 //
 import GradientBtn from "@/components/Buttons/GradientBtn";
-//import LottieAni from "@/components/Lottie";
+import LottieAni from "@/components/Lottie";
 import GoTo from "@/utils/GoTo";
 // import Link from "next/link";
 
@@ -172,7 +172,11 @@ const TheBeginning = () => {
                           className="flex items-center justify-start px-4 pe-8 py-1 text-inherit"
                         >
                           <span className="pe-2">
-                            {/* <LottieAni json="/json/home/Newspaper.json" play={false} className="w-10" /> */}
+                            <LottieAni
+                              json="/json/home/Newspaper.json"
+                              play={false}
+                              className="w-10"
+                            />
                           </span>
                           Dancing with machines &#40; Blog &#41;
                         </GoTo>
@@ -183,7 +187,11 @@ const TheBeginning = () => {
                           className="flex items-center justify-start px-4 pe-8 py-1 text-inherit"
                         >
                           <span className="pe-2">
-                            {/* <LottieAni json="/json/home/Processor.json" play={false} className="w-10" /> */}
+                            <LottieAni
+                              json="/json/home/Processor.json"
+                              play={false}
+                              className="w-10"
+                            />
                           </span>
                           Case studies
                         </GoTo>
@@ -194,7 +202,11 @@ const TheBeginning = () => {
                           className="flex items-center justify-start px-4 pe-8 py-1 text-inherit"
                         >
                           <span className="pe-2">
-                            {/* <LottieAni json="/json/home/Team.json" play={false} className="w-10" /> */}
+                            <LottieAni
+                              json="/json/home/Team.json"
+                              play={false}
+                              className="w-10"
+                            />
                           </span>
                           Process
                         </GoTo>
@@ -205,7 +217,11 @@ const TheBeginning = () => {
                           className="flex items-center justify-start px-4 pe-8 py-1 text-inherit"
                         >
                           <span className="pe-2">
-                            {/* <LottieAni json="/json/home/Cyber Security.json" play={false} className="w-10" /> */}
+                            <LottieAni
+                              json="/json/home/Cyber Security.json"
+                              play={false}
+                              className="w-10"
+                            />
                           </span>
                           The Forge
                         </GoTo>
