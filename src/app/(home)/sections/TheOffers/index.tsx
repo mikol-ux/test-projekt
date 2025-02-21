@@ -1,50 +1,42 @@
 "use client";
 
 import React from "react";
-import LottieAni from "@/components/Lottie";
-import GradientBtn from "@/components/Buttons/GradientBtn";
 
-// Import JSON animations directly
-import DashboardAnimation from "../../../../../public/json/home/Create Dashboard.json";
-import LoadingAnimation from "../../../../../public/json/home/Loading.json";
-import ShareAnimation from "../../../../../public/json/home/Share.json";
-import SecurityAnimation from "../../../../../public/json/home/Cyber Security.json";
-import QualityAnimation from "../../../../../public/json/home/Brick Wall.json";
-import FileSharingAnimation from "../../../../../public/json/home/File Sharing.json";
+import GradientBtn from "@/components/Buttons/GradientBtn";
 
 const BenefitsSection = () => {
   const benefits = [
     {
-      icon: DashboardAnimation,
+      icon: "https://lottie.host/embed/d9ac638f-c2f5-4b06-94b9-86d96c0ffb4f/OmYOlekPlB.lottie",
       title: "DASHBOARD",
       description:
         "Track and manage your projects efficiently with maximum impact and minimal risk from one place.",
     },
     {
-      icon: LoadingAnimation,
+      icon: "https://lottie.host/embed/144250a8-97f3-4501-b444-d60053d59d53/f0DxkU7Nrq.lottie",
       title: "MARKET READY",
       description: "Market-ready identity that attracts your audience.",
     },
     {
-      icon: ShareAnimation,
+      icon: "https://lottie.host/embed/fa1d5922-6b81-43c9-86ec-91d51932ceff/1ITkzJiyiI.lottie",
       title: "CONNECT",
       description:
         "Learn from and connect with other founders and share your experiences.",
     },
     {
-      icon: SecurityAnimation,
+      icon: "https://lottie.host/embed/d740f9d9-c68a-45c6-ab7a-9db5b281131b/giMXMLtwHS.lottie",
       title: "SECURE",
       description:
         "We comply with security protocols (CIA) throughout the cycle of development.",
     },
     {
-      icon: QualityAnimation,
+      icon: "https://lottie.host/embed/0f5c8dad-c9eb-4e00-ab6b-5c5c7720aa59/fn3itoPebo.lottie",
       title: "TOP NOTCH QUALITY",
       description:
         "Get high-quality premium results with web, software, media for your business.",
     },
     {
-      icon: FileSharingAnimation,
+      icon: "https://lottie.host/embed/0f5c8dad-c9eb-4e00-ab6b-5c5c7720aa59/fn3itoPebo.lottie",
       title: "SYNCHRONOUS",
       description:
         "We love meetings as essential moments to connect and brainstorm as a team.",
@@ -71,7 +63,7 @@ const BenefitsSection = () => {
             className="flex flex-col items-center md:items-start"
           >
             <div className="p-4 flex justify-between items-center gap-4">
-              <LottieAni json={benefit.icon} className="w-10" play />
+              <iframe src={benefit.icon}></iframe>
               <h6 className="text-sky-blue tpk-text-lg font-light">
                 {benefit.title}
               </h6>
