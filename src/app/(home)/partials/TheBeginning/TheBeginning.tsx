@@ -1,6 +1,6 @@
 //
 import GradientBtn from "@/components/Buttons/GradientBtn";
-
+import LottieAni from "@/components/Lottie";
 import GoTo from "@/utils/GoTo";
 // import Link from "next/link";
 
@@ -171,7 +171,12 @@ const TheBeginning = () => {
                           href="#"
                           className="flex items-center justify-start px-4 pe-8 py-1 text-inherit"
                         >
-                          <span className="pe-2"></span>
+                          <span className="pe-2">
+                            <LottieAni
+                              animationData="/json/home/Newspaper.json"
+                              className="w-10"
+                            />
+                          </span>
                           Dancing with machines &#40; Blog &#41;
                         </GoTo>
                       </li>
@@ -181,7 +186,10 @@ const TheBeginning = () => {
                           className="flex items-center justify-start px-4 pe-8 py-1 text-inherit"
                         >
                           <span className="pe-2">
-                            <iframe src="https://lottie.host/embed/165b4101-e20d-437b-9f5e-aa78754e42a8/rC49xUAZDl.lottie"></iframe>
+                            <LottieAni
+                              animationData="/json/home/Processor.json"
+                              className="w-10"
+                            />
                           </span>
                           Case studies
                         </GoTo>
@@ -192,7 +200,10 @@ const TheBeginning = () => {
                           className="flex items-center justify-start px-4 pe-8 py-1 text-inherit"
                         >
                           <span className="pe-2">
-                            <iframe src="https://lottie.host/embed/165b4101-e20d-437b-9f5e-aa78754e42a8/rC49xUAZDl.lottie"></iframe>
+                            <LottieAni
+                              animationData="/json/home/Team.json"
+                              className="w-10"
+                            />
                           </span>
                           Process
                         </GoTo>
@@ -203,7 +214,10 @@ const TheBeginning = () => {
                           className="flex items-center justify-start px-4 pe-8 py-1 text-inherit"
                         >
                           <span className="pe-2">
-                            <iframe src="https://lottie.host/embed/165b4101-e20d-437b-9f5e-aa78754e42a8/rC49xUAZDl.lottie"></iframe>
+                            <LottieAni
+                              animationData="/json/home/Cyber Security.json"
+                              className="w-10"
+                            />
                           </span>
                           The Forge
                         </GoTo>
