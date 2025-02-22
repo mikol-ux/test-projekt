@@ -2,6 +2,10 @@
 import GradientBtn from "@/components/Buttons/GradientBtn";
 import LottieAni from "@/components/Lottie";
 import GoTo from "@/utils/GoTo";
+import Newspaper from "../../../../../public/json/home/Newspaper.json";
+import Processor from "../../../../../public/json/home/Processor.json";
+import Team from "../../../../../public/json/home/Team.json";
+import Cyber from "../../../../../public/json/home/Cyber Security.json";
 // import Link from "next/link";
 
 const TheBeginning = () => {
@@ -173,7 +177,7 @@ const TheBeginning = () => {
                         >
                           <span className="pe-2">
                             <LottieAni
-                              animationData="/json/home/Newspaper.json"
+                              animationData={Processor}
                               className="w-10"
                             />
                           </span>
@@ -187,7 +191,7 @@ const TheBeginning = () => {
                         >
                           <span className="pe-2">
                             <LottieAni
-                              animationData="/json/home/Processor.json"
+                              animationData={Processor}
                               className="w-10"
                             />
                           </span>
@@ -200,10 +204,7 @@ const TheBeginning = () => {
                           className="flex items-center justify-start px-4 pe-8 py-1 text-inherit"
                         >
                           <span className="pe-2">
-                            <LottieAni
-                              animationData="/json/home/Team.json"
-                              className="w-10"
-                            />
+                            <LottieAni animationData={Team} className="w-10" />
                           </span>
                           Process
                         </GoTo>
@@ -214,10 +215,7 @@ const TheBeginning = () => {
                           className="flex items-center justify-start px-4 pe-8 py-1 text-inherit"
                         >
                           <span className="pe-2">
-                            <LottieAni
-                              animationData="/json/home/Cyber Security.json"
-                              className="w-10"
-                            />
+                            <LottieAni animationData={Cyber} className="w-10" />
                           </span>
                           The Forge
                         </GoTo>

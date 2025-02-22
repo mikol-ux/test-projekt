@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 interface LottieAnimationProps {
-  animationData: any; // JSON animation data
+  animationData: Record<string, unknown>; // JSON animation data
   loop?: boolean;
   autoplay?: boolean;
   speed?: number;

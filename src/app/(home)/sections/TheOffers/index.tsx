@@ -2,39 +2,47 @@ import React from "react";
 import LottieAni from "@/components/Lottie";
 import GradientBtn from "@/components/Buttons/GradientBtn";
 
+// Import JSON animations
+import dashboardAnimation from "../../../../../public/json/home/Create Dashboard.json";
+import loadingAnimation from "../../../../../public/json/home/Loading.json";
+import shareAnimation from "../../../../../public/json/home/Share.json";
+import securityAnimation from "../../../../../public/json/home/Cyber Security.json";
+import qualityAnimation from "../../../../../public/json/home/Brick Wall.json";
+import sharingAnimation from "../../../../../public/json/home/File Sharing.json";
+
 const BenefitsSection = () => {
   const benefits = [
     {
-      icon: "/json/home/Create Dashboard.json",
+      icon: dashboardAnimation,
       title: "DASHBOARD",
       description:
         "Track and manage your projects efficiently with maximum impact and minimal risk from one place.",
     },
     {
-      icon: "/json/home/Loading.json",
+      icon: loadingAnimation,
       title: "MARKET READY",
       description: "Market-ready identity that attracts your audience.",
     },
     {
-      icon: "/json/home/Share.json",
+      icon: shareAnimation,
       title: "CONNECT",
       description:
         "Learn from and connect with other founders and share your experiences.",
     },
     {
-      icon: "/json/home/Cyber Security.json",
+      icon: securityAnimation,
       title: "SECURE",
       description:
         "We comply with security protocols (CIA) throughout the cycle of development.",
     },
     {
-      icon: "/json/home/Brick Wall.json",
+      icon: qualityAnimation,
       title: "TOP NOTCH QUALITY",
       description:
         "Get high-quality premium results with web, software, media for your business.",
     },
     {
-      icon: "/json/home/File Sharing.json",
+      icon: sharingAnimation,
       title: "SYNCHRONOUS",
       description:
         "We love meetings as essential moments to connect and brainstorm as a team.",
