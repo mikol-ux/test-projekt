@@ -2,7 +2,7 @@
 import GradientBtn from "@/components/Buttons/GradientBtn";
 import LottieAni from "@/components/Lottie";
 import GoTo from "@/utils/GoTo";
-import Newspaper from "../../../../../public/json/home/Newspaper.json";
+//import Newspaper from "../../../../../public/json/home/Newspaper.json";
 import Processor from "../../../../../public/json/home/Processor.json";
 import Team from "../../../../../public/json/home/Team.json";
 import Cyber from "../../../../../public/json/home/Cyber Security.json";

@@ -38,7 +38,7 @@ const TheService: React.FC = () => {
           {options.map((option, index) => (
             <li
               key={index}
-              className={`group bg-linear-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[1px] transition-all duration-1000 ease-in-out hover:p-0 w-full md:w-[90%] md:hover:w-[93%] hover:bg-none rounded-lg md:mx-auto `}
+              className={`group bg-linear-to-r from-pitch-dark-blue from-[-4.81%] via-deep-blue via-[27%] to-sky-blue to-100% p-[1px] transition-all duration-500 ease-in-out hover:p-0 w-full md:w-[90%] md:ml-0 md:hover:ml-3.5 hover:bg-none rounded-lg  `}
             >
               <div
                 key={index}
@@ -50,10 +50,10 @@ const TheService: React.FC = () => {
                     bg-black text-gray-300 hover:text-white hover:border-none 
                      before:absolute before:inset-0 before:bg-gradient-to-r 
                     before:from-black before:to-[#438DB5] before:z-0 
-                    before:transition-opacity before:duration-1000 before:opacity-0 
+                    before:transition-opacity before:duration-500 before:opacity-0 
                     hover:before:opacity-100 focus:before:opacity-100"
               >
-                <span className="relative z-10 basis-1/4 flex md:items-center justify-between gap-2 md:gap-1 text-black dark:text-white uppercase transition-opacity duration-1000 ease-in-out px-2.5 xl:px-16 opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100">
+                <span className="relative z-10 basis-1/4 flex md:items-center justify-between gap-2 md:gap-1 text-black dark:text-white uppercase transition-opacity duration-500 ease-in-out px-2.5 xl:px-16 opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100">
                   <span className="">
                     <svg
                       width="23"
